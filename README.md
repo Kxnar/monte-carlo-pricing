@@ -1,50 +1,49 @@
-# Monte Carlo Pricing Lab
+# Monte Carlo option pricing
 
-**When does variance reduction actually make an option-pricing calculation more efficient?**
+I wanted to see how much better you can do than plain Monte Carlo when pricing a European put, and whether the improvement is still worth it once you count the time spent tuning the sampler.
 
-This project compares five estimators for European puts under synthetic generalised-normal mixture return models. It checks simulated prices and variance against numerical integration, separates tuning from evaluation, and measures both accuracy and computational cost.
+This compares five estimators in Python and NumPy. The main model uses a two-component generalised-normal mixture, which allows asymmetric returns and heavier tails than a Gaussian. There are also Gaussian and stress cases. Numerical integration gives a reference price to check the simulations against.
 
-**Start here:** [technical walkthrough](docs/WALKTHROUGH.md) · [final benchmark report](results/reconstruction-v3/REPORT.md) · [experiment provenance](docs/PROVENANCE.md)
+The main finding: tuned importance sampling reduced variance by about **9.5x** in the default at-the-money case. But the proposal search took enough time to outweigh the gain for a single calculation. Reusing the proposal makes a difference.
 
-![Convergence under the default mixture](results/reconstruction-v3/mixture-convergence.svg)
+[Walkthrough](docs/WALKTHROUGH.md) | [Full results](results/reconstruction-v3/REPORT.md) | [Experiment notes](docs/PROVENANCE.md)
 
-## Run a price calculation
+## Try it
 
-Python 3.10+ and NumPy are the only runtime requirements. Use a virtual environment if desired, then run from the repository root:
+You'll need Python 3.10+ and NumPy. From the repository folder:
 
 ```sh
 python -m pip install .
 python -m mcpricing price --scenario mixture --strike 100 --samples 20000
-python -m unittest discover -s tests -v
 ```
 
-The command prints price estimates, standard errors, quadrature reference, population variance constants, pilot costs and a pathwise delta estimate. The installed `mcpricing` command is equivalent to `python -m mcpricing`.
+This prints the prices, standard errors, runtimes and tuning costs, alongside the integration reference. It also estimates delta: how the price changes with the starting stock price.
 
-For an explained comparison with a fixed proposal:
+For a smaller example with comments:
 
 ```sh
 python examples/first_experiment.py
 ```
 
-## What is implemented?
+## What's being compared?
 
-| Method | Mechanism | Main issue to understand |
-|---|---|---|
-| IID | Direct mixture draws | Standard error decreases as the inverse square root of sample count |
-| IS | Defensive, shifted-mixture importance sampling | Proposal tuning and likelihood weights cost time |
-| AV | Opposite shocks within each mixture component | A pair is one independent observation, using two payoffs |
-| CV | Discounted terminal stock as a control variate | Its expectation must be known; coefficient is fitted on separate samples |
-| MH | Gaussian random-walk Metropolis-Hastings | Serial correlation; step is tuned by expected squared jump distance |
+| Method | What it does |
+|---|---|
+| Direct Monte Carlo (IID) | Draws independent returns and averages the discounted payoffs. |
+| Importance sampling (IS) | Samples losses more often, then reweights the payoffs to keep the same pricing target. |
+| Antithetic variates (AV) | Pairs opposite shocks around each mixture component's centre. Both payoffs count towards the budget. |
+| Control variates (CV) | Uses the discounted stock price, whose expectation is known, to reduce noise in the put estimate. |
+| Metropolis-Hastings (MH) | Samples returns with a random walk. Consecutive draws are correlated. |
 
-The mixture is sampled exactly via Gamma radii and independent signs. The terminal stock law includes an exponential-moment correction enforcing its discounted expectation. Sixteen tests cover the Black-Scholes limit, martingale and put-call identities, estimators, population variance, numerical refinement, delta, reproducibility and the end-to-end benchmark.
+The IS proposal, CV coefficient and MH step size are tuned on separate pilot samples, then held fixed during evaluation. A drift correction keeps the stock's discounted expectation equal to its starting price.
 
-## What the experiments found
+## Results
 
-The final benchmark contains **13,500 estimates**: three distributions x three strikes x three payoff budgets x five pilot groups x 20 independent repeats x five methods. All evaluation draws are separate from tuning. Raw trials, candidates, seeds, source hashes and environment details are committed alongside the report.
+The full run contains **13,500 price estimates**: three return distributions, three strikes, three sample budgets, five independently tuned pilot groups, 20 repeats per group and five methods. Raw trials, seeds, pilot choices and environment details are saved in [`results/reconstruction-v3`](results/reconstruction-v3).
 
-At spot/strike 100 in the default mixture, with 20,000 payoff evaluations:
+Here's the default mixture with spot and strike both 100, using 20,000 payoff evaluations per estimate. The reference price is **4.28997599**.
 
-| Method | Empirical RMSE | Population variance reduction vs IID | Mean estimator time |
+| Method | RMSE | Variance reduction vs IID, from integration | Mean time per estimate |
 |---|---:|---:|---:|
 | IID | 0.05346 | 1.00x | 2.59 ms |
 | IS | 0.01754 | 9.40x | 6.44 ms |
@@ -52,77 +51,66 @@ At spot/strike 100 in the default mixture, with 20,000 payoff evaluations:
 | CV | 0.04017 | 2.41x | 2.70 ms |
 | MH | 0.14755 | Not computed | 37.59 ms |
 
-The price reference is **4.28997599**. Population variance ratios use integrated payoff moments conditional on each frozen pilot and are averaged over the five pilot groups. MH's autocovariance sum is not integrated, so it is deliberately omitted from that column. Finite-sample RMSE and theoretical variance need not rank close competitors identically.
+Times exclude tuning. The variance column comes from integrating payoff moments for each fixed pilot, averaged across the five groups. MH needs an autocorrelation calculation as well, so it has no entry there. RMSE comes from repeated simulations; the two columns won't line up exactly.
 
-The empirical IS variance ratio is **9.46x**, with an exploratory hierarchical-bootstrap 95% interval of **5.16-19.47x**. The population calculation is a more precise check for this specific model and proposal. A 9.40x variance reduction means approximately **3.07x lower standard error**, not 9.40x less error or a guaranteed runtime speedup.
+![Convergence under the default mixture](results/reconstruction-v3/mixture-convergence.svg)
 
-IS's variance-times-runtime efficiency is about **3.81x** that of IID **excluding pilots**, but only **0.70x** when charging the full 28.36 ms proposal search to one estimate. Reusing a proposal changes the cost comparison. At different strikes, antithetic or control variates can be attractive without a large tuning bill.
+IS gave **9.46x lower empirical variance**, close to the **9.40x** integration result. That corresponds to roughly **3.07x lower standard error** at the same sample count. The bootstrap 95% interval for the empirical ratio was wide, **5.16-19.47x**; with only five pilot groups, it's an exploratory check.
 
-An earlier experiment exposed a weak MH tuning objective: a rare-payoff pilot can misleadingly report low variance because it barely sees losses. The revised implementation tunes target exploration instead. Both rounds are retained; changes and limitations are explained in [provenance](docs/PROVENANCE.md).
+Runtime changes the picture. Measured by variance times runtime, IS was **3.81x as efficient** as IID before tuning costs. Charging the full **28.36 ms** proposal search to one estimate brought that ratio down to **0.70x**. These numbers depend on the model, strike and machine.
 
-These are model- and machine-specific findings, not trading performance claims or universal speedups.
+One useful failure came from the first MH implementation. Choosing a step size by low pilot payoff variance could favour a chain that barely visited the loss region. It looked stable because it missed the events that mattered. Tuning by expected squared jump distance improved exploration: at strike 80 in the default mixture, with 20,000 samples, RMSE fell from **0.1165 to 0.0506** and 95% interval coverage rose from **89% to 96%**. Both rounds are kept in the repo; the [experiment notes](docs/PROVENANCE.md) explain the change.
 
-## Reproduce or extend the benchmark
+## Run it yourself
 
-Quick smoke experiment:
+For a quick benchmark:
 
 ```sh
 python -m mcpricing benchmark --scenarios mixture --strikes 100 --sizes 1000 5000 --groups 2 --repeats 5 --pilot-samples 1000 --bootstrap 200 --output local-results
 ```
 
-Full final experiment:
+For the full experiment:
 
 ```sh
 python -m mcpricing benchmark --output my-full-run
 ```
 
-Exact tested dependency version on Python 3.12:
+Each run saves trial data, summary tables, pilot settings, plots and a standalone `report.html`. Use a fresh output folder each time. To rebuild a report from saved data:
+
+```sh
+python -m mcpricing report my-full-run
+```
+
+The recorded runs used Python 3.12.14 and NumPy 2.3.5. To use the pinned NumPy version:
 
 ```sh
 python -m pip install -r requirements-reproduce.txt
 python -m pip install --no-deps .
 ```
 
-Existing output directories are never overwritten. Each run generates `trials.csv`, `summary.csv`, `population.csv`, pilot and environment JSON, SVG figures, Markdown and a standalone HTML report. Open `report.html` in a browser to inspect the results locally.
-
-To regenerate a report from an existing run:
+## Checks and limits
 
 ```sh
-python -m mcpricing report my-full-run
+python -m unittest discover -s tests -v
 ```
 
-## Portability and automation
+All 16 tests passed locally on Windows with Python 3.12.14. They cover the Black-Scholes limit, distribution moments, discounted-stock expectation, put-call parity, estimator calculations, numerical refinement, delta and benchmark reproducibility. The package was also built and installed separately from the source folder. GitHub Actions is configured for Linux, Windows and macOS; see the workflow runs for hosted results.
 
-The package built and installed successfully on Windows with Python 3.12.14 and NumPy 2.3.5. All 16 local tests passed. An included GitHub Actions workflow targets Linux, Windows and macOS, with Python 3.10, 3.12 and 3.13 combinations. Those hosted jobs must pass before claiming cross-platform validation.
+These are synthetic, single-maturity models. They aren't fitted to market data, and changing maturity doesn't rescale the return distribution. For this one-dimensional put, numerical integration is cheaper than simulation; the point is to study the estimators. Path-dependent options would need a model for the whole price path.
 
-A Docker recipe is provided:
+MH's batch-means intervals sometimes under-cover. Its Python loop also makes runtime comparisons with the vectorised methods partly a comparison of implementations.
+
+There's an optional Docker setup, which hasn't been tested locally:
 
 ```sh
 docker build -t mcpricing .
 docker run --rm mcpricing price --samples 20000
 ```
 
-Docker was unavailable in the reconstruction environment, so the recipe has not been executed there. The core program requires no GPU, service account, API key or market-data subscription.
+## Finding your way around
 
-## Model scope
+Start with [`examples/first_experiment.py`](examples/first_experiment.py). The distribution and payoff are in `mcpricing/model.py`, the five methods in `mcpricing/estimators.py`, and the reference variance calculations in `mcpricing/theory.py`. `benchmark.py` runs the experiments; `report.py` makes the tables and plots.
 
-This is a **single-maturity terminal pricing model**, specified directly under a synthetic pricing law. It is not inferred from historical returns, calibrated to an option surface, or presented as a consistent multi-maturity process. Shapes above one provide the exponential moments needed for the construction; the implementation deliberately limits parameters to a documented numerical range.
+The [walkthrough](docs/WALKTHROUGH.md) covers the derivations and includes exercises. [CONTRIBUTING.md](CONTRIBUTING.md) explains how to add an experiment.
 
-The one-dimensional reference integral is cheaper and more appropriate than Monte Carlo for this simple contract. Simulation is used to study estimator behaviour before extending to harder payoffs. A path-dependent extension would require a separately justified dynamic model.
-
-MH is a teaching baseline. Starting the chain in stationarity prevents a bad initial point from distorting the comparison, but does not remove serial dependence. Batch-means intervals are approximate and occasionally under-cover. Bootstrap uncertainty estimates use only five pilot groups and are exploratory.
-
-## Project map
-
-| File | Purpose |
-|---|---|
-| `mcpricing/model.py` | Terminal law, put payoff, proposal and reference price |
-| `mcpricing/estimators.py` | Five estimators and independent-pilot tuning |
-| `mcpricing/theory.py` | Integrated variance constants and reference delta |
-| `mcpricing/quadrature.py` | Gauss-Legendre rule and tail truncation helpers |
-| `mcpricing/benchmark.py` | Repeated experiments, timing and bootstrap intervals |
-| `mcpricing/report.py` | Markdown, HTML and SVG reports |
-| `tests/` | Numerical and statistical checks |
-| `docs/WALKTHROUGH.md` | Derivations, code-reading guide and exercises |
-
-This is a fresh reconstruction of a lost student project, with AI implementation assistance. All measurements are from the reconstructed code. See [CONTRIBUTING.md](CONTRIBUTING.md) for how to design and record an extension.
+This rebuilds a student project whose original code was lost, with AI assistance on the implementation. The parameters and results come from the rebuilt version; the [experiment notes](docs/PROVENANCE.md) record what changed.
