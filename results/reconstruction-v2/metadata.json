@@ -1,0 +1,92 @@
+{
+  "created_utc": "2026-10-06T00:34:25.983104+00:00",
+  "seed": 20261006,
+  "scenarios": {
+    "gaussian": {
+      "weights": [
+        0.8,
+        0.2
+      ],
+      "locations": [
+        0.0,
+        0.0
+      ],
+      "scales": [
+        0.28284271247461906,
+        0.28284271247461906
+      ],
+      "shapes": [
+        2.0,
+        2.0
+      ]
+    },
+    "mixture": {
+      "weights": [
+        0.8,
+        0.2
+      ],
+      "locations": [
+        0.02,
+        -0.08
+      ],
+      "scales": [
+        0.16,
+        0.3
+      ],
+      "shapes": [
+        2.0,
+        1.5
+      ]
+    },
+    "stress": {
+      "weights": [
+        0.7,
+        0.3
+      ],
+      "locations": [
+        0.025,
+        -0.15
+      ],
+      "scales": [
+        0.14,
+        0.36
+      ],
+      "shapes": [
+        2.0,
+        1.3
+      ]
+    }
+  },
+  "strikes": [
+    80,
+    100,
+    120
+  ],
+  "sizes": [
+    1000,
+    5000,
+    20000
+  ],
+  "pilot_groups": 5,
+  "repeats_per_group": 20,
+  "pilot_n": 8000,
+  "bootstrap_resamples": 1000,
+  "total_estimates": 13500,
+  "elapsed_seconds": 66.58659069999703,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.3.5",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "machine": "AMD64",
+  "source_sha256": {
+    "benchmark.py": "d0ef8e70a8a66b4e4e55670e63ab62dc06213b3bf8efac59cab48bb54d2526f3",
+    "estimators.py": "75892c65e26d3c2673eca5314418d7f2dfb0d15b19e717e80f236300a37ade06",
+    "model.py": "296ea5d5fea32f676fe92c29f4cc8d23d519b5763e78caf76d7c3422363d2363",
+    "quadrature.py": "7a98275455f4b254c2984f76d74e82ca55988d54fd7389d489c1548332939777",
+    "report.py": "7b0508f59b855defc46bc4a6c287fcad79b2e02f7208c05dfbe67ad91eea143d",
+    "scenarios.py": "49763e6e0abcc2fb989bf677ca8e78f6801610718ecd102f19db45f6f4e4239f",
+    "theory.py": "7f68b192a65927b65dc3780f55d58cf91ea04cd5ea6d20cbb714557598af66eb",
+    "__init__.py": "5b8bd23ae4133bad4b0f973b9f01da4b40fb7a12f1035550ba4e9a6bb30cad02",
+    "__main__.py": "946592579ee63f989a0b8ece2a15e0792ce5fd2d0d9dc80c74a0f3b6c044a6e0"
+  },
+  "timing": "Includes estimator sampling, payoff and diagnostics, including MH burn-in. Excludes separately reported pilots, shared model/reference setup, imports and output generation."
+}
