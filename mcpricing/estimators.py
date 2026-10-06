@@ -85,7 +85,7 @@ def importance_values(model, contract, proposal, n, rng):
     return contract.payoff(model, x)*weights
 
 
-def mh_values(model, contract, n, rng, step=0.25, burn=1000):
+def mh_draws(model, n, rng, step=0.25, burn=1000):
     if not isinstance(n, (int, np.integer)) or n < 1 or not isinstance(burn,int) or burn < 0:
         raise ValueError("MH needs a positive sample count and nonnegative integer burn-in.")
     if not math.isfinite(step) or step <= 0:
@@ -98,6 +98,7 @@ def mh_values(model, contract, n, rng, step=0.25, burn=1000):
     log_uniform = np.log(rng.random(n+burn))
     samples = np.empty(n)
     accepted = 0
+    squared_jumps = 0.0
     for i in range(n+burn):
         candidate = state + increments[i]
         candidate_density = model.scalar_logpdf(candidate)
@@ -106,8 +107,15 @@ def mh_values(model, contract, n, rng, step=0.25, burn=1000):
             state, density = candidate, candidate_density
         if i >= burn:
             accepted += accept
+            if accept:
+                squared_jumps += increments[i]**2
             samples[i-burn] = state
-    return contract.payoff(model, samples), accepted/n
+    return samples, accepted/n, squared_jumps/n
+
+
+def mh_values(model, contract, n, rng, step=0.25, burn=1000):
+    samples, acceptance, _ = mh_draws(model,n,rng,step,burn)
+    return contract.payoff(model,samples), acceptance
 
 
 def standard_error(values, correlated=False):
@@ -143,10 +151,14 @@ def tune(model, contract, seed=1729, pilot_n=8000):
     start = perf_counter()
     steps = []
     for step in (0.06, 0.12, 0.2, 0.35, 0.55, 0.9):
-        values, acceptance = mh_values(model, contract, pilot_n, np.random.default_rng(children[index]), step)
+        samples, acceptance, esjd = mh_draws(model,pilot_n,np.random.default_rng(children[index]),step)
+        values = contract.payoff(model,samples)
         variance = standard_error(values, correlated=True)**2*pilot_n
-        steps.append((variance, step))
-        diagnostics.append(dict(method="MH", step=step, pilot_asymptotic_variance=variance, acceptance=acceptance))
+        # A rare-payoff pilot may see few losses and spuriously report tiny variance.
+        # Tune target exploration instead; retain payoff variance as a diagnostic.
+        steps.append((esjd, step))
+        diagnostics.append(dict(method="MH", step=step, pilot_asymptotic_variance=variance,
+                                acceptance=acceptance, expected_squared_jump=esjd))
         index += 1
     costs["MH"] = perf_counter()-start
     start = perf_counter()
@@ -157,5 +169,5 @@ def tune(model, contract, seed=1729, pilot_n=8000):
     coefficient = float(np.dot(centred_stock,centred_payoff)/np.dot(centred_stock,centred_stock))
     costs["CV"] = perf_counter()-start
     costs["IID"] = costs["AV"] = 0.0
-    return dict(proposal=min(candidates,key=lambda x:x[0])[1], mh_step=min(steps)[1],
+    return dict(proposal=min(candidates,key=lambda x:x[0])[1], mh_step=max(steps)[1],
                 coefficient=coefficient, costs=costs, candidates=diagnostics)

@@ -70,6 +70,12 @@ class EstimatorTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 estimate('IID',self.model,self.contract,n,np.random.default_rng(1))
 
+    def test_mh_tuning_uses_target_movement_not_rare_payoff_variance(self):
+        pilots=[row for row in self.pilot['candidates'] if row['method']=='MH']
+        best=max(pilots,key=lambda row:row['expected_squared_jump'])
+        self.assertEqual(self.pilot['mh_step'],best['step'])
+        self.assertGreater(best['expected_squared_jump'],0)
+
 
 if __name__=='__main__':
     unittest.main()

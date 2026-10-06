@@ -43,6 +43,7 @@ def main():
         else:
             model=SCENARIOS[args.scenario]
             c=Contract(strike=args.strike)
+            model.log_mgf_one  # Shared setup is not a method-specific tuning cost.
             p=tune(model,c,args.seed)
             constants=variance_constants(model,c,p['proposal'],p['coefficient'])
             output=dict(scenario=args.scenario,contract=asdict(c),reference=c.reference(model)[0],
