@@ -51,6 +51,8 @@ def render_report(directory):
     with (directory/'summary.csv').open(encoding='utf-8') as handle:
         rows=list(csv.DictReader(handle))
     meta=json.loads((directory/'metadata.json').read_text(encoding='utf-8'))
+    pilot_records=json.loads((directory/'pilots.json').read_text(encoding='utf-8'))
+    esjd_tuning=any('expected_squared_jump' in candidate for pilot in pilot_records for candidate in pilot['candidates'])
     n=max(int(r['n']) for r in rows)
     intro=(f'{meta["total_estimates"]:,} estimates across {len(meta["scenarios"])} synthetic distributions, '
            f'{len(meta["strikes"])} strikes and {len(meta["sizes"])} payoff budgets. '
@@ -89,7 +91,7 @@ def render_report(directory):
         'Bootstrap intervals resample pilot groups and held-out repeats. Five pilot groups still give limited evidence about tuning variability; the intervals are exploratory, not simultaneous confidence bands over the grid.',
         'Coverage is the observed fraction of nominal 95% intervals containing the reference. It has sampling uncertainty. MH uses batch means; IID formulas must not be used on correlated chain draws.',
         'Efficiency incl. pilot = (IID variance x IID runtime) / (method variance x (runtime + one full method-specific pilot)). Above 1 is better. This is a variance-times-cost comparison, not an observed speedup at equal RMSE. Reusing a pilot amortises its cost; per-call figures excluding pilots are in summary.csv.',
-        'Pilot time includes all 12 IS candidate trials, all six MH step trials, or the CV coefficient fit, respectively. MH steps maximise expected squared jump distance, avoiding a rare-payoff pilot being mistaken for a low-variance chain. Shared quadrature, imports and report writing are excluded from estimator timing. IS weight ESS and MH payoff ESS are different diagnostics and should not be directly compared.',
+        'Pilot time includes all 12 IS candidate trials, all six MH step trials, or the CV coefficient fit, respectively. '+('MH steps maximise expected squared jump distance.' if esjd_tuning else 'This historical run tunes MH by pilot payoff variance; see the later exploration-based tuning revision.')+' Shared quadrature, imports and report writing are excluded from estimator timing. IS weight ESS and MH payoff ESS are different diagnostics and should not be directly compared.',
         'The benchmark samples a one-maturity terminal law. No calibrated volatility surface, dynamic hedging, transaction costs or realised trading profit is claimed. Quadrature is the practical preferred solver for this simple one-dimensional contract.',
         'Antithetic sampling is performed within each mixture component. Between-component randomness can outweigh the within-component negative covariance, so it is not guaranteed to beat IID for these mixtures.',
         'Hardware timing is machine-specific and sub-millisecond measurements are noisy. The code stores source hashes, random seeds, parameters, raw trials and environment information. Reordering or selecting a subset of scenarios leaves their random streams unchanged.'

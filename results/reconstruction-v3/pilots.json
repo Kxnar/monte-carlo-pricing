@@ -1,0 +1,6392 @@
+[
+  {
+    "scenario": "gaussian",
+    "strike": 80,
+    "group": 0,
+    "seed": [
+      20261006,
+      0,
+      4635329916471083008,
+      0,
+      111
+    ],
+    "proposal": {
+      "shift": -0.35,
+      "inflation": 1.0,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.06964881625344181,
+    "mh_step": 0.55,
+    "costs": {
+      "IS": 0.022869500011438504,
+      "MH": 0.09487120000994764,
+      "CV": 0.0009590999979991466,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 9.917858180737042
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 4.689107208724826
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 3.4218807471076746
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 3.2439704972460346
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 2.4479285750074706
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 2.259199296070438
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 1.3706738133903444
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 1.3835838911970244
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 1.5321557630210305
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 0.6050036007425246
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 0.8879263092434627
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 1.1785822760100102
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 401.32108647639456,
+        "acceptance": 0.9035,
+        "expected_squared_jump": 0.0029292959043655704
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 96.14616760682681,
+        "acceptance": 0.809125,
+        "expected_squared_jump": 0.009172154065600294
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 76.26720304344353,
+        "acceptance": 0.696875,
+        "expected_squared_jump": 0.01747494839417064
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 39.62031291159041,
+        "acceptance": 0.54525,
+        "expected_squared_jump": 0.027076439822046994
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 51.84280568943098,
+        "acceptance": 0.4035,
+        "expected_squared_jump": 0.029362024292200778
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 34.12955600755864,
+        "acceptance": 0.276125,
+        "expected_squared_jump": 0.025453011672139432
+      }
+    ]
+  },
+  {
+    "scenario": "gaussian",
+    "strike": 80,
+    "group": 1,
+    "seed": [
+      20261006,
+      0,
+      4635329916471083008,
+      1,
+      111
+    ],
+    "proposal": {
+      "shift": -0.35,
+      "inflation": 1.0,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.07203055330566649,
+    "mh_step": 0.55,
+    "costs": {
+      "IS": 0.024272100010421127,
+      "MH": 0.09675470000365749,
+      "CV": 0.0009686999983387068,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 9.311057619940884
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 4.684452624572763
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 3.5470293607499115
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 3.299257522860799
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 2.378006543987543
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 2.19591413275241
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 1.3513822076850612
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 1.3818992535371823
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 1.5258024620409385
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 0.6064716283122431
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 0.8934234660518273
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 1.1510507139656425
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 216.84385908584676,
+        "acceptance": 0.9095,
+        "expected_squared_jump": 0.002910645020125095
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 136.12895706788314,
+        "acceptance": 0.818125,
+        "expected_squared_jump": 0.009374670199835467
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 40.44447760395298,
+        "acceptance": 0.70775,
+        "expected_squared_jump": 0.018675876842846398
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 46.47593393147251,
+        "acceptance": 0.5435,
+        "expected_squared_jump": 0.02778316823495648
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 50.07882131267016,
+        "acceptance": 0.39875,
+        "expected_squared_jump": 0.028167011968135678
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 47.907677385712304,
+        "acceptance": 0.25275,
+        "expected_squared_jump": 0.024971280597998774
+      }
+    ]
+  },
+  {
+    "scenario": "gaussian",
+    "strike": 80,
+    "group": 2,
+    "seed": [
+      20261006,
+      0,
+      4635329916471083008,
+      2,
+      111
+    ],
+    "proposal": {
+      "shift": -0.35,
+      "inflation": 1.0,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.07216929047862984,
+    "mh_step": 0.55,
+    "costs": {
+      "IS": 0.022434899990912527,
+      "MH": 0.08994039999379311,
+      "CV": 0.0008789999992586672,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 8.5948280679378
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 4.68482137500837
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 3.4591490297212646
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 3.2939724343062182
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 2.3538393447038795
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 2.287580952100768
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 1.3593461184167603
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 1.3932455839837286
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 1.5344989796480857
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 0.6018635051520543
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 0.8835353148651657
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 1.148650750072099
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 266.53579545769577,
+        "acceptance": 0.906,
+        "expected_squared_jump": 0.0028877755883312713
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 161.45910805734079,
+        "acceptance": 0.813375,
+        "expected_squared_jump": 0.009047099426925404
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 53.87060011909222,
+        "acceptance": 0.70775,
+        "expected_squared_jump": 0.01814097674096407
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 31.444132093719926,
+        "acceptance": 0.53925,
+        "expected_squared_jump": 0.027915762468835863
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 47.38366124523265,
+        "acceptance": 0.395,
+        "expected_squared_jump": 0.02806804181319707
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 63.41923989274193,
+        "acceptance": 0.26275,
+        "expected_squared_jump": 0.023219987605858135
+      }
+    ]
+  },
+  {
+    "scenario": "gaussian",
+    "strike": 80,
+    "group": 3,
+    "seed": [
+      20261006,
+      0,
+      4635329916471083008,
+      3,
+      111
+    ],
+    "proposal": {
+      "shift": -0.35,
+      "inflation": 1.0,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.07450010865935834,
+    "mh_step": 0.55,
+    "costs": {
+      "IS": 0.0222693999967305,
+      "MH": 0.08959850000974257,
+      "CV": 0.0008849999867379665,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 9.199158886513509
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 4.562949126222416
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 3.547790862864573
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 3.2159355859245977
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 2.3816904452434655
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 2.1408568043345007
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 1.3640437532302085
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 1.353026707502055
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 1.5234618607874633
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 0.6001051110310385
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 0.8774744536004214
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 1.1701989492403804
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 196.44809170325706,
+        "acceptance": 0.91175,
+        "expected_squared_jump": 0.0029734792516610013
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 193.52743443152127,
+        "acceptance": 0.81025,
+        "expected_squared_jump": 0.00936874258337421
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 40.145774114447754,
+        "acceptance": 0.707,
+        "expected_squared_jump": 0.018672143991222502
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 42.16544334522155,
+        "acceptance": 0.540125,
+        "expected_squared_jump": 0.028011236329843432
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 31.42188889918536,
+        "acceptance": 0.401,
+        "expected_squared_jump": 0.029364658563630967
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 44.7313232969972,
+        "acceptance": 0.263,
+        "expected_squared_jump": 0.02427937398803136
+      }
+    ]
+  },
+  {
+    "scenario": "gaussian",
+    "strike": 80,
+    "group": 4,
+    "seed": [
+      20261006,
+      0,
+      4635329916471083008,
+      4,
+      111
+    ],
+    "proposal": {
+      "shift": -0.35,
+      "inflation": 1.0,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.07092096072875148,
+    "mh_step": 0.35,
+    "costs": {
+      "IS": 0.02271009999094531,
+      "MH": 0.09638289999566041,
+      "CV": 0.0009492000099271536,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 9.508986252915527
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 4.657491749167769
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 3.5219356397487362
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 3.2514816586030535
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 2.2579732219205466
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 2.1624791377374426
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 1.333389533004445
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 1.401231405229715
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 1.5581557263408323
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 0.6041978564595616
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 0.8986203253806753
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 1.170081310664586
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 354.7412261923768,
+        "acceptance": 0.91375,
+        "expected_squared_jump": 0.0029381125446373384
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 127.65726561398996,
+        "acceptance": 0.806625,
+        "expected_squared_jump": 0.008829512107484287
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 63.020443374784975,
+        "acceptance": 0.6975,
+        "expected_squared_jump": 0.016964804538090093
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 34.18763101613043,
+        "acceptance": 0.549625,
+        "expected_squared_jump": 0.028902280941814178
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 48.024600449610624,
+        "acceptance": 0.3975,
+        "expected_squared_jump": 0.02876594306800209
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 70.08336892946075,
+        "acceptance": 0.2625,
+        "expected_squared_jump": 0.022827919633688517
+      }
+    ]
+  },
+  {
+    "scenario": "gaussian",
+    "strike": 100,
+    "group": 0,
+    "seed": [
+      20261006,
+      0,
+      4636737291354636288,
+      0,
+      111
+    ],
+    "proposal": {
+      "shift": -0.2,
+      "inflation": 1.0,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.3545750076537461,
+    "mh_step": 0.55,
+    "costs": {
+      "IS": 0.02240190000156872,
+      "MH": 0.09009979999973439,
+      "CV": 0.0009172999998554587,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 87.09957840306888
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 63.98591740451162
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 61.15167435211325
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 32.07294563598825
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 35.39025906491752
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 43.73418972388923
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 15.787853773702455
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 25.406935404727275
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 35.71182384940658
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 26.136322630610195
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 32.57929574245054
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 41.253236700952165
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 2724.2679386504483,
+        "acceptance": 0.90425,
+        "expected_squared_jump": 0.003040694374669162
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 1425.4615600378697,
+        "acceptance": 0.813625,
+        "expected_squared_jump": 0.009421286700300175
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 575.2843863557928,
+        "acceptance": 0.711625,
+        "expected_squared_jump": 0.01837018145091731
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 469.45956940851966,
+        "acceptance": 0.537875,
+        "expected_squared_jump": 0.02823383245861313
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 428.1699975451057,
+        "acceptance": 0.399375,
+        "expected_squared_jump": 0.029443067627239628
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 445.9125428224759,
+        "acceptance": 0.27125,
+        "expected_squared_jump": 0.02487437800227609
+      }
+    ]
+  },
+  {
+    "scenario": "gaussian",
+    "strike": 100,
+    "group": 1,
+    "seed": [
+      20261006,
+      0,
+      4636737291354636288,
+      1,
+      111
+    ],
+    "proposal": {
+      "shift": -0.2,
+      "inflation": 1.0,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.35774595633324746,
+    "mh_step": 0.55,
+    "costs": {
+      "IS": 0.02457460000005085,
+      "MH": 0.09198779999860562,
+      "CV": 0.0009048000065376982,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 87.9816533098868
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 64.35550435627654
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 61.65394205770992
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 32.33872225167239
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 35.626116302111875
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 43.66683783920252
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 15.825489506912975
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 25.42994738606596
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 35.946987488234114
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 26.476639666359738
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 32.37351991636913
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 41.32309255932372
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 1919.720320694538,
+        "acceptance": 0.907875,
+        "expected_squared_jump": 0.002997025392510818
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 1639.022329093114,
+        "acceptance": 0.80825,
+        "expected_squared_jump": 0.009242077704758057
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 624.6518900477756,
+        "acceptance": 0.704,
+        "expected_squared_jump": 0.018106244557710278
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 363.8659813050471,
+        "acceptance": 0.541125,
+        "expected_squared_jump": 0.02827338187382716
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 434.22472426652354,
+        "acceptance": 0.39575,
+        "expected_squared_jump": 0.029722243890595964
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 593.2725531968184,
+        "acceptance": 0.267625,
+        "expected_squared_jump": 0.026753120283829892
+      }
+    ]
+  },
+  {
+    "scenario": "gaussian",
+    "strike": 100,
+    "group": 2,
+    "seed": [
+      20261006,
+      0,
+      4636737291354636288,
+      2,
+      111
+    ],
+    "proposal": {
+      "shift": -0.2,
+      "inflation": 1.0,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.364154197719924,
+    "mh_step": 0.55,
+    "costs": {
+      "IS": 0.026643299992429093,
+      "MH": 0.09208770000259392,
+      "CV": 0.0009488999930908903,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 87.68321517486191
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 64.68772133560118
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 61.805848528884425
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 32.71392044992487
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 35.565965008055095
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 42.849167041555205
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 15.752367942708927
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 25.6085343531255
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 35.709370543693176
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 26.30036650562061
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 32.39529482538027
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 41.61880387488478
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 3738.9528682097152,
+        "acceptance": 0.906375,
+        "expected_squared_jump": 0.002927005504607913
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 932.7792871413553,
+        "acceptance": 0.817625,
+        "expected_squared_jump": 0.009218813050256682
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 509.49186548156587,
+        "acceptance": 0.70875,
+        "expected_squared_jump": 0.017786455234015813
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 316.1184128349352,
+        "acceptance": 0.538375,
+        "expected_squared_jump": 0.02767432592549079
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 559.8638708906076,
+        "acceptance": 0.40375,
+        "expected_squared_jump": 0.02950239171559332
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 378.1282439850151,
+        "acceptance": 0.27125,
+        "expected_squared_jump": 0.025432776681960027
+      }
+    ]
+  },
+  {
+    "scenario": "gaussian",
+    "strike": 100,
+    "group": 3,
+    "seed": [
+      20261006,
+      0,
+      4636737291354636288,
+      3,
+      111
+    ],
+    "proposal": {
+      "shift": -0.2,
+      "inflation": 1.0,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.3561477411468137,
+    "mh_step": 0.35,
+    "costs": {
+      "IS": 0.02553839999018237,
+      "MH": 0.09930680000979919,
+      "CV": 0.0009509000083198771,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 85.00443352055025
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 62.670760958253155
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 61.66643629779305
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 32.55619364790258
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 35.7414979232576
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 43.648748649261336
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 15.7764495782746
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 25.317778421092235
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 35.475631956002715
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 26.648140493624844
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 32.39796881261046
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 40.811751122744404
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 3327.0281065125096,
+        "acceptance": 0.906,
+        "expected_squared_jump": 0.0029120258972467747
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 1303.1686335248812,
+        "acceptance": 0.812,
+        "expected_squared_jump": 0.008930896056558753
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 517.4877568499976,
+        "acceptance": 0.701375,
+        "expected_squared_jump": 0.017657225690801685
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 404.11582053746747,
+        "acceptance": 0.542625,
+        "expected_squared_jump": 0.028647644988965895
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 366.4336510935603,
+        "acceptance": 0.39375,
+        "expected_squared_jump": 0.028327005702776846
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 338.0411388628716,
+        "acceptance": 0.268125,
+        "expected_squared_jump": 0.025852197614786434
+      }
+    ]
+  },
+  {
+    "scenario": "gaussian",
+    "strike": 100,
+    "group": 4,
+    "seed": [
+      20261006,
+      0,
+      4636737291354636288,
+      4,
+      111
+    ],
+    "proposal": {
+      "shift": -0.2,
+      "inflation": 1.0,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.3648668646987289,
+    "mh_step": 0.55,
+    "costs": {
+      "IS": 0.023187400001916103,
+      "MH": 0.09785109999938868,
+      "CV": 0.0011810000141849741,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 86.47087710463926
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 64.85784868061438
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 62.08030842121513
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 32.187466091339125
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 35.49607000904788
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 42.844521899203414
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 15.514863165989077
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 25.531641311852187
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 35.348886478028014
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 26.16623326782328
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 32.88743506573251
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 40.989564661698935
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 2852.153155559693,
+        "acceptance": 0.903625,
+        "expected_squared_jump": 0.0029442563191624587
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 923.9777654419852,
+        "acceptance": 0.8095,
+        "expected_squared_jump": 0.008839207961950918
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 473.95452584851597,
+        "acceptance": 0.701125,
+        "expected_squared_jump": 0.017483883780841977
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 416.56865210700863,
+        "acceptance": 0.535,
+        "expected_squared_jump": 0.028400713587512096
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 529.2606149995663,
+        "acceptance": 0.398375,
+        "expected_squared_jump": 0.030184153905122205
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 558.3668927748387,
+        "acceptance": 0.2725,
+        "expected_squared_jump": 0.025801493716953845
+      }
+    ]
+  },
+  {
+    "scenario": "gaussian",
+    "strike": 120,
+    "group": 0,
+    "seed": [
+      20261006,
+      0,
+      4638144666238189568,
+      0,
+      111
+    ],
+    "proposal": {
+      "shift": -0.2,
+      "inflation": 1.0,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.7152060809818798,
+    "mh_step": 0.55,
+    "costs": {
+      "IS": 0.022586800012504682,
+      "MH": 0.0923736000113422,
+      "CV": 0.0009437000117031857,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 239.08968022503797
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 215.1283214977358
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 249.16969143683545
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 71.39880153378874
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 121.79306648404918
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 185.6372138665232
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 67.72168072774572
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 124.84512792650312
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 188.27688531179996
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 351.2230549808316
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 300.88843956827753
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 315.24093165723536
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 6796.239239143668,
+        "acceptance": 0.90575,
+        "expected_squared_jump": 0.002875848200565938
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 4441.314984204541,
+        "acceptance": 0.8085,
+        "expected_squared_jump": 0.008928378695998593
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 1567.3058655067373,
+        "acceptance": 0.70375,
+        "expected_squared_jump": 0.017910985152691624
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 1096.1421392969037,
+        "acceptance": 0.54525,
+        "expected_squared_jump": 0.0265830879368762
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 1302.1560183205086,
+        "acceptance": 0.39325,
+        "expected_squared_jump": 0.02734164477038598
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 1049.3333483418073,
+        "acceptance": 0.268125,
+        "expected_squared_jump": 0.022986093194599464
+      }
+    ]
+  },
+  {
+    "scenario": "gaussian",
+    "strike": 120,
+    "group": 1,
+    "seed": [
+      20261006,
+      0,
+      4638144666238189568,
+      1,
+      111
+    ],
+    "proposal": {
+      "shift": -0.2,
+      "inflation": 1.0,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.7189321025287596,
+    "mh_step": 0.35,
+    "costs": {
+      "IS": 0.02287439999054186,
+      "MH": 0.09412570000858977,
+      "CV": 0.0009753999911481515,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 235.66747559755717
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 213.62630893435414
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 248.43559270156211
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 68.17412678675252
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 122.79020292865889
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 185.12159845199204
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 68.08482613830544
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 125.65354832710236
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 188.79462149728076
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 359.1389137392644
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 301.12800303304584
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 315.4129595577135
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 8616.791257555069,
+        "acceptance": 0.908875,
+        "expected_squared_jump": 0.0028841608609316304
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 3372.166529347273,
+        "acceptance": 0.813,
+        "expected_squared_jump": 0.009049161327742848
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 1440.908735082423,
+        "acceptance": 0.70975,
+        "expected_squared_jump": 0.018428942492295233
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 1039.947687966282,
+        "acceptance": 0.545375,
+        "expected_squared_jump": 0.02913690189888273
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 999.1738564165992,
+        "acceptance": 0.39775,
+        "expected_squared_jump": 0.02751773240679355
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 1306.0853064470366,
+        "acceptance": 0.26425,
+        "expected_squared_jump": 0.024776701322255935
+      }
+    ]
+  },
+  {
+    "scenario": "gaussian",
+    "strike": 120,
+    "group": 2,
+    "seed": [
+      20261006,
+      0,
+      4638144666238189568,
+      2,
+      111
+    ],
+    "proposal": {
+      "shift": -0.2,
+      "inflation": 1.0,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.7249390914960617,
+    "mh_step": 0.55,
+    "costs": {
+      "IS": 0.024812200004816987,
+      "MH": 0.09990640000614803,
+      "CV": 0.0011393000022508204,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 235.408213003521
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 214.77006619963635
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 249.80411053678526
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 70.09007595611726
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 121.02669313011639
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 188.31560856038107
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 67.71474973338425
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 124.4904497504387
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 187.66938933348575
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 350.8140556646488
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 299.18081739069396
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 312.02208907694717
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 9070.17329251526,
+        "acceptance": 0.907875,
+        "expected_squared_jump": 0.002925855880595556
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 3809.6778598145293,
+        "acceptance": 0.814875,
+        "expected_squared_jump": 0.008634107503013286
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 1666.1283868278397,
+        "acceptance": 0.704,
+        "expected_squared_jump": 0.01890093471986912
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 1312.0530634578374,
+        "acceptance": 0.5345,
+        "expected_squared_jump": 0.026843479470233998
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 1129.9776752274008,
+        "acceptance": 0.39725,
+        "expected_squared_jump": 0.027622640941095483
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 1360.4057530802434,
+        "acceptance": 0.26925,
+        "expected_squared_jump": 0.023753325935199895
+      }
+    ]
+  },
+  {
+    "scenario": "gaussian",
+    "strike": 120,
+    "group": 3,
+    "seed": [
+      20261006,
+      0,
+      4638144666238189568,
+      3,
+      111
+    ],
+    "proposal": {
+      "shift": -0.2,
+      "inflation": 1.0,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.7056706177983254,
+    "mh_step": 0.55,
+    "costs": {
+      "IS": 0.02320940000936389,
+      "MH": 0.09478740001213737,
+      "CV": 0.0010909000120591372,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 236.35245800506803
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 215.83417747580242
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 252.39337728872354
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 68.89801650219135
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 122.90791627742894
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 185.95722613239485
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 68.67820278576197
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 122.9572122546696
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 186.6367546475062
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 353.6114174125704
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 297.70982193859834
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 308.7932491460597
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 7995.0949625711,
+        "acceptance": 0.901875,
+        "expected_squared_jump": 0.002965610707940149
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 3446.4471446140997,
+        "acceptance": 0.814125,
+        "expected_squared_jump": 0.00932996604175735
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 1980.4477257920994,
+        "acceptance": 0.703125,
+        "expected_squared_jump": 0.018355759298772506
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 1122.303447699361,
+        "acceptance": 0.542875,
+        "expected_squared_jump": 0.028176831745869112
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 1095.0334923200933,
+        "acceptance": 0.39525,
+        "expected_squared_jump": 0.029238334793853425
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 1089.0848340745852,
+        "acceptance": 0.263375,
+        "expected_squared_jump": 0.023517366802333444
+      }
+    ]
+  },
+  {
+    "scenario": "gaussian",
+    "strike": 120,
+    "group": 4,
+    "seed": [
+      20261006,
+      0,
+      4638144666238189568,
+      4,
+      111
+    ],
+    "proposal": {
+      "shift": -0.1,
+      "inflation": 1.0,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.7095377635048543,
+    "mh_step": 0.35,
+    "costs": {
+      "IS": 0.02364590000070166,
+      "MH": 0.0929170999879716,
+      "CV": 0.0009507000067969784,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 244.33736795611728
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 213.62554762033116
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 250.77688517827968
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 68.69126676748459
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 120.82630406829735
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 184.0694486186685
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 68.81832993542298
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 122.88171043312755
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 188.62604931488397
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 348.78028198844083
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 298.02226644996875
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 316.9223173222896
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 9082.492455000232,
+        "acceptance": 0.904375,
+        "expected_squared_jump": 0.002877414587473371
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 3925.2677145694315,
+        "acceptance": 0.814125,
+        "expected_squared_jump": 0.009220629436545532
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 1221.4908498137181,
+        "acceptance": 0.702,
+        "expected_squared_jump": 0.01712699554409212
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 1166.4085401227444,
+        "acceptance": 0.547625,
+        "expected_squared_jump": 0.029534952126056075
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 1234.7226897165726,
+        "acceptance": 0.39675,
+        "expected_squared_jump": 0.028289117723201012
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 1401.033017177731,
+        "acceptance": 0.271625,
+        "expected_squared_jump": 0.026403073790294
+      }
+    ]
+  },
+  {
+    "scenario": "mixture",
+    "strike": 80,
+    "group": 0,
+    "seed": [
+      20261006,
+      1,
+      4635329916471083008,
+      0,
+      111
+    ],
+    "proposal": {
+      "shift": -0.35,
+      "inflation": 1.5,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.09610936261046295,
+    "mh_step": 0.55,
+    "costs": {
+      "IS": 0.02886170000419952,
+      "MH": 0.09231110000109766,
+      "CV": 0.0009059000003617257,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 8.877184970846471
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 6.052025642756952
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 4.341422025358126
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 5.050690394863289
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 3.222398186351942
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 2.6670093505364094
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 2.4326176673372104
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 1.5990468706012582
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 1.2344571104709083
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 0.517626631805341
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 0.36924484360823523
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 0.2942862064232311
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 304.3672104551576,
+        "acceptance": 0.848,
+        "expected_squared_jump": 0.0025919998187596536
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 145.68964467621169,
+        "acceptance": 0.716375,
+        "expected_squared_jump": 0.006834046136141117
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 176.5091830518925,
+        "acceptance": 0.574,
+        "expected_squared_jump": 0.011184217868767264
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 50.63784500772384,
+        "acceptance": 0.415625,
+        "expected_squared_jump": 0.015124332851342296
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 55.590057666170615,
+        "acceptance": 0.304875,
+        "expected_squared_jump": 0.01717035757370474
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 38.120175252111444,
+        "acceptance": 0.19,
+        "expected_squared_jump": 0.011925865345346757
+      }
+    ]
+  },
+  {
+    "scenario": "mixture",
+    "strike": 80,
+    "group": 1,
+    "seed": [
+      20261006,
+      1,
+      4635329916471083008,
+      1,
+      111
+    ],
+    "proposal": {
+      "shift": -0.35,
+      "inflation": 1.5,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.08394045449157242,
+    "mh_step": 0.55,
+    "costs": {
+      "IS": 0.028410799990524538,
+      "MH": 0.09662630000093486,
+      "CV": 0.0009628999978303909,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 9.027235436692198
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 6.322218344321776
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 4.607023851503571
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 4.591328667579315
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 3.339086376372848
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 2.401421622097206
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 2.332126384731606
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 1.6192704726377087
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 1.2221076460428766
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 0.48922738089585405
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 0.3672509486375356
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 0.2937310815057585
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 293.2884997484488,
+        "acceptance": 0.8475,
+        "expected_squared_jump": 0.0024903660607523102
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 199.17102530112996,
+        "acceptance": 0.723125,
+        "expected_squared_jump": 0.007087545848597692
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 206.24317000950919,
+        "acceptance": 0.58075,
+        "expected_squared_jump": 0.01166041287751688
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 24.372166330400752,
+        "acceptance": 0.411875,
+        "expected_squared_jump": 0.014303002104955345
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 47.97492764177941,
+        "acceptance": 0.296,
+        "expected_squared_jump": 0.016393472258956213
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 54.73612228479978,
+        "acceptance": 0.187125,
+        "expected_squared_jump": 0.012351603428647516
+      }
+    ]
+  },
+  {
+    "scenario": "mixture",
+    "strike": 80,
+    "group": 2,
+    "seed": [
+      20261006,
+      1,
+      4635329916471083008,
+      2,
+      111
+    ],
+    "proposal": {
+      "shift": -0.35,
+      "inflation": 1.5,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.08674194352800921,
+    "mh_step": 0.55,
+    "costs": {
+      "IS": 0.026873900002101436,
+      "MH": 0.09603549999883398,
+      "CV": 0.0008936000085668638,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 10.038439758619415
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 6.050968554618759
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 4.6247620337504465
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 4.974489394458933
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 3.5489174561239816
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 2.4948771933164817
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 2.3991741787658096
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 1.607555182750357
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 1.1132874389579772
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 0.5130085699941511
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 0.36909446578855626
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 0.2983757837274143
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 25.25330861435632,
+        "acceptance": 0.846,
+        "expected_squared_jump": 0.0025697303422628007
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 63.8775469397254,
+        "acceptance": 0.713875,
+        "expected_squared_jump": 0.007067357262903928
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 169.38373601211487,
+        "acceptance": 0.58,
+        "expected_squared_jump": 0.011450926121993596
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 29.080950474446208,
+        "acceptance": 0.416375,
+        "expected_squared_jump": 0.01566181782726532
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 62.18360424804695,
+        "acceptance": 0.307875,
+        "expected_squared_jump": 0.017267182510039163
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 34.44144176526332,
+        "acceptance": 0.198375,
+        "expected_squared_jump": 0.015133733595543743
+      }
+    ]
+  },
+  {
+    "scenario": "mixture",
+    "strike": 80,
+    "group": 3,
+    "seed": [
+      20261006,
+      1,
+      4635329916471083008,
+      3,
+      111
+    ],
+    "proposal": {
+      "shift": -0.35,
+      "inflation": 1.5,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.10088568096860062,
+    "mh_step": 0.55,
+    "costs": {
+      "IS": 0.027167100008227862,
+      "MH": 0.09302029998798389,
+      "CV": 0.0010799000010592863,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 9.615044672315658
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 6.096537289127506
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 4.403783536852993
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 4.613210309645172
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 3.197888621126948
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 2.499303466611857
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 2.4256452900972407
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 1.6641248235294104
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 1.1692003736160892
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 0.5450240951372418
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 0.37595429870706887
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 0.29467129194900593
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 448.99459511474174,
+        "acceptance": 0.855125,
+        "expected_squared_jump": 0.002526548904658896
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 192.04343594991457,
+        "acceptance": 0.721125,
+        "expected_squared_jump": 0.007213467060916399
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 108.53346090836031,
+        "acceptance": 0.592625,
+        "expected_squared_jump": 0.01191347763007811
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 48.571828082355424,
+        "acceptance": 0.4135,
+        "expected_squared_jump": 0.014398211438263003
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 43.874681609372466,
+        "acceptance": 0.30325,
+        "expected_squared_jump": 0.01749833017758119
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 69.80438027036271,
+        "acceptance": 0.194125,
+        "expected_squared_jump": 0.013282479102942567
+      }
+    ]
+  },
+  {
+    "scenario": "mixture",
+    "strike": 80,
+    "group": 4,
+    "seed": [
+      20261006,
+      1,
+      4635329916471083008,
+      4,
+      111
+    ],
+    "proposal": {
+      "shift": -0.35,
+      "inflation": 1.5,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.08923570167380676,
+    "mh_step": 0.55,
+    "costs": {
+      "IS": 0.026774800004204735,
+      "MH": 0.09183869999833405,
+      "CV": 0.0008997999975690618,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 10.304721571202844
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 5.898450877860968
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 4.149532815726018
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 4.961102862150507
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 3.515307935980761
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 2.4034394941965513
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 2.246377319610883
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 1.7148059483786275
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 1.1638365337912118
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 0.5188016943857378
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 0.3857620512565513
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 0.2865832813536878
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 198.04634196318455,
+        "acceptance": 0.849,
+        "expected_squared_jump": 0.002534358389127746
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 28.50486675107667,
+        "acceptance": 0.719625,
+        "expected_squared_jump": 0.006989153687655015
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 32.29349716288566,
+        "acceptance": 0.575,
+        "expected_squared_jump": 0.01119085781178426
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 19.307192012460703,
+        "acceptance": 0.41425,
+        "expected_squared_jump": 0.014824237018804582
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 54.19411733924612,
+        "acceptance": 0.288,
+        "expected_squared_jump": 0.016823999932956822
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 121.89002022915253,
+        "acceptance": 0.1885,
+        "expected_squared_jump": 0.012493406777695889
+      }
+    ]
+  },
+  {
+    "scenario": "mixture",
+    "strike": 100,
+    "group": 0,
+    "seed": [
+      20261006,
+      1,
+      4636737291354636288,
+      0,
+      111
+    ],
+    "proposal": {
+      "shift": -0.2,
+      "inflation": 1.25,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.38621705423455016,
+    "mh_step": 0.55,
+    "costs": {
+      "IS": 0.02958109999599401,
+      "MH": 0.09929850000480656,
+      "CV": 0.0012005000025965273,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 61.32049101136203
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 44.20461629519395
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 34.54379138313241
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 21.40182138619497
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 16.640732062554388
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 14.688562386572963
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 7.119014395770404
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 6.5004961085801005
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 7.68406872911511
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 28.997690743017777
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 18.749694240846893
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 16.359720359354174
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 2710.5468647758057,
+        "acceptance": 0.851875,
+        "expected_squared_jump": 0.0026063125460484447
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 1267.8402686339234,
+        "acceptance": 0.717125,
+        "expected_squared_jump": 0.006940919756113363
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 1116.691597293233,
+        "acceptance": 0.582625,
+        "expected_squared_jump": 0.011345421905319262
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 413.51846893485185,
+        "acceptance": 0.41325,
+        "expected_squared_jump": 0.01462314472939247
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 356.5967044570802,
+        "acceptance": 0.299,
+        "expected_squared_jump": 0.017276567964653416
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 313.01248137863087,
+        "acceptance": 0.1975,
+        "expected_squared_jump": 0.013418484044399551
+      }
+    ]
+  },
+  {
+    "scenario": "mixture",
+    "strike": 100,
+    "group": 1,
+    "seed": [
+      20261006,
+      1,
+      4636737291354636288,
+      1,
+      111
+    ],
+    "proposal": {
+      "shift": -0.2,
+      "inflation": 1.25,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.381065344978554,
+    "mh_step": 0.55,
+    "costs": {
+      "IS": 0.027234799999860115,
+      "MH": 0.09170370000356343,
+      "CV": 0.0009344999998575076,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 57.900287453532854
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 43.34047204000604
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 34.10462757324934
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 21.22476977706819
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 16.72708265427365
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 14.840003604899069
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 7.191626689379161
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 6.683838264956077
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 7.6504966096968
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 27.1891479730735
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 18.501850130500106
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 15.714815721376459
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 1213.1807641678622,
+        "acceptance": 0.85325,
+        "expected_squared_jump": 0.002497687547956831
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 970.5880532452563,
+        "acceptance": 0.724375,
+        "expected_squared_jump": 0.006829042603739209
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 751.8745743131411,
+        "acceptance": 0.5895,
+        "expected_squared_jump": 0.012626467398877104
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 377.4483205222138,
+        "acceptance": 0.408125,
+        "expected_squared_jump": 0.014910067044367382
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 412.5632454971925,
+        "acceptance": 0.289875,
+        "expected_squared_jump": 0.015073378049016798
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 470.3104440915955,
+        "acceptance": 0.19325,
+        "expected_squared_jump": 0.014200713011650504
+      }
+    ]
+  },
+  {
+    "scenario": "mixture",
+    "strike": 100,
+    "group": 2,
+    "seed": [
+      20261006,
+      1,
+      4636737291354636288,
+      2,
+      111
+    ],
+    "proposal": {
+      "shift": -0.2,
+      "inflation": 1.25,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.39799687391350946,
+    "mh_step": 0.55,
+    "costs": {
+      "IS": 0.0274214000091888,
+      "MH": 0.09628389999852516,
+      "CV": 0.0011314000003039837,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 68.0984350561865
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 44.44262617923743
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 35.40623135810829
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 20.500510718309226
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 16.852338115468072
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 14.93739072337394
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 6.988020877929984
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 6.7864097218003865
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 7.621485282450051
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 26.992167156629655
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 19.158106606786458
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 16.384904053314422
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 1379.4760242491218,
+        "acceptance": 0.848875,
+        "expected_squared_jump": 0.0025632603603867638
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 677.7583239571163,
+        "acceptance": 0.720125,
+        "expected_squared_jump": 0.006888754220856245
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 570.0689189680024,
+        "acceptance": 0.579375,
+        "expected_squared_jump": 0.011325433546256845
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 213.02316254822014,
+        "acceptance": 0.412625,
+        "expected_squared_jump": 0.015621543586752345
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 460.813660880661,
+        "acceptance": 0.295375,
+        "expected_squared_jump": 0.015889266960214338
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 489.2613472483728,
+        "acceptance": 0.18825,
+        "expected_squared_jump": 0.012270627496098694
+      }
+    ]
+  },
+  {
+    "scenario": "mixture",
+    "strike": 100,
+    "group": 3,
+    "seed": [
+      20261006,
+      1,
+      4636737291354636288,
+      3,
+      111
+    ],
+    "proposal": {
+      "shift": -0.2,
+      "inflation": 1.25,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.403612778117657,
+    "mh_step": 0.55,
+    "costs": {
+      "IS": 0.02877630000875797,
+      "MH": 0.09287870000116527,
+      "CV": 0.0009774000063771382,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 60.85933232142114
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 44.24502378350052
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 35.48232582218118
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 21.343309451974523
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 16.540713716543532
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 14.835792931618778
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 7.161676489024078
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 6.684783850809627
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 7.67874633642508
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 27.986700275940766
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 18.94014039213197
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 16.06426922778777
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 3270.418616747017,
+        "acceptance": 0.857375,
+        "expected_squared_jump": 0.0024667712629452766
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 1377.386997637361,
+        "acceptance": 0.72625,
+        "expected_squared_jump": 0.006887637524572698
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 689.6443052219538,
+        "acceptance": 0.585625,
+        "expected_squared_jump": 0.011075456781910483
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 401.9774936011491,
+        "acceptance": 0.418125,
+        "expected_squared_jump": 0.015759689305837814
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 330.8179089098823,
+        "acceptance": 0.28525,
+        "expected_squared_jump": 0.016409651321452227
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 663.1236707654163,
+        "acceptance": 0.196625,
+        "expected_squared_jump": 0.015150276462980304
+      }
+    ]
+  },
+  {
+    "scenario": "mixture",
+    "strike": 100,
+    "group": 4,
+    "seed": [
+      20261006,
+      1,
+      4636737291354636288,
+      4,
+      111
+    ],
+    "proposal": {
+      "shift": -0.2,
+      "inflation": 1.25,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.3984438107239044,
+    "mh_step": 0.55,
+    "costs": {
+      "IS": 0.028794900004868396,
+      "MH": 0.11772439999913331,
+      "CV": 0.00120749999769032,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 66.70604346966822
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 42.54238626462436
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 34.745393582392325
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 21.65000356559077
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 16.752288053669062
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 15.0949241487653
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 7.0899430719998096
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 6.753997732928812
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 7.576431810689496
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 27.87682804181543
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 18.983940329270347
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 16.020414233879638
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 5272.464866520755,
+        "acceptance": 0.8555,
+        "expected_squared_jump": 0.0025809538598336166
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 1139.9235020284138,
+        "acceptance": 0.714375,
+        "expected_squared_jump": 0.00677945258059828
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 527.0314619524682,
+        "acceptance": 0.5965,
+        "expected_squared_jump": 0.01197235859304511
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 239.61335237216838,
+        "acceptance": 0.404875,
+        "expected_squared_jump": 0.013900414320545418
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 306.65446943195,
+        "acceptance": 0.29925,
+        "expected_squared_jump": 0.016694704637506778
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 377.21908482132665,
+        "acceptance": 0.1945,
+        "expected_squared_jump": 0.014836810911783783
+      }
+    ]
+  },
+  {
+    "scenario": "mixture",
+    "strike": 120,
+    "group": 0,
+    "seed": [
+      20261006,
+      1,
+      4638144666238189568,
+      0,
+      111
+    ],
+    "proposal": {
+      "shift": -0.1,
+      "inflation": 1.0,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.7935530643207493,
+    "mh_step": 0.55,
+    "costs": {
+      "IS": 0.027902500005438924,
+      "MH": 0.11533669999334961,
+      "CV": 0.0010598999942885712,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 167.10697939629807
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 138.93711618666302
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 143.16639207719018
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 31.717956707739322
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 48.79502796973417
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 75.11455315499293
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 184.83326504866233
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 145.84160864306656
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 144.96030317397418
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 1089.7507715701772
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 721.0246263043829
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 576.1321944679577
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 9076.089351634826,
+        "acceptance": 0.8465,
+        "expected_squared_jump": 0.002484957325889385
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 1866.4207907277978,
+        "acceptance": 0.732,
+        "expected_squared_jump": 0.006977220807929128
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 1438.6061482368293,
+        "acceptance": 0.57375,
+        "expected_squared_jump": 0.011351847048639577
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 1382.0280965511904,
+        "acceptance": 0.423125,
+        "expected_squared_jump": 0.015534912796340703
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 841.8453897217171,
+        "acceptance": 0.296375,
+        "expected_squared_jump": 0.01663037615808956
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 1370.9311205968704,
+        "acceptance": 0.18775,
+        "expected_squared_jump": 0.013492170676494409
+      }
+    ]
+  },
+  {
+    "scenario": "mixture",
+    "strike": 120,
+    "group": 1,
+    "seed": [
+      20261006,
+      1,
+      4638144666238189568,
+      1,
+      111
+    ],
+    "proposal": {
+      "shift": -0.1,
+      "inflation": 1.0,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.7893728500217091,
+    "mh_step": 0.9,
+    "costs": {
+      "IS": 0.030799000000115484,
+      "MH": 0.11624810000648722,
+      "CV": 0.001011299988022074,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 169.6552390898395
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 137.0311232679155
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 141.3385735613014
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 31.989582451424926
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 47.7923721736831
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 76.86547348586606
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 185.5357813030483
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 143.99999718226235
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 145.22915434130803
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 1109.5543704448446
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 745.8848872745175
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 568.7247787362832
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 4434.7895348931,
+        "acceptance": 0.855125,
+        "expected_squared_jump": 0.0025844556571159045
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 4088.783182146425,
+        "acceptance": 0.737625,
+        "expected_squared_jump": 0.00673845954599808
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 818.7411524506334,
+        "acceptance": 0.585125,
+        "expected_squared_jump": 0.01173902866448875
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 796.2830628787691,
+        "acceptance": 0.425125,
+        "expected_squared_jump": 0.015615342208825883
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 813.4687195361001,
+        "acceptance": 0.29675,
+        "expected_squared_jump": 0.015695932910535906
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 1124.550657548709,
+        "acceptance": 0.205,
+        "expected_squared_jump": 0.01853633406634535
+      }
+    ]
+  },
+  {
+    "scenario": "mixture",
+    "strike": 120,
+    "group": 2,
+    "seed": [
+      20261006,
+      1,
+      4638144666238189568,
+      2,
+      111
+    ],
+    "proposal": {
+      "shift": -0.1,
+      "inflation": 1.0,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.7793723570209065,
+    "mh_step": 0.55,
+    "costs": {
+      "IS": 0.03185110000777058,
+      "MH": 0.09857970000302885,
+      "CV": 0.0010015000007115304,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 161.66776049931616
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 140.49198303830505
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 142.4723357690746
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 33.19223787047043
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 47.0113008633491
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 75.37867374766815
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 187.4980234078939
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 143.57896541477115
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 146.5999400918678
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 1085.4803942615515
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 741.6701185090097
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 592.3733992815902
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 5692.779048992423,
+        "acceptance": 0.854875,
+        "expected_squared_jump": 0.0026095988545099245
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 2936.739386662354,
+        "acceptance": 0.73075,
+        "expected_squared_jump": 0.0071033916272242184
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 1038.3362836246913,
+        "acceptance": 0.588,
+        "expected_squared_jump": 0.012004168573624732
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 906.4320296865232,
+        "acceptance": 0.412625,
+        "expected_squared_jump": 0.01525597030445283
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 862.6460919714762,
+        "acceptance": 0.29725,
+        "expected_squared_jump": 0.017249933282641634
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 1143.3175553729284,
+        "acceptance": 0.18675,
+        "expected_squared_jump": 0.013601036391290365
+      }
+    ]
+  },
+  {
+    "scenario": "mixture",
+    "strike": 120,
+    "group": 3,
+    "seed": [
+      20261006,
+      1,
+      4638144666238189568,
+      3,
+      111
+    ],
+    "proposal": {
+      "shift": -0.1,
+      "inflation": 1.0,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.7656525367070156,
+    "mh_step": 0.55,
+    "costs": {
+      "IS": 0.0286498999921605,
+      "MH": 0.09475509999901988,
+      "CV": 0.000971200002823025,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 165.6806827931457
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 141.53369932100142
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 140.8936043683094
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 31.4219767859127
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 47.935068409146794
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 77.26044140356916
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 191.3631165950954
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 145.90913552113668
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 146.09179357728334
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 1059.3837612869386
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 760.1543614103138
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 565.8924493335026
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 4032.960482940297,
+        "acceptance": 0.857375,
+        "expected_squared_jump": 0.002536022672669545
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 2638.6350468617866,
+        "acceptance": 0.72675,
+        "expected_squared_jump": 0.007173165191146271
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 1324.9956004387866,
+        "acceptance": 0.5885,
+        "expected_squared_jump": 0.011530110375842163
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 859.5786455380141,
+        "acceptance": 0.41975,
+        "expected_squared_jump": 0.015026116560572985
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 613.1797426483284,
+        "acceptance": 0.301375,
+        "expected_squared_jump": 0.016755432968857634
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 1295.1475923744747,
+        "acceptance": 0.18975,
+        "expected_squared_jump": 0.014604189161829186
+      }
+    ]
+  },
+  {
+    "scenario": "mixture",
+    "strike": 120,
+    "group": 4,
+    "seed": [
+      20261006,
+      1,
+      4638144666238189568,
+      4,
+      111
+    ],
+    "proposal": {
+      "shift": -0.1,
+      "inflation": 1.0,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.7836016552581598,
+    "mh_step": 0.35,
+    "costs": {
+      "IS": 0.030801599990809336,
+      "MH": 0.09934470000735018,
+      "CV": 0.0010843000054592267,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 171.1622432904021
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 137.22896980426603
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 141.19872890792524
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 32.09232197446681
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 47.48623420774896
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 75.78590958978882
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 189.5136162198009
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 142.56789423915194
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 145.33147807222176
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 1062.715316161708
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 751.4330814432984
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 563.721377380834
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 4035.396194016633,
+        "acceptance": 0.8505,
+        "expected_squared_jump": 0.0025416385859961844
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 2654.388144210262,
+        "acceptance": 0.72,
+        "expected_squared_jump": 0.006888572174675273
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 1493.4325032446868,
+        "acceptance": 0.578375,
+        "expected_squared_jump": 0.011227387325486256
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 899.2567740783834,
+        "acceptance": 0.4175,
+        "expected_squared_jump": 0.01575241430915269
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 943.2467228995454,
+        "acceptance": 0.295375,
+        "expected_squared_jump": 0.01536625762949353
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 1325.5822842935866,
+        "acceptance": 0.204375,
+        "expected_squared_jump": 0.014341868400104438
+      }
+    ]
+  },
+  {
+    "scenario": "stress",
+    "strike": 80,
+    "group": 0,
+    "seed": [
+      20261006,
+      2,
+      4635329916471083008,
+      0,
+      111
+    ],
+    "proposal": {
+      "shift": -0.35,
+      "inflation": 1.5,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.16115175837288434,
+    "mh_step": 0.9,
+    "costs": {
+      "IS": 0.02913260000059381,
+      "MH": 0.0965934000123525,
+      "CV": 0.0009560000034980476,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 35.94831885109087
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 28.74526702301195
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 25.774038898012066
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 25.469688736688376
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 20.65510049381891
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 18.37124526524159
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 16.399071403804676
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 13.612241748179475
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 12.452131441773398
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 7.236983486969571
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 6.241731457683638
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 5.605311919001922
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 1486.6888788947438,
+        "acceptance": 0.8465,
+        "expected_squared_jump": 0.0026013145164196123
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 1848.5783136202351,
+        "acceptance": 0.724625,
+        "expected_squared_jump": 0.007240670819388337
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 464.1916139750524,
+        "acceptance": 0.600375,
+        "expected_squared_jump": 0.012808718487751355
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 622.1688569909328,
+        "acceptance": 0.44425,
+        "expected_squared_jump": 0.02280306693646777
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 273.70138970911347,
+        "acceptance": 0.327875,
+        "expected_squared_jump": 0.028437364963109973
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 277.78054237928905,
+        "acceptance": 0.223125,
+        "expected_squared_jump": 0.028744954914757367
+      }
+    ]
+  },
+  {
+    "scenario": "stress",
+    "strike": 80,
+    "group": 1,
+    "seed": [
+      20261006,
+      2,
+      4635329916471083008,
+      1,
+      111
+    ],
+    "proposal": {
+      "shift": -0.35,
+      "inflation": 1.5,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.18075464353620685,
+    "mh_step": 0.55,
+    "costs": {
+      "IS": 0.029301200003828853,
+      "MH": 0.09874129999661818,
+      "CV": 0.0009885000035865232,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 35.51546479352837
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 28.370160780226495
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 26.32264402172825
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 25.80414686042474
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 20.17848764955301
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 18.06281140125653
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 16.092637330084525
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 13.743682809943294
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 12.356459161156197
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 6.709593907563599
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 6.302901244921546
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 5.4921879405226495
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 2156.17442820259,
+        "acceptance": 0.861875,
+        "expected_squared_jump": 0.0025586278392880114
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 989.7697703625963,
+        "acceptance": 0.733125,
+        "expected_squared_jump": 0.007523490164977329
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 837.0384592572419,
+        "acceptance": 0.598125,
+        "expected_squared_jump": 0.013398102477763808
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 370.9202611510533,
+        "acceptance": 0.4375,
+        "expected_squared_jump": 0.021397187902298154
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 288.09861502052763,
+        "acceptance": 0.338,
+        "expected_squared_jump": 0.0300602016646655
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 343.85096874344913,
+        "acceptance": 0.219125,
+        "expected_squared_jump": 0.028805518792256814
+      }
+    ]
+  },
+  {
+    "scenario": "stress",
+    "strike": 80,
+    "group": 2,
+    "seed": [
+      20261006,
+      2,
+      4635329916471083008,
+      2,
+      111
+    ],
+    "proposal": {
+      "shift": -0.35,
+      "inflation": 1.5,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.17291497914736395,
+    "mh_step": 0.9,
+    "costs": {
+      "IS": 0.02768239998840727,
+      "MH": 0.09476130000257399,
+      "CV": 0.000905399996554479,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 37.65191534523929
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 27.457014331720924
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 24.8552289814431
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 25.716836184745677
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 20.62162439074726
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 18.227114406990353
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 16.41401808106057
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 13.798541307069803
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 12.365266090213522
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 7.4322566447441485
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 6.3840186559766305
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 5.359542063188667
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 187.32040603946314,
+        "acceptance": 0.85775,
+        "expected_squared_jump": 0.0025753739935139154
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 1237.7370228136435,
+        "acceptance": 0.728375,
+        "expected_squared_jump": 0.007279331460764488
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 1445.4981246373645,
+        "acceptance": 0.59375,
+        "expected_squared_jump": 0.013168546999369798
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 530.692154531889,
+        "acceptance": 0.440875,
+        "expected_squared_jump": 0.0207058695149322
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 444.99414836956913,
+        "acceptance": 0.32575,
+        "expected_squared_jump": 0.02885682156754599
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 332.220993994875,
+        "acceptance": 0.224,
+        "expected_squared_jump": 0.031050548541073062
+      }
+    ]
+  },
+  {
+    "scenario": "stress",
+    "strike": 80,
+    "group": 3,
+    "seed": [
+      20261006,
+      2,
+      4635329916471083008,
+      3,
+      111
+    ],
+    "proposal": {
+      "shift": -0.35,
+      "inflation": 1.5,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.17578161441936804,
+    "mh_step": 0.9,
+    "costs": {
+      "IS": 0.028637499999604188,
+      "MH": 0.09753159999672789,
+      "CV": 0.0010086999973282218,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 40.50719100210089
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 29.20649556012364
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 26.251943350469148
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 23.60002037004478
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 20.122768323873395
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 17.228012950724366
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 17.04189164406642
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 14.914424595027338
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 12.048301618376973
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 7.2494352178902774
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 5.9788146672466045
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 5.500595692739548
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 1386.3287770497848,
+        "acceptance": 0.856875,
+        "expected_squared_jump": 0.002560484781725402
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 1217.6771170309523,
+        "acceptance": 0.726625,
+        "expected_squared_jump": 0.007073528632134283
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 620.3201230654404,
+        "acceptance": 0.604625,
+        "expected_squared_jump": 0.012692515912889413
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 366.3417091690526,
+        "acceptance": 0.4385,
+        "expected_squared_jump": 0.020513868381128186
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 345.9318176820526,
+        "acceptance": 0.32475,
+        "expected_squared_jump": 0.02909911718696487
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 196.65943855823284,
+        "acceptance": 0.21425,
+        "expected_squared_jump": 0.03083749554649764
+      }
+    ]
+  },
+  {
+    "scenario": "stress",
+    "strike": 80,
+    "group": 4,
+    "seed": [
+      20261006,
+      2,
+      4635329916471083008,
+      4,
+      111
+    ],
+    "proposal": {
+      "shift": -0.35,
+      "inflation": 1.5,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.16365740831263068,
+    "mh_step": 0.9,
+    "costs": {
+      "IS": 0.028513900004327297,
+      "MH": 0.09428469999693334,
+      "CV": 0.0009891999943647534,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 36.373611606457025
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 27.52994121730087
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 27.46824535701331
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 25.08848659847934
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 20.818245260168542
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 18.100070951097507
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 15.572096525735441
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 13.147664269203899
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 11.864132481925823
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 7.103049760750522
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 6.068709887742962
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 5.603141566375096
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 1006.2775151858681,
+        "acceptance": 0.85525,
+        "expected_squared_jump": 0.002648516616853981
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 1788.4273294586035,
+        "acceptance": 0.718125,
+        "expected_squared_jump": 0.007267243509759307
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 354.13077651492785,
+        "acceptance": 0.581875,
+        "expected_squared_jump": 0.01254815781331091
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 541.7959489661381,
+        "acceptance": 0.449375,
+        "expected_squared_jump": 0.02157474407324771
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 164.93713581787972,
+        "acceptance": 0.32125,
+        "expected_squared_jump": 0.026895626474087657
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 153.03566171343357,
+        "acceptance": 0.2165,
+        "expected_squared_jump": 0.02932515289822352
+      }
+    ]
+  },
+  {
+    "scenario": "stress",
+    "strike": 100,
+    "group": 0,
+    "seed": [
+      20261006,
+      2,
+      4636737291354636288,
+      0,
+      111
+    ],
+    "proposal": {
+      "shift": -0.35,
+      "inflation": 1.5,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.3714324455314745,
+    "mh_step": 0.9,
+    "costs": {
+      "IS": 0.027617499988991767,
+      "MH": 0.09623280000232626,
+      "CV": 0.0010476000024937093,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 138.10891325977585
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 106.85835881013055
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 95.6859341769206
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 77.23554492491031
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 63.19462766998999
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 57.08492821128374
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 38.02455640374587
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 31.739959688512194
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 30.204830619173208
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 23.928893464163625
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 16.83245523904784
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 13.395079436108544
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 10298.710774315005,
+        "acceptance": 0.855875,
+        "expected_squared_jump": 0.002612523483564402
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 4949.689148574073,
+        "acceptance": 0.725,
+        "expected_squared_jump": 0.007106327959015545
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 2691.6045596841977,
+        "acceptance": 0.596375,
+        "expected_squared_jump": 0.013844636127215905
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 975.370727973312,
+        "acceptance": 0.439125,
+        "expected_squared_jump": 0.02065558689351339
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 882.3586657147813,
+        "acceptance": 0.323875,
+        "expected_squared_jump": 0.02706580585302334
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 1285.3135774720272,
+        "acceptance": 0.23,
+        "expected_squared_jump": 0.03236713240939014
+      }
+    ]
+  },
+  {
+    "scenario": "stress",
+    "strike": 100,
+    "group": 1,
+    "seed": [
+      20261006,
+      2,
+      4636737291354636288,
+      1,
+      111
+    ],
+    "proposal": {
+      "shift": -0.35,
+      "inflation": 1.5,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.393420619260035,
+    "mh_step": 0.55,
+    "costs": {
+      "IS": 0.02832309999212157,
+      "MH": 0.09253480000188574,
+      "CV": 0.0009805000008782372,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 129.22033318682278
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 103.32554728592785
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 96.90687425865012
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 74.1726843365163
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 65.7260163508618
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 59.33454267977388
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 40.64906098749269
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 33.27749544441834
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 30.780975137511355
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 24.44399733530955
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 16.27927461341794
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 13.22073975307564
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 4303.786020751534,
+        "acceptance": 0.85025,
+        "expected_squared_jump": 0.002590332464455798
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 11843.300212571958,
+        "acceptance": 0.729625,
+        "expected_squared_jump": 0.007103918784793159
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 1753.3250398251225,
+        "acceptance": 0.59375,
+        "expected_squared_jump": 0.012920949230599792
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 1441.8341942720303,
+        "acceptance": 0.43525,
+        "expected_squared_jump": 0.019368573182179282
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 1289.5192821682779,
+        "acceptance": 0.341375,
+        "expected_squared_jump": 0.029208745446280472
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 873.740387235116,
+        "acceptance": 0.22425,
+        "expected_squared_jump": 0.027887342603929728
+      }
+    ]
+  },
+  {
+    "scenario": "stress",
+    "strike": 100,
+    "group": 2,
+    "seed": [
+      20261006,
+      2,
+      4636737291354636288,
+      2,
+      111
+    ],
+    "proposal": {
+      "shift": -0.35,
+      "inflation": 1.5,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.4344676773105684,
+    "mh_step": 0.9,
+    "costs": {
+      "IS": 0.027893399994354695,
+      "MH": 0.0955826999997953,
+      "CV": 0.0010460000048624352,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 138.8098215011336
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 110.82094719915835
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 95.72144178741839
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 76.1830802183618
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 63.17401465005623
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 57.34798126165899
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 38.852424076453175
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 32.25801229870512
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 29.515828219859603
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 24.473200915286395
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 16.318770044770208
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 13.480723697419315
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 6574.338740909197,
+        "acceptance": 0.853875,
+        "expected_squared_jump": 0.002600739923806005
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 2651.508769133674,
+        "acceptance": 0.72875,
+        "expected_squared_jump": 0.0073947317893454725
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 2077.8258086101423,
+        "acceptance": 0.593,
+        "expected_squared_jump": 0.013045231180489598
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 525.5691072296397,
+        "acceptance": 0.436875,
+        "expected_squared_jump": 0.02006793880801047
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 877.4110321116148,
+        "acceptance": 0.33175,
+        "expected_squared_jump": 0.026420429879815945
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 924.4182376433827,
+        "acceptance": 0.2205,
+        "expected_squared_jump": 0.03462423688371144
+      }
+    ]
+  },
+  {
+    "scenario": "stress",
+    "strike": 100,
+    "group": 3,
+    "seed": [
+      20261006,
+      2,
+      4636737291354636288,
+      3,
+      111
+    ],
+    "proposal": {
+      "shift": -0.35,
+      "inflation": 1.5,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.39269375263283146,
+    "mh_step": 0.9,
+    "costs": {
+      "IS": 0.028268399997614324,
+      "MH": 0.09436770000320394,
+      "CV": 0.0010638999956427142,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 133.0877053391747
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 108.62171415042822
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 95.10541088155756
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 77.82292855561275
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 66.44594644513107
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 57.683815374978295
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 38.48139502168383
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 33.695739569387186
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 29.829559402625197
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 24.616548081459527
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 16.877522216729332
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 13.198440957601596
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 1499.3456682735134,
+        "acceptance": 0.852375,
+        "expected_squared_jump": 0.002456623683114395
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 4573.954042242619,
+        "acceptance": 0.717625,
+        "expected_squared_jump": 0.007225812584605727
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 2505.7205898145344,
+        "acceptance": 0.616625,
+        "expected_squared_jump": 0.013874849488570876
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 1325.702862639324,
+        "acceptance": 0.452,
+        "expected_squared_jump": 0.02187626786438303
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 675.7201484751548,
+        "acceptance": 0.326625,
+        "expected_squared_jump": 0.027347402200911617
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 937.1697395339048,
+        "acceptance": 0.2175,
+        "expected_squared_jump": 0.02955412187418097
+      }
+    ]
+  },
+  {
+    "scenario": "stress",
+    "strike": 100,
+    "group": 4,
+    "seed": [
+      20261006,
+      2,
+      4636737291354636288,
+      4,
+      111
+    ],
+    "proposal": {
+      "shift": -0.35,
+      "inflation": 1.5,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.373742668188012,
+    "mh_step": 0.9,
+    "costs": {
+      "IS": 0.027163399994606152,
+      "MH": 0.09229689999483526,
+      "CV": 0.0010353999969083816,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 130.30115862056005
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 108.00434101385578
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 93.03524369312858
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 77.0008524208393
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 64.279634277388
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 57.612559961744715
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 39.449028189025526
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 33.022876601920316
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 30.87261372783074
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 23.968869605420554
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 16.66295244469827
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 13.568111608211838
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 4537.846856090377,
+        "acceptance": 0.848,
+        "expected_squared_jump": 0.0025801684170108003
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 5394.95564060204,
+        "acceptance": 0.725625,
+        "expected_squared_jump": 0.007386027692646692
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 3965.0155808520526,
+        "acceptance": 0.606375,
+        "expected_squared_jump": 0.013828647542656305
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 1449.2673041104129,
+        "acceptance": 0.442,
+        "expected_squared_jump": 0.021102809693979846
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 1267.987332620986,
+        "acceptance": 0.3275,
+        "expected_squared_jump": 0.026087080181197132
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 784.8937828872555,
+        "acceptance": 0.220375,
+        "expected_squared_jump": 0.028113908840100052
+      }
+    ]
+  },
+  {
+    "scenario": "stress",
+    "strike": 120,
+    "group": 0,
+    "seed": [
+      20261006,
+      2,
+      4638144666238189568,
+      0,
+      111
+    ],
+    "proposal": {
+      "shift": -0.1,
+      "inflation": 1.25,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.6604531173899926,
+    "mh_step": 0.9,
+    "costs": {
+      "IS": 0.02767409999796655,
+      "MH": 0.0917460999917239,
+      "CV": 0.0009561000042594969,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 257.0160170476655
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 226.89723238244517
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 216.91053888292552
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 93.8619255142146
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 88.26518267732226
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 95.26256116445687
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 184.52040804063222
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 129.34844192314813
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 110.92692467380743
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 787.6795998397381
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 580.46714333294
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 448.4813906311787
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 22040.69433764593,
+        "acceptance": 0.864625,
+        "expected_squared_jump": 0.002723453216678405
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 9253.548496365054,
+        "acceptance": 0.7275,
+        "expected_squared_jump": 0.007265270730104095
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 5073.073575739056,
+        "acceptance": 0.608625,
+        "expected_squared_jump": 0.013556306597904369
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 2822.3536612631697,
+        "acceptance": 0.452125,
+        "expected_squared_jump": 0.0227823311218427
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 3091.183341488345,
+        "acceptance": 0.33075,
+        "expected_squared_jump": 0.02871599812823509
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 1896.70677372156,
+        "acceptance": 0.2265,
+        "expected_squared_jump": 0.029989228858068595
+      }
+    ]
+  },
+  {
+    "scenario": "stress",
+    "strike": 120,
+    "group": 1,
+    "seed": [
+      20261006,
+      2,
+      4638144666238189568,
+      1,
+      111
+    ],
+    "proposal": {
+      "shift": -0.1,
+      "inflation": 1.25,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.6228358965107789,
+    "mh_step": 0.9,
+    "costs": {
+      "IS": 0.030398800008697435,
+      "MH": 0.09833729999081697,
+      "CV": 0.0011328999971738085,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 266.917139915589
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 215.40323011185956
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 210.2156967431776
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 94.3943698779652
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 90.59345982326431
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 98.23879586900405
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 188.0595637663308
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 128.63240027767452
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 112.48867855791944
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 823.6660877402799
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 605.6502098350078
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 443.30091008111356
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 5258.343105306379,
+        "acceptance": 0.848125,
+        "expected_squared_jump": 0.0025742727556343032
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 6098.558577376646,
+        "acceptance": 0.727625,
+        "expected_squared_jump": 0.0071547007400158645
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 3901.708199774261,
+        "acceptance": 0.600625,
+        "expected_squared_jump": 0.013171453135054835
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 3043.843728819225,
+        "acceptance": 0.443375,
+        "expected_squared_jump": 0.022293543994980777
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 1737.851904033599,
+        "acceptance": 0.330375,
+        "expected_squared_jump": 0.029860444983310135
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 2542.176114538433,
+        "acceptance": 0.224,
+        "expected_squared_jump": 0.030496843569755783
+      }
+    ]
+  },
+  {
+    "scenario": "stress",
+    "strike": 120,
+    "group": 2,
+    "seed": [
+      20261006,
+      2,
+      4638144666238189568,
+      2,
+      111
+    ],
+    "proposal": {
+      "shift": -0.1,
+      "inflation": 1.25,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.6485166870947138,
+    "mh_step": 0.55,
+    "costs": {
+      "IS": 0.027482299992698245,
+      "MH": 0.09502340000472032,
+      "CV": 0.000916199991479516,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 271.4606541773718
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 226.1624894757927
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 211.42597876691534
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 94.43556373939398
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 89.04502756867484
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 97.05590272227634
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 182.95992874475368
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 126.29557057950595
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 110.49028293223934
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 807.0303101671727
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 582.1217975434164
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 447.2274537704606
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 20429.669637993105,
+        "acceptance": 0.858125,
+        "expected_squared_jump": 0.0025696362461218765
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 8220.729434971625,
+        "acceptance": 0.7225,
+        "expected_squared_jump": 0.007290591161559722
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 3898.3536407930947,
+        "acceptance": 0.5925,
+        "expected_squared_jump": 0.012908535358990112
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 2114.7173050746906,
+        "acceptance": 0.441625,
+        "expected_squared_jump": 0.02130739235808736
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 1975.0015581022276,
+        "acceptance": 0.336625,
+        "expected_squared_jump": 0.029882293577433224
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 2530.8742846366613,
+        "acceptance": 0.220875,
+        "expected_squared_jump": 0.028392225335987134
+      }
+    ]
+  },
+  {
+    "scenario": "stress",
+    "strike": 120,
+    "group": 3,
+    "seed": [
+      20261006,
+      2,
+      4638144666238189568,
+      3,
+      111
+    ],
+    "proposal": {
+      "shift": -0.1,
+      "inflation": 1.25,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.6672577271923597,
+    "mh_step": 0.9,
+    "costs": {
+      "IS": 0.026857799995923415,
+      "MH": 0.09170669999730308,
+      "CV": 0.0009216000034939498,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 271.65671666172307
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 221.72597349521058
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 213.62609143617163
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 91.20275049714475
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 87.40786995089054
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 100.31316380387807
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 185.15267347937802
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 129.95246849430802
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 111.8213818535848
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 779.0459317768654
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 592.568695547561
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 445.40888061763036
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 7896.555273615779,
+        "acceptance": 0.8475,
+        "expected_squared_jump": 0.0025538246537624414
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 12961.471554651935,
+        "acceptance": 0.731375,
+        "expected_squared_jump": 0.00717647979539246
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 3380.2376026103952,
+        "acceptance": 0.595875,
+        "expected_squared_jump": 0.013308389111255715
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 1972.072231176051,
+        "acceptance": 0.44025,
+        "expected_squared_jump": 0.021271684973870518
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 2071.1700926064873,
+        "acceptance": 0.330875,
+        "expected_squared_jump": 0.02751344228575754
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 1840.486639710345,
+        "acceptance": 0.217375,
+        "expected_squared_jump": 0.02916009406795803
+      }
+    ]
+  },
+  {
+    "scenario": "stress",
+    "strike": 120,
+    "group": 4,
+    "seed": [
+      20261006,
+      2,
+      4638144666238189568,
+      4,
+      111
+    ],
+    "proposal": {
+      "shift": -0.1,
+      "inflation": 1.25,
+      "defensive_weight": 0.1
+    },
+    "coefficient": -0.6210991148999867,
+    "mh_step": 0.9,
+    "costs": {
+      "IS": 0.029775500006508082,
+      "MH": 0.09792129999550525,
+      "CV": 0.0009356999944429845,
+      "IID": 0.0,
+      "AV": 0.0
+    },
+    "candidates": [
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.0,
+        "pilot_variance": 252.05047388841217
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.25,
+        "pilot_variance": 229.23217128181517
+      },
+      {
+        "method": "IS",
+        "shift": 0.0,
+        "inflation": 1.5,
+        "pilot_variance": 207.6036010566255
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.0,
+        "pilot_variance": 95.7955636280222
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.25,
+        "pilot_variance": 89.95824026824864
+      },
+      {
+        "method": "IS",
+        "shift": -0.1,
+        "inflation": 1.5,
+        "pilot_variance": 98.0770676175676
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.0,
+        "pilot_variance": 184.01719124936713
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.25,
+        "pilot_variance": 127.0755314913141
+      },
+      {
+        "method": "IS",
+        "shift": -0.2,
+        "inflation": 1.5,
+        "pilot_variance": 115.2691354681058
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.0,
+        "pilot_variance": 782.7200393388505
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.25,
+        "pilot_variance": 608.9760608537924
+      },
+      {
+        "method": "IS",
+        "shift": -0.35,
+        "inflation": 1.5,
+        "pilot_variance": 427.9785753311502
+      },
+      {
+        "method": "MH",
+        "step": 0.06,
+        "pilot_asymptotic_variance": 14486.035011341648,
+        "acceptance": 0.85675,
+        "expected_squared_jump": 0.0025379267462673667
+      },
+      {
+        "method": "MH",
+        "step": 0.12,
+        "pilot_asymptotic_variance": 4754.482269242693,
+        "acceptance": 0.727,
+        "expected_squared_jump": 0.007248510516728716
+      },
+      {
+        "method": "MH",
+        "step": 0.2,
+        "pilot_asymptotic_variance": 4640.062956757269,
+        "acceptance": 0.60675,
+        "expected_squared_jump": 0.013238312318540259
+      },
+      {
+        "method": "MH",
+        "step": 0.35,
+        "pilot_asymptotic_variance": 2351.9448620669878,
+        "acceptance": 0.44675,
+        "expected_squared_jump": 0.021100096123475912
+      },
+      {
+        "method": "MH",
+        "step": 0.55,
+        "pilot_asymptotic_variance": 1778.14163056211,
+        "acceptance": 0.331,
+        "expected_squared_jump": 0.02672619655109186
+      },
+      {
+        "method": "MH",
+        "step": 0.9,
+        "pilot_asymptotic_variance": 1993.0230085830522,
+        "acceptance": 0.22275,
+        "expected_squared_jump": 0.031137007466913964
+      }
+    ]
+  }
+]

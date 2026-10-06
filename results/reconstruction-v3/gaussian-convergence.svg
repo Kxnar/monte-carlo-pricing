@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1110 400" width="1110" height="400" role="img" aria-label="Monte Carlo RMSE by sample budget for gaussian">
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#18243b">
+<text x="24" y="27" font-size="19" font-weight="bold">Gaussian: convergence by payoff budget</text>
+<text x="24" y="49" font-size="12">Logarithmic axes. RMSE versus numerical integration. Lower is better.</text>
+<text x="64" y="77" font-size="14" font-weight="bold">Strike 80</text>
+<line x1="64" x2="342" y1="312.0" y2="312.0" stroke="#e2e8f0"/>
+<text x="57" y="316.0" text-anchor="end" font-size="10">0.00447</text>
+<line x1="64" x2="342" y1="256.5" y2="256.5" stroke="#e2e8f0"/>
+<text x="57" y="260.5" text-anchor="end" font-size="10">0.018</text>
+<line x1="64" x2="342" y1="201.0" y2="201.0" stroke="#e2e8f0"/>
+<text x="57" y="205.0" text-anchor="end" font-size="10">0.0723</text>
+<line x1="64" x2="342" y1="145.49999999999997" y2="145.49999999999997" stroke="#e2e8f0"/>
+<text x="57" y="149.49999999999997" text-anchor="end" font-size="10">0.29</text>
+<line x1="64" x2="342" y1="90.0" y2="90.0" stroke="#e2e8f0"/>
+<text x="57" y="94.0" text-anchor="end" font-size="10">1.17</text>
+<text x="64.0" y="332" text-anchor="middle" font-size="10">1,000</text>
+<text x="213.3537134831739" y="332" text-anchor="middle" font-size="10">5,000</text>
+<text x="342.0" y="332" text-anchor="middle" font-size="10">20,000</text>
+<text x="203.0" y="351" text-anchor="middle" font-size="11">Payoff evaluations</text>
+<polyline points="64.00,189.83 213.35,223.58 342.00,245.58" fill="none" stroke="#2563eb" stroke-width="2"/>
+<circle cx="64.00" cy="189.83" r="3.5" fill="#2563eb"/>
+<circle cx="213.35" cy="223.58" r="3.5" fill="#2563eb"/>
+<circle cx="342.00" cy="245.58" r="3.5" fill="#2563eb"/>
+<text x="64" y="383" fill="#2563eb" font-size="12">IID</text>
+<polyline points="64.00,244.02 213.35,276.16 342.00,303.10" fill="none" stroke="#15803d" stroke-width="2"/>
+<circle cx="64.00" cy="244.02" r="3.5" fill="#15803d"/>
+<circle cx="213.35" cy="276.16" r="3.5" fill="#15803d"/>
+<circle cx="342.00" cy="303.10" r="3.5" fill="#15803d"/>
+<text x="119" y="383" fill="#15803d" font-size="12">IS</text>
+<polyline points="64.00,190.56 213.35,221.93 342.00,250.25" fill="none" stroke="#9333ea" stroke-width="2"/>
+<circle cx="64.00" cy="190.56" r="3.5" fill="#9333ea"/>
+<circle cx="213.35" cy="221.93" r="3.5" fill="#9333ea"/>
+<circle cx="342.00" cy="250.25" r="3.5" fill="#9333ea"/>
+<text x="174" y="383" fill="#9333ea" font-size="12">AV</text>
+<polyline points="64.00,194.32 213.35,227.46 342.00,256.31" fill="none" stroke="#db2777" stroke-width="2"/>
+<circle cx="64.00" cy="194.32" r="3.5" fill="#db2777"/>
+<circle cx="213.35" cy="227.46" r="3.5" fill="#db2777"/>
+<circle cx="342.00" cy="256.31" r="3.5" fill="#db2777"/>
+<text x="229" y="383" fill="#db2777" font-size="12">CV</text>
+<polyline points="64.00,157.21 213.35,190.81 342.00,215.53" fill="none" stroke="#b45309" stroke-width="2"/>
+<circle cx="64.00" cy="157.21" r="3.5" fill="#b45309"/>
+<circle cx="213.35" cy="190.81" r="3.5" fill="#b45309"/>
+<circle cx="342.00" cy="215.53" r="3.5" fill="#b45309"/>
+<text x="284" y="383" fill="#b45309" font-size="12">MH</text>
+<text x="434" y="77" font-size="14" font-weight="bold">Strike 100</text>
+<line x1="434" x2="712" y1="312.0" y2="312.0" stroke="#e2e8f0"/>
+<text x="427" y="316.0" text-anchor="end" font-size="10">0.00447</text>
+<line x1="434" x2="712" y1="256.5" y2="256.5" stroke="#e2e8f0"/>
+<text x="427" y="260.5" text-anchor="end" font-size="10">0.018</text>
+<line x1="434" x2="712" y1="201.0" y2="201.0" stroke="#e2e8f0"/>
+<text x="427" y="205.0" text-anchor="end" font-size="10">0.0723</text>
+<line x1="434" x2="712" y1="145.49999999999997" y2="145.49999999999997" stroke="#e2e8f0"/>
+<text x="427" y="149.49999999999997" text-anchor="end" font-size="10">0.29</text>
+<line x1="434" x2="712" y1="90.0" y2="90.0" stroke="#e2e8f0"/>
+<text x="427" y="94.0" text-anchor="end" font-size="10">1.17</text>
+<text x="434.0" y="332" text-anchor="middle" font-size="10">1,000</text>
+<text x="583.3537134831739" y="332" text-anchor="middle" font-size="10">5,000</text>
+<text x="712.0" y="332" text-anchor="middle" font-size="10">20,000</text>
+<text x="573.0" y="351" text-anchor="middle" font-size="11">Payoff evaluations</text>
+<polyline points="434.00,145.60 583.35,180.42 712.00,203.97" fill="none" stroke="#2563eb" stroke-width="2"/>
+<circle cx="434.00" cy="145.60" r="3.5" fill="#2563eb"/>
+<circle cx="583.35" cy="180.42" r="3.5" fill="#2563eb"/>
+<circle cx="712.00" cy="203.97" r="3.5" fill="#2563eb"/>
+<text x="434" y="383" fill="#2563eb" font-size="12">IID</text>
+<polyline points="434.00,176.63 583.35,210.81 712.00,239.81" fill="none" stroke="#15803d" stroke-width="2"/>
+<circle cx="434.00" cy="176.63" r="3.5" fill="#15803d"/>
+<circle cx="583.35" cy="210.81" r="3.5" fill="#15803d"/>
+<circle cx="712.00" cy="239.81" r="3.5" fill="#15803d"/>
+<text x="489" y="383" fill="#15803d" font-size="12">IS</text>
+<polyline points="434.00,160.76 583.35,187.79 712.00,215.28" fill="none" stroke="#9333ea" stroke-width="2"/>
+<circle cx="434.00" cy="160.76" r="3.5" fill="#9333ea"/>
+<circle cx="583.35" cy="187.79" r="3.5" fill="#9333ea"/>
+<circle cx="712.00" cy="215.28" r="3.5" fill="#9333ea"/>
+<text x="544" y="383" fill="#9333ea" font-size="12">AV</text>
+<polyline points="434.00,160.13 583.35,195.38 712.00,224.36" fill="none" stroke="#db2777" stroke-width="2"/>
+<circle cx="434.00" cy="160.13" r="3.5" fill="#db2777"/>
+<circle cx="583.35" cy="195.38" r="3.5" fill="#db2777"/>
+<circle cx="712.00" cy="224.36" r="3.5" fill="#db2777"/>
+<text x="599" y="383" fill="#db2777" font-size="12">CV</text>
+<polyline points="434.00,116.75 583.35,147.19 712.00,174.57" fill="none" stroke="#b45309" stroke-width="2"/>
+<circle cx="434.00" cy="116.75" r="3.5" fill="#b45309"/>
+<circle cx="583.35" cy="147.19" r="3.5" fill="#b45309"/>
+<circle cx="712.00" cy="174.57" r="3.5" fill="#b45309"/>
+<text x="654" y="383" fill="#b45309" font-size="12">MH</text>
+<text x="804" y="77" font-size="14" font-weight="bold">Strike 120</text>
+<line x1="804" x2="1082" y1="312.0" y2="312.0" stroke="#e2e8f0"/>
+<text x="797" y="316.0" text-anchor="end" font-size="10">0.00447</text>
+<line x1="804" x2="1082" y1="256.5" y2="256.5" stroke="#e2e8f0"/>
+<text x="797" y="260.5" text-anchor="end" font-size="10">0.018</text>
+<line x1="804" x2="1082" y1="201.0" y2="201.0" stroke="#e2e8f0"/>
+<text x="797" y="205.0" text-anchor="end" font-size="10">0.0723</text>
+<line x1="804" x2="1082" y1="145.49999999999997" y2="145.49999999999997" stroke="#e2e8f0"/>
+<text x="797" y="149.49999999999997" text-anchor="end" font-size="10">0.29</text>
+<line x1="804" x2="1082" y1="90.0" y2="90.0" stroke="#e2e8f0"/>
+<text x="797" y="94.0" text-anchor="end" font-size="10">1.17</text>
+<text x="804.0" y="332" text-anchor="middle" font-size="10">1,000</text>
+<text x="953.3537134831739" y="332" text-anchor="middle" font-size="10">5,000</text>
+<text x="1082.0" y="332" text-anchor="middle" font-size="10">20,000</text>
+<text x="943.0" y="351" text-anchor="middle" font-size="11">Payoff evaluations</text>
+<polyline points="804.00,127.81 953.35,159.23 1082.00,187.17" fill="none" stroke="#2563eb" stroke-width="2"/>
+<circle cx="804.00" cy="127.81" r="3.5" fill="#2563eb"/>
+<circle cx="953.35" cy="159.23" r="3.5" fill="#2563eb"/>
+<circle cx="1082.00" cy="187.17" r="3.5" fill="#2563eb"/>
+<text x="804" y="383" fill="#2563eb" font-size="12">IID</text>
+<polyline points="804.00,148.06 953.35,182.58 1082.00,209.76" fill="none" stroke="#15803d" stroke-width="2"/>
+<circle cx="804.00" cy="148.06" r="3.5" fill="#15803d"/>
+<circle cx="953.35" cy="182.58" r="3.5" fill="#15803d"/>
+<circle cx="1082.00" cy="209.76" r="3.5" fill="#15803d"/>
+<text x="859" y="383" fill="#15803d" font-size="12">IS</text>
+<polyline points="804.00,180.92 953.35,212.95 1082.00,238.49" fill="none" stroke="#9333ea" stroke-width="2"/>
+<circle cx="804.00" cy="180.92" r="3.5" fill="#9333ea"/>
+<circle cx="953.35" cy="212.95" r="3.5" fill="#9333ea"/>
+<circle cx="1082.00" cy="238.49" r="3.5" fill="#9333ea"/>
+<text x="914" y="383" fill="#9333ea" font-size="12">AV</text>
+<polyline points="804.00,161.71 953.35,200.36 1082.00,224.27" fill="none" stroke="#db2777" stroke-width="2"/>
+<circle cx="804.00" cy="161.71" r="3.5" fill="#db2777"/>
+<circle cx="953.35" cy="200.36" r="3.5" fill="#db2777"/>
+<circle cx="1082.00" cy="224.27" r="3.5" fill="#db2777"/>
+<text x="969" y="383" fill="#db2777" font-size="12">CV</text>
+<polyline points="804.00,97.27 953.35,122.95 1082.00,156.79" fill="none" stroke="#b45309" stroke-width="2"/>
+<circle cx="804.00" cy="97.27" r="3.5" fill="#b45309"/>
+<circle cx="953.35" cy="122.95" r="3.5" fill="#b45309"/>
+<circle cx="1082.00" cy="156.79" r="3.5" fill="#b45309"/>
+<text x="1024" y="383" fill="#b45309" font-size="12">MH</text>
+</g></svg>
