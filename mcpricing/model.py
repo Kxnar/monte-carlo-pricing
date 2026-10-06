@@ -21,8 +21,10 @@ class Mixture:
             raise ValueError("Parameters must be finite.")
         if any(w <= 0 for w in self.weights) or not math.isclose(sum(self.weights), 1):
             raise ValueError("Positive mixture weights must sum to one.")
-        if any(a <= 0 for a in self.scales) or any(b <= 1 for b in self.shapes):
-            raise ValueError("Scales must be positive; shapes > 1 ensure finite exponential moments.")
+        if any(not 0.005 <= a <= 1 for a in self.scales) or any(not 1.25 <= b <= 4 for b in self.shapes):
+            raise ValueError("This numerical implementation supports scales [0.005, 1] and shapes [1.25, 4].")
+        if any(abs(m) > 2 for m in self.locations):
+            raise ValueError("This implementation supports component locations in [-2, 2].")
 
     @cached_property
     def log_constants(self):
@@ -43,6 +45,8 @@ class Mixture:
         return hi + math.log1p(math.exp(lo-hi))
 
     def sample(self, rng, n):
+        if not isinstance(n, (int, np.integer)) or n < 0:
+            raise ValueError("Sample count must be a nonnegative integer.")
         components = rng.choice(2, size=n, p=self.weights)
         shapes = np.asarray(self.shapes)[components]
         radii = rng.gamma(1/shapes)**(1/shapes)
@@ -51,15 +55,25 @@ class Mixture:
 
     @cached_property
     def log_mgf_one(self):
+        return self.log_mgf(1)
+
+    def log_mgf(self, exponent):
+        """Compute log E[exp(exponent X)], checked by quadrature refinement."""
+        if not math.isfinite(exponent) or abs(exponent) > 2:
+            raise ValueError("Supported exponential moments have exponent in [-2, 2].")
         # Standardise each component before quadrature; integrate both sides of its cusp.
-        total = 0.0
+        terms = []
         for w, m, a, b in zip(self.weights, self.locations, self.scales, self.shapes):
             normaliser = b/(2*math.gamma(1/b))
-            cutoff = radius(b, a)
-            halves = sum(positive_integral(lambda u: np.exp(sign*a*u-u**b), 0, cutoff)
-                         for sign in (-1, 1))
-            total += w*math.exp(m)*normaliser*halves
-        return math.log(total)
+            cutoff = radius(b, abs(exponent)*a)
+            def integrate(order):
+                return sum(positive_integral(lambda u: np.exp(sign*exponent*a*u-u**b), 0, cutoff, order)
+                           for sign in (-1, 1))
+            coarse, fine = integrate(256), integrate(512)
+            if not math.isfinite(fine) or abs(coarse-fine) > 1e-9*fine:
+                raise ArithmeticError("Exponential-moment quadrature failed to converge.")
+            terms.append(math.log(w*normaliser*fine)+exponent*m)
+        return float(np.logaddexp(*terms))
 
 
 @dataclass(frozen=True)
@@ -82,6 +96,14 @@ class Contract:
         # Evaluate only in-the-money terms, avoiding exp overflow for large positive x.
         log_ratio = np.asarray(x) + self.shift(model) + math.log(self.spot/self.strike)
         return math.exp(-self.rate*self.maturity)*self.strike*(-np.expm1(np.minimum(log_ratio, 0)))
+
+    def discounted_stock(self, model, x):
+        """A control with known expectation spot, under the chosen pricing law."""
+        return self.spot*np.exp(np.asarray(x)-model.log_mgf_one)
+
+    def delta_values(self, model, x):
+        terminal_ratio = np.asarray(x)+self.shift(model)+math.log(self.spot/self.strike)
+        return -self.discounted_stock(model, x)/self.spot*(terminal_ratio < 0)
 
     def reference(self, model, order=256):
         cutoff = math.log(self.strike/self.spot)-self.shift(model)
