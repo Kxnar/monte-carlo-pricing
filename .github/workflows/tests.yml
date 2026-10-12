@@ -32,3 +32,15 @@ jobs:
       - run: python -m unittest discover -s tests -v
       - run: mcpricing price --samples 2000
       - run: mcpricing benchmark --scenarios mixture --strikes 100 --sizes 1000 --groups 2 --repeats 2 --pilot-samples 500 --bootstrap 100 --output smoke-results
+  independent-reference:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.14'
+          cache: pip
+      - run: python -m pip install '.[reference]'
+      - run: python -m unittest discover -s tests -v
+      - run: mcpricing asian-price --paths 2000
+      - run: mcpricing portfolio-demo --paths 2000 --pilot-paths 1000

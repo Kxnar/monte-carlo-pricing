@@ -30,9 +30,43 @@ def main():
     bench.add_argument('--seed',type=int,default=20261006)
     report=subs.add_parser('report',help='Regenerate report and figures from stored CSV files.')
     report.add_argument('directory',type=Path)
+    wp=subs.add_parser('workbench-pilot',help='Measure the finite A/B/C timing design before freezing.')
+    wp.add_argument('--output',type=Path,required=True)
+    wf=subs.add_parser('workbench-freeze',help='Select on TRAIN and freeze a source-hashed finite campaign.')
+    wf.add_argument('--pilot',type=Path,required=True);wf.add_argument('--output',type=Path,required=True)
+    wr=subs.add_parser('workbench-run',help='Execute all final cases from the frozen configuration.')
+    wr.add_argument('--configuration',type=Path,required=True);wr.add_argument('--output',type=Path,required=True)
+    rr=subs.add_parser('workbench-report',help='Regenerate the workbench report from saved evidence.')
+    rr.add_argument('directory',type=Path)
+    ap=subs.add_parser('asian-price',help='Price a GBM arithmetic Asian put with independent geometric control.')
+    ap.add_argument('--strike',type=float,default=100.);ap.add_argument('--days',type=int,default=365)
+    ap.add_argument('--fixings',type=int,default=12)
+    pd=subs.add_parser('portfolio-demo',help='Nine signed Asian legs, covariance-aware risk, hedge and first-order P&L.')
+    for command in (ap,pd):
+        command.add_argument('--paths',type=int,default=16384);command.add_argument('--pilot-paths',type=int,default=4096)
+        command.add_argument('--seed',type=int,default=42);command.add_argument('--block-size',type=int,default=4096)
     args=parser.parse_args()
     try:
-        if args.command=='benchmark':
+        if args.command.startswith('workbench-'):
+            if args.command=='workbench-report':
+                from .workbench_report import render_workbench_report
+                render_workbench_report(args.directory)
+            else:
+                from .workbench import run_pilot,freeze_configuration,run_workbench
+                if args.command=='workbench-pilot':result=run_pilot(args.output)
+                elif args.command=='workbench-freeze':result=freeze_configuration(args.pilot,args.output)
+                else:result=run_workbench(args.configuration,args.output)
+                print(json.dumps({k:result[k] for k in ('schema_version','actual_counts','validation','forecast','adaptation') if k in result},indent=2))
+        elif args.command=='portfolio-demo':
+            from .workbench import portfolio_demo
+            portfolio_demo(args.paths,args.pilot_paths,args.seed,args.block_size)
+        elif args.command=='asian-price':
+            from .asian import GBM,AsianPut,fit_control,price_asian
+            if args.fixings<1 or args.days<args.fixings:raise ValueError('Use positive fixings and days >= fixings')
+            model=GBM();contract=AsianPut(args.strike,tuple(round(args.days*i/args.fixings)/365 for i in range(1,args.fixings+1)),args.days/365)
+            fit=fit_control(model,contract,pilot_paths=args.pilot_paths,seed=args.seed+1,block_size=args.block_size)
+            print(json.dumps(dict(model=asdict(model),contract=asdict(contract),control=asdict(fit),estimates={m:asdict(price_asian(model,contract,n_paths=args.paths,seed=args.seed,method=m,control=fit if m=='geometric_cv' else None,block_size=args.block_size)) for m in ('iid','antithetic','geometric_cv')}),indent=2))
+        elif args.command=='benchmark':
             from .benchmark import run
             meta=run(args.output,args.scenarios,args.strikes,args.sizes,args.groups,args.repeats,
                      args.pilot_samples,args.seed,args.bootstrap)

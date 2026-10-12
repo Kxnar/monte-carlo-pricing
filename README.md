@@ -1,5 +1,15 @@
 # Monte Carlo option pricing
 
+The new [Asian portfolio workbench](docs/WORKBENCH.md) extends this project with streamed arithmetic Asian pricing, an exact geometric control, independent QuantLib checks, joint portfolio price/delta/vega, and measured proposal reuse. It saves pilot choices, a frozen evaluation configuration, raw trials, validation gates, source hashes, and a standalone report. The workflow keeps tuning, production, reference, and memory costs separate; results describe the recorded experiment and machine.
+
+```sh
+python -m pip install '.[reference]'
+python -m mcpricing asian-price --paths 2000
+python -m mcpricing portfolio-demo --paths 2000 --pilot-paths 1000
+```
+
+See [the workbench protocol and reproduction commands](docs/WORKBENCH.md). The European reconstruction and its recorded results below remain a separate experiment.
+
 I wanted to see how much better you can do than plain Monte Carlo when pricing a European put, and whether the improvement is still worth it once you count the time spent tuning the sampler.
 
 This compares five estimators in Python and NumPy. The main model uses a two-component generalised-normal mixture, which allows asymmetric returns and heavier tails than a Gaussian. There are also Gaussian and stress cases. Numerical integration gives a reference price to check the simulations against.

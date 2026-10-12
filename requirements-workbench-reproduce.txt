@@ -1,0 +1,5 @@
+# Recorded workbench environment: Python 3.14.6 on Windows.
+# NumPy and QuantLib are required; SciPy is recorded for reproducibility.
+numpy==2.5.4
+QuantLib==1.43
+scipy==1.18.1
