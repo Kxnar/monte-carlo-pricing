@@ -1,0 +1,200 @@
+[
+  {
+    "case_id": "signed-nine-leg",
+    "kind": "common_union_singletons",
+    "order": [
+      "common_union_singletons",
+      "batch",
+      "own_grid_singletons_iid"
+    ],
+    "repeat": 0,
+    "seconds": 0.4238799000158906
+  },
+  {
+    "case_id": "signed-nine-leg",
+    "kind": "batch",
+    "order": [
+      "common_union_singletons",
+      "batch",
+      "own_grid_singletons_iid"
+    ],
+    "repeat": 0,
+    "seconds": 0.23778070003027096
+  },
+  {
+    "case_id": "signed-nine-leg",
+    "kind": "own_grid_singletons_iid",
+    "order": [
+      "common_union_singletons",
+      "batch",
+      "own_grid_singletons_iid"
+    ],
+    "repeat": 0,
+    "seconds": 0.31384789996081963
+  },
+  {
+    "case_id": "signed-nine-leg",
+    "kind": "common_union_singletons",
+    "order": [
+      "common_union_singletons",
+      "own_grid_singletons_iid",
+      "batch"
+    ],
+    "repeat": 1,
+    "seconds": 0.399678900022991
+  },
+  {
+    "case_id": "signed-nine-leg",
+    "kind": "own_grid_singletons_iid",
+    "order": [
+      "common_union_singletons",
+      "own_grid_singletons_iid",
+      "batch"
+    ],
+    "repeat": 1,
+    "seconds": 0.300054999999702
+  },
+  {
+    "case_id": "signed-nine-leg",
+    "kind": "batch",
+    "order": [
+      "common_union_singletons",
+      "own_grid_singletons_iid",
+      "batch"
+    ],
+    "repeat": 1,
+    "seconds": 0.22907910001231357
+  },
+  {
+    "case_id": "signed-nine-leg",
+    "kind": "batch",
+    "order": [
+      "batch",
+      "own_grid_singletons_iid",
+      "common_union_singletons"
+    ],
+    "repeat": 2,
+    "seconds": 0.22550040000351146
+  },
+  {
+    "case_id": "signed-nine-leg",
+    "kind": "own_grid_singletons_iid",
+    "order": [
+      "batch",
+      "own_grid_singletons_iid",
+      "common_union_singletons"
+    ],
+    "repeat": 2,
+    "seconds": 0.28720820002490655
+  },
+  {
+    "case_id": "signed-nine-leg",
+    "kind": "common_union_singletons",
+    "order": [
+      "batch",
+      "own_grid_singletons_iid",
+      "common_union_singletons"
+    ],
+    "repeat": 2,
+    "seconds": 0.3752913000062108
+  },
+  {
+    "case_id": "irregular-book",
+    "kind": "batch",
+    "order": [
+      "batch",
+      "common_union_singletons",
+      "own_grid_singletons_iid"
+    ],
+    "repeat": 0,
+    "seconds": 0.03095540002686903
+  },
+  {
+    "case_id": "irregular-book",
+    "kind": "common_union_singletons",
+    "order": [
+      "batch",
+      "common_union_singletons",
+      "own_grid_singletons_iid"
+    ],
+    "repeat": 0,
+    "seconds": 0.030683599994517863
+  },
+  {
+    "case_id": "irregular-book",
+    "kind": "own_grid_singletons_iid",
+    "order": [
+      "batch",
+      "common_union_singletons",
+      "own_grid_singletons_iid"
+    ],
+    "repeat": 0,
+    "seconds": 0.028750800003763288
+  },
+  {
+    "case_id": "irregular-book",
+    "kind": "own_grid_singletons_iid",
+    "order": [
+      "own_grid_singletons_iid",
+      "common_union_singletons",
+      "batch"
+    ],
+    "repeat": 1,
+    "seconds": 0.02948980004293844
+  },
+  {
+    "case_id": "irregular-book",
+    "kind": "common_union_singletons",
+    "order": [
+      "own_grid_singletons_iid",
+      "common_union_singletons",
+      "batch"
+    ],
+    "repeat": 1,
+    "seconds": 0.03067969996482134
+  },
+  {
+    "case_id": "irregular-book",
+    "kind": "batch",
+    "order": [
+      "own_grid_singletons_iid",
+      "common_union_singletons",
+      "batch"
+    ],
+    "repeat": 1,
+    "seconds": 0.030370699998456985
+  },
+  {
+    "case_id": "irregular-book",
+    "kind": "own_grid_singletons_iid",
+    "order": [
+      "own_grid_singletons_iid",
+      "batch",
+      "common_union_singletons"
+    ],
+    "repeat": 2,
+    "seconds": 0.02951379999285564
+  },
+  {
+    "case_id": "irregular-book",
+    "kind": "batch",
+    "order": [
+      "own_grid_singletons_iid",
+      "batch",
+      "common_union_singletons"
+    ],
+    "repeat": 2,
+    "seconds": 0.03158329997677356
+  },
+  {
+    "case_id": "irregular-book",
+    "kind": "common_union_singletons",
+    "order": [
+      "own_grid_singletons_iid",
+      "batch",
+      "common_union_singletons"
+    ],
+    "repeat": 2,
+    "seconds": 0.03314489999320358
+  }
+]

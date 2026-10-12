@@ -1,0 +1,293 @@
+{
+  "C_wall_seconds": 1.6969805999542587,
+  "chosen_block_size": 4096,
+  "forecast": {
+    "A_production_seconds": 25.464659847988514,
+    "A_reference_seconds": 113.42824320495129,
+    "B_validation_seconds": 5.898784003220499,
+    "C_seconds": 488.7304127868265,
+    "total_seconds": 633.5220998429868
+  },
+  "memory": [
+    {
+      "block_size": 512,
+      "case_id": "monthly-K100",
+      "memory_kind": "tracemalloc separate untimed run; not process RSS",
+      "peak_memory_bytes": 126832,
+      "seconds": 0.09057800000300631,
+      "seed": 169615004538252639251140923200408289591,
+      "suite": "A"
+    },
+    {
+      "block_size": 4096,
+      "case_id": "monthly-K100",
+      "memory_kind": "tracemalloc separate untimed run; not process RSS",
+      "peak_memory_bytes": 987072,
+      "seconds": 0.02387440000893548,
+      "seed": 337027036101057781790114691570113308632,
+      "suite": "A"
+    },
+    {
+      "block_size": 512,
+      "case_id": "stress-52",
+      "memory_kind": "tracemalloc separate untimed run; not process RSS",
+      "peak_memory_bytes": 448880,
+      "seconds": 0.3381597000407055,
+      "seed": 287915016328530535270024956420795139183,
+      "suite": "A"
+    },
+    {
+      "block_size": 4096,
+      "case_id": "stress-52",
+      "memory_kind": "tracemalloc separate untimed run; not process RSS",
+      "peak_memory_bytes": 3574088,
+      "seconds": 0.1030136999906972,
+      "seed": 200513594384141744497938190890029605736,
+      "suite": "A"
+    },
+    {
+      "block_size": 512,
+      "memory_kind": "tracemalloc separate untimed run; not process RSS",
+      "peak_memory_bytes": 658848,
+      "seconds": 0.1066450999933295,
+      "seed": 321013114725244414176401530206271848202,
+      "suite": "B"
+    },
+    {
+      "block_size": 4096,
+      "memory_kind": "tracemalloc separate untimed run; not process RSS",
+      "peak_memory_bytes": 5246504,
+      "seconds": 0.03483100002631545,
+      "seed": 21283802852998233116031121292416384894,
+      "suite": "B"
+    }
+  ],
+  "raw": [
+    {
+      "block_size": 512,
+      "case_id": "monthly-K100",
+      "kind": "tuning",
+      "n": 8192,
+      "seconds": 0.022944899974390864,
+      "suite": "A"
+    },
+    {
+      "block_size": 512,
+      "case_id": "monthly-K100",
+      "kind": "iid",
+      "n": 65536,
+      "seconds": 0.034462799958419055,
+      "suite": "A"
+    },
+    {
+      "block_size": 512,
+      "case_id": "monthly-K100",
+      "kind": "antithetic",
+      "n": 65536,
+      "seconds": 0.0316840999876149,
+      "suite": "A"
+    },
+    {
+      "block_size": 512,
+      "case_id": "monthly-K100",
+      "kind": "geometric_cv",
+      "n": 65536,
+      "seconds": 0.036661699996329844,
+      "suite": "A"
+    },
+    {
+      "block_size": 4096,
+      "case_id": "monthly-K100",
+      "kind": "tuning",
+      "n": 8192,
+      "seconds": 0.002789999998640269,
+      "suite": "A"
+    },
+    {
+      "block_size": 4096,
+      "case_id": "monthly-K100",
+      "kind": "iid",
+      "n": 65536,
+      "seconds": 0.017476400011219084,
+      "suite": "A"
+    },
+    {
+      "block_size": 4096,
+      "case_id": "monthly-K100",
+      "kind": "antithetic",
+      "n": 65536,
+      "seconds": 0.016873000015038997,
+      "suite": "A"
+    },
+    {
+      "block_size": 4096,
+      "case_id": "monthly-K100",
+      "kind": "geometric_cv",
+      "n": 65536,
+      "seconds": 0.017132599954493344,
+      "suite": "A"
+    },
+    {
+      "block_size": 0,
+      "case_id": "monthly-K100",
+      "kind": "reference",
+      "n": 16384,
+      "seconds": 0.14968090003822,
+      "suite": "A"
+    },
+    {
+      "block_size": 0,
+      "case_id": "monthly-K100",
+      "kind": "reference",
+      "n": 16384,
+      "seconds": 0.09712639998178929,
+      "suite": "A"
+    },
+    {
+      "block_size": 512,
+      "case_id": "stress-52",
+      "kind": "tuning",
+      "n": 8192,
+      "seconds": 0.014870100014377385,
+      "suite": "A"
+    },
+    {
+      "block_size": 512,
+      "case_id": "stress-52",
+      "kind": "iid",
+      "n": 65536,
+      "seconds": 0.11546329996781424,
+      "suite": "A"
+    },
+    {
+      "block_size": 512,
+      "case_id": "stress-52",
+      "kind": "antithetic",
+      "n": 65536,
+      "seconds": 0.10496309999143705,
+      "suite": "A"
+    },
+    {
+      "block_size": 512,
+      "case_id": "stress-52",
+      "kind": "geometric_cv",
+      "n": 65536,
+      "seconds": 0.12046360003296286,
+      "suite": "A"
+    },
+    {
+      "block_size": 4096,
+      "case_id": "stress-52",
+      "kind": "tuning",
+      "n": 8192,
+      "seconds": 0.010432700044475496,
+      "suite": "A"
+    },
+    {
+      "block_size": 4096,
+      "case_id": "stress-52",
+      "kind": "iid",
+      "n": 65536,
+      "seconds": 0.0777034999919124,
+      "suite": "A"
+    },
+    {
+      "block_size": 4096,
+      "case_id": "stress-52",
+      "kind": "antithetic",
+      "n": 65536,
+      "seconds": 0.06296820001443848,
+      "suite": "A"
+    },
+    {
+      "block_size": 4096,
+      "case_id": "stress-52",
+      "kind": "geometric_cv",
+      "n": 65536,
+      "seconds": 0.07731359999161214,
+      "suite": "A"
+    },
+    {
+      "block_size": 0,
+      "case_id": "stress-52",
+      "kind": "reference",
+      "n": 16384,
+      "seconds": 0.4672118000453338,
+      "suite": "A"
+    },
+    {
+      "block_size": 0,
+      "case_id": "stress-52",
+      "kind": "reference",
+      "n": 16384,
+      "seconds": 0.4675250999862328,
+      "suite": "A"
+    },
+    {
+      "block_size": 512,
+      "case_id": "signed-nine-leg",
+      "kind": "tuning",
+      "n": 4096,
+      "seconds": 0.00843039999017492,
+      "suite": "B"
+    },
+    {
+      "block_size": 512,
+      "case_id": "signed-nine-leg",
+      "kind": "iid",
+      "n": 16384,
+      "seconds": 0.030778300017118454,
+      "suite": "B"
+    },
+    {
+      "block_size": 512,
+      "case_id": "signed-nine-leg",
+      "kind": "antithetic",
+      "n": 16384,
+      "seconds": 0.026287399989087135,
+      "suite": "B"
+    },
+    {
+      "block_size": 512,
+      "case_id": "signed-nine-leg",
+      "kind": "geometric_cv",
+      "n": 16384,
+      "seconds": 0.033044899988453835,
+      "suite": "B"
+    },
+    {
+      "block_size": 4096,
+      "case_id": "signed-nine-leg",
+      "kind": "tuning",
+      "n": 4096,
+      "seconds": 0.007692699960898608,
+      "suite": "B"
+    },
+    {
+      "block_size": 4096,
+      "case_id": "signed-nine-leg",
+      "kind": "iid",
+      "n": 16384,
+      "seconds": 0.02528510004049167,
+      "suite": "B"
+    },
+    {
+      "block_size": 4096,
+      "case_id": "signed-nine-leg",
+      "kind": "antithetic",
+      "n": 16384,
+      "seconds": 0.020296100003179163,
+      "suite": "B"
+    },
+    {
+      "block_size": 4096,
+      "case_id": "signed-nine-leg",
+      "kind": "geometric_cv",
+      "n": 16384,
+      "seconds": 0.0281535999965854,
+      "suite": "B"
+    }
+  ],
+  "schema_version": "workbench-pilot-v1",
+  "wall_seconds": 4.764636499981862
+}

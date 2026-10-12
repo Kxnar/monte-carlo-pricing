@@ -1,0 +1,20 @@
+{
+  "completed": [
+    {
+      "case_id": "monthly-K80",
+      "suite": "A"
+    },
+    {
+      "case_id": "monthly-K100",
+      "suite": "A"
+    },
+    {
+      "case_id": "monthly-K120",
+      "suite": "A"
+    }
+  ],
+  "status": "interrupted_source_repair",
+  "wall_seconds": 26.763231299992185,
+  "reason": "Optional QuantLib integration test lacked base-install skip; required test-only source correction invalidates frozen source hash. No grid/gate/computational change.",
+  "superseded_by": "workbench-final-v3"
+}

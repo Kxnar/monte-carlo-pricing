@@ -1,0 +1,62 @@
+{
+  "completed": [
+    {
+      "case_id": "monthly-K80",
+      "suite": "A"
+    },
+    {
+      "case_id": "monthly-K100",
+      "suite": "A"
+    },
+    {
+      "case_id": "monthly-K120",
+      "suite": "A"
+    },
+    {
+      "case_id": "stress-52",
+      "suite": "A"
+    },
+    {
+      "case_id": "irregular",
+      "suite": "A"
+    },
+    {
+      "case_id": "one-fixing",
+      "suite": "A"
+    },
+    {
+      "case_id": "signed-nine-leg",
+      "suite": "B"
+    },
+    {
+      "case_id": "irregular-book",
+      "suite": "B"
+    },
+    {
+      "case_id": "heldout-mixture-repeated",
+      "suite": "C"
+    },
+    {
+      "case_id": "heldout-mixture-nearby",
+      "suite": "C"
+    },
+    {
+      "case_id": "heldout-mixture-jump",
+      "suite": "C"
+    },
+    {
+      "case_id": "heldout-stress-repeated",
+      "suite": "C"
+    },
+    {
+      "case_id": "heldout-stress-nearby",
+      "suite": "C"
+    },
+    {
+      "case_id": "heldout-stress-jump",
+      "suite": "C"
+    }
+  ],
+  "status": "complete",
+  "wall_seconds": 443.4552496999968
+}

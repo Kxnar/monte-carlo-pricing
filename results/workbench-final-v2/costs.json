@@ -1,0 +1,11 @@
+{
+  "decision_seconds": 0.0,
+  "memory_seconds": 0.0,
+  "production_seconds": 5.006886700284667,
+  "reference_seconds": 20.869859800091945,
+  "report_seconds": 0.0,
+  "setup_seconds": 0.0,
+  "summary_seconds": 0.5963784000487067,
+  "tuning_seconds": 0.04012510000029579,
+  "validation_seconds": 0.0
+}

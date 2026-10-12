@@ -1,2 +1,5 @@
 * text=auto eol=lf
 *.svg text
+
+# Frozen benchmark manifests hash artifact bytes, including line endings.
+results/workbench-*/** -text -eol whitespace=cr-at-eol

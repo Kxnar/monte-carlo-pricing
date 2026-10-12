@@ -1,0 +1,31 @@
+{
+  "reference_environment_tests": {
+    "run": 60,
+    "passed": 60,
+    "skipped": 0
+  },
+  "numpy_only_environment_tests": {
+    "run": 60,
+    "passed": 54,
+    "skipped": 6,
+    "QuantLib_present": false,
+    "numpy": "2.5.4"
+  },
+  "wheel": {
+    "file": "results\\workbench-final-v3\\verification\\wheels\\monte_carlo_pricing_lab-0.3.0-py3-none-any.whl",
+    "sha256": "ab2c7aa396955cdbbbebd9c0d5b358350c6ee058be825b2cd963d0aa351e4aab",
+    "distribution_version": "0.3.0",
+    "build": "pip wheel . --no-deps (isolated build)",
+    "initial_nonisolated_attempt": "Failed because setuptools.build_meta was absent; isolated build passed"
+  },
+  "installed_out_of_repository_smoke": {
+    "asian-price --paths 2000 --pilot-paths 1000": "passed",
+    "portfolio-demo --paths 2000 --pilot-paths 1000": "passed",
+    "venv": "C:\\Users\\knara\\AppData\\Local\\Temp\\mcpricing-base-verification-20261012-v3"
+  },
+  "source_and_configuration_hash_after_campaign": "matched",
+  "configuration_sha256": "031a0d3087abd4a9f042e14b01449ae4f755bae03c64c1068a4820e56a88fd8d",
+  "legacy_version_marker": "0.2.0",
+  "distribution_version": "0.3.0",
+  "version_note": "The legacy mcpricing.__version__ marker is unchanged; importlib.metadata distribution version is authoritative. No pricing effect; sealed source preserved."
+}

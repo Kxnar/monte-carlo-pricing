@@ -1,0 +1,731 @@
+[
+  {
+    "case_id": "monthly-K80",
+    "combined_standard_error": 0.0020279586054525026,
+    "combined_uncertainty_coverage": {
+      "fraction": 0.9583333333333334,
+      "lower": 0.7975777375115778,
+      "n": 24,
+      "upper": 0.992606734645195
+    },
+    "difference": 0.004621265827221832,
+    "estimator_coverage": {
+      "fraction": 0.9583333333333334,
+      "lower": 0.7975777375115778,
+      "n": 24,
+      "upper": 0.992606734645195
+    },
+    "mean": 0.09806134948895917,
+    "mean_production_seconds": 0.001117362500129578,
+    "method": "iid",
+    "n_requested": 4096,
+    "observed_deviation_rmse": 0.010753931226937383,
+    "passed": true,
+    "pooled_standard_error": 0.0020264575414875286,
+    "reference": 0.09344008366173734,
+    "reference_corrected_mse": 0.00011564095089572179,
+    "reference_standard_error": 7.801242194151426e-05
+  },
+  {
+    "case_id": "monthly-K80",
+    "combined_standard_error": 0.0014537512090508652,
+    "combined_uncertainty_coverage": {
+      "fraction": 0.9583333333333334,
+      "lower": 0.7975777375115778,
+      "n": 24,
+      "upper": 0.992606734645195
+    },
+    "difference": 0.0004085827210265486,
+    "estimator_coverage": {
+      "fraction": 0.9583333333333334,
+      "lower": 0.7975777375115778,
+      "n": 24,
+      "upper": 0.992606734645195
+    },
+    "mean": 0.09384866638276389,
+    "mean_production_seconds": 0.005007458334148396,
+    "method": "iid",
+    "n_requested": 16384,
+    "observed_deviation_rmse": 0.005310568246359637,
+    "passed": true,
+    "pooled_standard_error": 0.0014516565157914154,
+    "reference": 0.09344008366173734,
+    "reference_corrected_mse": 2.8196049161266084e-05,
+    "reference_standard_error": 7.801242194151426e-05
+  },
+  {
+    "case_id": "monthly-K80",
+    "combined_standard_error": 0.0005665710765300914,
+    "combined_uncertainty_coverage": {
+      "fraction": 1.0,
+      "lower": 0.8620194241710247,
+      "n": 24,
+      "upper": 1.0
+    },
+    "difference": 0.00033438868712359904,
+    "estimator_coverage": {
+      "fraction": 1.0,
+      "lower": 0.8620194241710247,
+      "n": 24,
+      "upper": 1.0
+    },
+    "mean": 0.09377447234886094,
+    "mean_production_seconds": 0.019184525005888037,
+    "method": "iid",
+    "n_requested": 65536,
+    "observed_deviation_rmse": 0.0026907734717934307,
+    "passed": true,
+    "pooled_standard_error": 0.0005611745243534188,
+    "reference": 0.09344008366173734,
+    "reference_corrected_mse": 7.2341759385300926e-06,
+    "reference_standard_error": 7.801242194151426e-05
+  },
+  {
+    "case_id": "monthly-K80",
+    "combined_standard_error": 0.001944590642668795,
+    "combined_uncertainty_coverage": {
+      "fraction": 0.9583333333333334,
+      "lower": 0.7975777375115778,
+      "n": 24,
+      "upper": 0.992606734645195
+    },
+    "difference": 0.0007557926242682256,
+    "estimator_coverage": {
+      "fraction": 0.9583333333333334,
+      "lower": 0.7975777375115778,
+      "n": 24,
+      "upper": 0.992606734645195
+    },
+    "mean": 0.09419587628600556,
+    "mean_production_seconds": 0.0011008000074070878,
+    "method": "antithetic",
+    "n_requested": 4096,
+    "observed_deviation_rmse": 0.00913957666595892,
+    "passed": true,
+    "pooled_standard_error": 0.0019430251747154118,
+    "reference": 0.09344008366173734,
+    "reference_corrected_mse": 8.352577569496358e-05,
+    "reference_standard_error": 7.801242194151426e-05
+  },
+  {
+    "case_id": "monthly-K80",
+    "combined_standard_error": 0.0020319855086992056,
+    "combined_uncertainty_coverage": {
+      "fraction": 0.9583333333333334,
+      "lower": 0.7975777375115778,
+      "n": 24,
+      "upper": 0.992606734645195
+    },
+    "difference": -0.00024544834414653993,
+    "estimator_coverage": {
+      "fraction": 0.9583333333333334,
+      "lower": 0.7975777375115778,
+      "n": 24,
+      "upper": 0.992606734645195
+    },
+    "mean": 0.0931946353175908,
+    "mean_production_seconds": 0.00406177500068831,
+    "method": "antithetic",
+    "n_requested": 16384,
+    "observed_deviation_rmse": 0.0055139839633432195,
+    "passed": true,
+    "pooled_standard_error": 0.0020304874216764772,
+    "reference": 0.09344008366173734,
+    "reference_corrected_mse": 3.0397933210029015e-05,
+    "reference_standard_error": 7.801242194151426e-05
+  },
+  {
+    "case_id": "monthly-K80",
+    "combined_standard_error": 0.000884629187465874,
+    "combined_uncertainty_coverage": {
+      "fraction": 0.9166666666666666,
+      "lower": 0.741507847985494,
+      "n": 24,
+      "upper": 0.9768416721570266
+    },
+    "difference": -0.0008157480199073447,
+    "estimator_coverage": {
+      "fraction": 0.9166666666666666,
+      "lower": 0.741507847985494,
+      "n": 24,
+      "upper": 0.9768416721570266
+    },
+    "mean": 0.09262433564183,
+    "mean_production_seconds": 0.01490237083392761,
+    "method": "antithetic",
+    "n_requested": 65536,
+    "observed_deviation_rmse": 0.0026626669877746626,
+    "passed": true,
+    "pooled_standard_error": 0.0008811826492500584,
+    "reference": 0.09344008366173734,
+    "reference_corrected_mse": 7.083709549807814e-06,
+    "reference_standard_error": 7.801242194151426e-05
+  },
+  {
+    "case_id": "monthly-K80",
+    "combined_standard_error": 0.0001912376289558668,
+    "combined_uncertainty_coverage": {
+      "fraction": 1.0,
+      "lower": 0.8620194241710247,
+      "n": 24,
+      "upper": 1.0
+    },
+    "difference": -0.00024382265601331776,
+    "estimator_coverage": {
+      "fraction": 1.0,
+      "lower": 0.8620194241710247,
+      "n": 24,
+      "upper": 1.0
+    },
+    "mean": 0.09319626100572402,
+    "mean_production_seconds": 0.0011494333327088195,
+    "method": "geometric_cv",
+    "n_requested": 4096,
+    "observed_deviation_rmse": 0.000850180693705213,
+    "passed": true,
+    "pooled_standard_error": 0.00017460209835932935,
+    "reference": 0.09344008366173734,
+    "reference_corrected_mse": 7.167212739718964e-07,
+    "reference_standard_error": 7.801242194151426e-05
+  },
+  {
+    "case_id": "monthly-K80",
+    "combined_standard_error": 0.00013220443023235993,
+    "combined_uncertainty_coverage": {
+      "fraction": 0.9583333333333334,
+      "lower": 0.7975777375115778,
+      "n": 24,
+      "upper": 0.992606734645195
+    },
+    "difference": 3.83777072442415e-05,
+    "estimator_coverage": {
+      "fraction": 0.9583333333333334,
+      "lower": 0.7975777375115778,
+      "n": 24,
+      "upper": 0.992606734645195
+    },
+    "mean": 0.09347846136898158,
+    "mean_production_seconds": 0.00494657083133158,
+    "method": "geometric_cv",
+    "n_requested": 16384,
+    "observed_deviation_rmse": 0.0004959508422972829,
+    "passed": true,
+    "pooled_standard_error": 0.00010673365634082844,
+    "reference": 0.09344008366173734,
+    "reference_corrected_mse": 2.398812999982036e-07,
+    "reference_standard_error": 7.801242194151426e-05
+  },
+  {
+    "case_id": "monthly-K80",
+    "combined_standard_error": 9.246977316523626e-05,
+    "combined_uncertainty_coverage": {
+      "fraction": 1.0,
+      "lower": 0.8620194241710247,
+      "n": 24,
+      "upper": 1.0
+    },
+    "difference": -7.458985678415742e-05,
+    "estimator_coverage": {
+      "fraction": 1.0,
+      "lower": 0.8620194241710247,
+      "n": 24,
+      "upper": 1.0
+    },
+    "mean": 0.09336549380495318,
+    "mean_production_seconds": 0.018949300004654408,
+    "method": "geometric_cv",
+    "n_requested": 65536,
+    "observed_deviation_rmse": 0.0002401402925095032,
+    "passed": true,
+    "pooled_standard_error": 4.964595625072994e-05,
+    "reference": 0.09344008366173734,
+    "reference_corrected_mse": 5.15814221093689e-08,
+    "reference_standard_error": 7.801242194151426e-05
+  },
+  {
+    "case_id": "monthly-K100",
+    "combined_standard_error": 0.02122910636990815,
+    "combined_uncertainty_coverage": {
+      "fraction": 0.9583333333333334,
+      "lower": 0.7975777375115778,
+      "n": 24,
+      "upper": 0.992606734645195
+    },
+    "difference": 0.00561434865129673,
+    "estimator_coverage": {
+      "fraction": 0.9583333333333334,
+      "lower": 0.7975777375115778,
+      "n": 24,
+      "upper": 0.992606734645195
+    },
+    "mean": 4.042475192243728,
+    "mean_production_seconds": 0.0013946499942297426,
+    "method": "iid",
+    "n_requested": 4096,
+    "observed_deviation_rmse": 0.09790092914670989,
+    "passed": true,
+    "pooled_standard_error": 0.021228800176098045,
+    "reference": 4.036860843592431,
+    "reference_corrected_mse": 0.009584578927440936,
+    "reference_standard_error": 0.00011401906934577937
+  },
+  {
+    "case_id": "monthly-K100",
+    "combined_standard_error": 0.00942665857800756,
+    "combined_uncertainty_coverage": {
+      "fraction": 1.0,
+      "lower": 0.8620194241710247,
+      "n": 24,
+      "upper": 1.0
+    },
+    "difference": 0.007494688857444309,
+    "estimator_coverage": {
+      "fraction": 1.0,
+      "lower": 0.8620194241710247,
+      "n": 24,
+      "upper": 1.0
+    },
+    "mean": 4.044355532449876,
+    "mean_production_seconds": 0.005343825005790374,
+    "method": "iid",
+    "n_requested": 16384,
+    "observed_deviation_rmse": 0.045332219480535826,
+    "passed": true,
+    "pooled_standard_error": 0.009425969000487379,
+    "reference": 4.036860843592431,
+    "reference_corrected_mse": 0.002054997122683298,
+    "reference_standard_error": 0.00011401906934577937
+  },
+  {
+    "case_id": "monthly-K100",
+    "combined_standard_error": 0.010089010373977367,
+    "combined_uncertainty_coverage": {
+      "fraction": 0.875,
+      "lower": 0.6899571185214243,
+      "n": 24,
+      "upper": 0.9565574496068442
+    },
+    "difference": -0.009920104271794905,
+    "estimator_coverage": {
+      "fraction": 0.875,
+      "lower": 0.6899571185214243,
+      "n": 24,
+      "upper": 0.9565574496068442
+    },
+    "mean": 4.0269407393206365,
+    "mean_production_seconds": 0.019278416662321735,
+    "method": "iid",
+    "n_requested": 65536,
+    "observed_deviation_rmse": 0.02685838083294205,
+    "passed": true,
+    "pooled_standard_error": 0.010088366070779176,
+    "reference": 4.036860843592431,
+    "reference_corrected_mse": 0.0007213596206191743,
+    "reference_standard_error": 0.00011401906934577937
+  },
+  {
+    "case_id": "monthly-K100",
+    "combined_standard_error": 0.0121441161706461,
+    "combined_uncertainty_coverage": {
+      "fraction": 0.9166666666666666,
+      "lower": 0.741507847985494,
+      "n": 24,
+      "upper": 0.9768416721570266
+    },
+    "difference": 0.040004267535178606,
+    "estimator_coverage": {
+      "fraction": 0.9166666666666666,
+      "lower": 0.741507847985494,
+      "n": 24,
+      "upper": 0.9768416721570266
+    },
+    "mean": 4.07686511112761,
+    "mean_production_seconds": 0.0013533166687314708,
+    "method": "antithetic",
+    "n_requested": 4096,
+    "observed_deviation_rmse": 0.0699943732383306,
+    "passed": true,
+    "pooled_standard_error": 0.012143580905893188,
+    "reference": 4.036860843592431,
+    "reference_corrected_mse": 0.004899199284678556,
+    "reference_standard_error": 0.00011401906934577937
+  },
+  {
+    "case_id": "monthly-K100",
+    "combined_standard_error": 0.006864324524844551,
+    "combined_uncertainty_coverage": {
+      "fraction": 0.9583333333333334,
+      "lower": 0.7975777375115778,
+      "n": 24,
+      "upper": 0.992606734645195
+    },
+    "difference": -0.00687235086581417,
+    "estimator_coverage": {
+      "fraction": 0.9583333333333334,
+      "lower": 0.7975777375115778,
+      "n": 24,
+      "upper": 0.992606734645195
+    },
+    "mean": 4.029988492726617,
+    "mean_production_seconds": 0.004163612500027132,
+    "method": "antithetic",
+    "n_requested": 16384,
+    "observed_deviation_rmse": 0.032221854903916804,
+    "passed": true,
+    "pooled_standard_error": 0.006863377509230269,
+    "reference": 4.036860843592431,
+    "reference_corrected_mse": 0.0010382349331008929,
+    "reference_standard_error": 0.00011401906934577937
+  },
+  {
+    "case_id": "monthly-K100",
+    "combined_standard_error": 0.0030021287821830286,
+    "combined_uncertainty_coverage": {
+      "fraction": 1.0,
+      "lower": 0.8620194241710247,
+      "n": 24,
+      "upper": 1.0
+    },
+    "difference": -0.0008236529359990641,
+    "estimator_coverage": {
+      "fraction": 1.0,
+      "lower": 0.8620194241710247,
+      "n": 24,
+      "upper": 1.0
+    },
+    "mean": 4.036037190656432,
+    "mean_production_seconds": 0.01480537083504411,
+    "method": "antithetic",
+    "n_requested": 65536,
+    "observed_deviation_rmse": 0.014105094358370941,
+    "passed": true,
+    "pooled_standard_error": 0.002999962812542395,
+    "reference": 4.036860843592431,
+    "reference_corrected_mse": 0.00019894068651037328,
+    "reference_standard_error": 0.00011401906934577937
+  },
+  {
+    "case_id": "monthly-K100",
+    "combined_standard_error": 0.0008913352342176806,
+    "combined_uncertainty_coverage": {
+      "fraction": 1.0,
+      "lower": 0.8620194241710247,
+      "n": 24,
+      "upper": 1.0
+    },
+    "difference": -0.00031397613984296413,
+    "estimator_coverage": {
+      "fraction": 1.0,
+      "lower": 0.8620194241710247,
+      "n": 24,
+      "upper": 1.0
+    },
+    "mean": 4.036546867452588,
+    "mean_production_seconds": 0.0014001374972091678,
+    "method": "geometric_cv",
+    "n_requested": 4096,
+    "observed_deviation_rmse": 0.002105004177110207,
+    "passed": true,
+    "pooled_standard_error": 0.0008840125290873483,
+    "reference": 4.036860843592431,
+    "reference_corrected_mse": 4.418042237476942e-06,
+    "reference_standard_error": 0.00011401906934577937
+  },
+  {
+    "case_id": "monthly-K100",
+    "combined_standard_error": 0.00031289907428497,
+    "combined_uncertainty_coverage": {
+      "fraction": 0.875,
+      "lower": 0.6899571185214243,
+      "n": 24,
+      "upper": 0.9565574496068442
+    },
+    "difference": -0.00034167415991426253,
+    "estimator_coverage": {
+      "fraction": 0.875,
+      "lower": 0.6899571185214243,
+      "n": 24,
+      "upper": 0.9565574496068442
+    },
+    "mean": 4.036519169432517,
+    "mean_production_seconds": 0.0053270041607902385,
+    "method": "geometric_cv",
+    "n_requested": 16384,
+    "observed_deviation_rmse": 0.001402738502699682,
+    "passed": true,
+    "pooled_standard_error": 0.0002913854535043119,
+    "reference": 4.036860843592431,
+    "reference_corrected_mse": 1.954674958781668e-06,
+    "reference_standard_error": 0.00011401906934577937
+  },
+  {
+    "case_id": "monthly-K100",
+    "combined_standard_error": 0.0001855181529291829,
+    "combined_uncertainty_coverage": {
+      "fraction": 0.9166666666666666,
+      "lower": 0.741507847985494,
+      "n": 24,
+      "upper": 0.9768416721570266
+    },
+    "difference": -9.716716292196281e-05,
+    "estimator_coverage": {
+      "fraction": 0.9166666666666666,
+      "lower": 0.741507847985494,
+      "n": 24,
+      "upper": 0.9768416721570266
+    },
+    "mean": 4.036763676429509,
+    "mean_production_seconds": 0.018546179167363636,
+    "method": "geometric_cv",
+    "n_requested": 65536,
+    "observed_deviation_rmse": 0.0006138786391852607,
+    "passed": true,
+    "pooled_standard_error": 0.00014634424106119807,
+    "reference": 4.036860843592431,
+    "reference_corrected_mse": 3.638466354734699e-07,
+    "reference_standard_error": 0.00011401906934577937
+  },
+  {
+    "case_id": "monthly-K120",
+    "combined_standard_error": 0.05235446416782892,
+    "combined_uncertainty_coverage": {
+      "fraction": 0.9583333333333334,
+      "lower": 0.7975777375115778,
+      "n": 24,
+      "upper": 0.992606734645195
+    },
+    "difference": 0.03545562992660223,
+    "estimator_coverage": {
+      "fraction": 0.9583333333333334,
+      "lower": 0.7975777375115778,
+      "n": 24,
+      "upper": 0.992606734645195
+    },
+    "mean": 18.416855224660637,
+    "mean_production_seconds": 0.0011131166611448862,
+    "method": "iid",
+    "n_requested": 4096,
+    "observed_deviation_rmse": 0.18094017329567424,
+    "passed": true,
+    "pooled_standard_error": 0.05235406549008034,
+    "reference": 18.381399594734035,
+    "reference_corrected_mse": 0.03273930456730776,
+    "reference_standard_error": 0.0002043158360498352
+  },
+  {
+    "case_id": "monthly-K120",
+    "combined_standard_error": 0.021205898546112573,
+    "combined_uncertainty_coverage": {
+      "fraction": 0.875,
+      "lower": 0.6899571185214243,
+      "n": 24,
+      "upper": 0.9565574496068442
+    },
+    "difference": -0.011418200202214734,
+    "estimator_coverage": {
+      "fraction": 0.875,
+      "lower": 0.6899571185214243,
+      "n": 24,
+      "upper": 0.9565574496068442
+    },
+    "mean": 18.36998139453182,
+    "mean_production_seconds": 0.00441639998947115,
+    "method": "iid",
+    "n_requested": 16384,
+    "observed_deviation_rmse": 0.10172304759566332,
+    "passed": true,
+    "pooled_standard_error": 0.021204914246163754,
+    "reference": 18.381399594734035,
+    "reference_corrected_mse": 0.010347536667188725,
+    "reference_standard_error": 0.0002043158360498352
+  },
+  {
+    "case_id": "monthly-K120",
+    "combined_standard_error": 0.010952815395202074,
+    "combined_uncertainty_coverage": {
+      "fraction": 0.9166666666666666,
+      "lower": 0.741507847985494,
+      "n": 24,
+      "upper": 0.9768416721570266
+    },
+    "difference": 0.0023984173426505606,
+    "estimator_coverage": {
+      "fraction": 0.9166666666666666,
+      "lower": 0.741507847985494,
+      "n": 24,
+      "upper": 0.9768416721570266
+    },
+    "mean": 18.383798012076685,
+    "mean_production_seconds": 0.017659462510588735,
+    "method": "iid",
+    "n_requested": 65536,
+    "observed_deviation_rmse": 0.04661796210394276,
+    "passed": true,
+    "pooled_standard_error": 0.010950909556768095,
+    "reference": 18.381399594734035,
+    "reference_corrected_mse": 0.0021731926457637827,
+    "reference_standard_error": 0.0002043158360498352
+  },
+  {
+    "case_id": "monthly-K120",
+    "combined_standard_error": 0.003501782994053627,
+    "combined_uncertainty_coverage": {
+      "fraction": 1.0,
+      "lower": 0.8620194241710247,
+      "n": 24,
+      "upper": 1.0
+    },
+    "difference": -0.0036850369514525028,
+    "estimator_coverage": {
+      "fraction": 1.0,
+      "lower": 0.8620194241710247,
+      "n": 24,
+      "upper": 1.0
+    },
+    "mean": 18.377714557782582,
+    "mean_production_seconds": 0.0010821541654877365,
+    "method": "antithetic",
+    "n_requested": 4096,
+    "observed_deviation_rmse": 0.01637270651197547,
+    "passed": true,
+    "pooled_standard_error": 0.003495817383185575,
+    "reference": 18.381399594734035,
+    "reference_corrected_mse": 0.00026802377356642326,
+    "reference_standard_error": 0.0002043158360498352
+  },
+  {
+    "case_id": "monthly-K120",
+    "combined_standard_error": 0.002935785686525929,
+    "combined_uncertainty_coverage": {
+      "fraction": 0.8333333333333334,
+      "lower": 0.6414652961213058,
+      "n": 24,
+      "upper": 0.9332143199927109
+    },
+    "difference": 0.0007632613770418573,
+    "estimator_coverage": {
+      "fraction": 0.8333333333333334,
+      "lower": 0.6414652961213058,
+      "n": 24,
+      "upper": 0.9332143199927109
+    },
+    "mean": 18.382162856111076,
+    "mean_production_seconds": 0.003684083332094209,
+    "method": "antithetic",
+    "n_requested": 16384,
+    "observed_deviation_rmse": 0.014004745388244547,
+    "passed": true,
+    "pooled_standard_error": 0.00292866738233446,
+    "reference": 18.381399594734035,
+    "reference_corrected_mse": 0.00019609114842869616,
+    "reference_standard_error": 0.0002043158360498352
+  },
+  {
+    "case_id": "monthly-K120",
+    "combined_standard_error": 0.0009803400203677918,
+    "combined_uncertainty_coverage": {
+      "fraction": 0.9583333333333334,
+      "lower": 0.7975777375115778,
+      "n": 24,
+      "upper": 0.992606734645195
+    },
+    "difference": -0.00020703544934619345,
+    "estimator_coverage": {
+      "fraction": 0.9583333333333334,
+      "lower": 0.7975777375115778,
+      "n": 24,
+      "upper": 0.992606734645195
+    },
+    "mean": 18.38119255928469,
+    "mean_production_seconds": 0.0146624791668728,
+    "method": "antithetic",
+    "n_requested": 65536,
+    "observed_deviation_rmse": 0.0044918525286039585,
+    "passed": true,
+    "pooled_standard_error": 0.0009588125962220037,
+    "reference": 18.381399594734035,
+    "reference_corrected_mse": 2.0134994177865036e-05,
+    "reference_standard_error": 0.0002043158360498352
+  },
+  {
+    "case_id": "monthly-K120",
+    "combined_standard_error": 0.0007405772999587232,
+    "combined_uncertainty_coverage": {
+      "fraction": 0.9583333333333334,
+      "lower": 0.7975777375115778,
+      "n": 24,
+      "upper": 0.992606734645195
+    },
+    "difference": -0.0020894048769335427,
+    "estimator_coverage": {
+      "fraction": 0.9583333333333334,
+      "lower": 0.7975777375115778,
+      "n": 24,
+      "upper": 0.992606734645195
+    },
+    "mean": 18.3793101898571,
+    "mean_production_seconds": 0.0011705750002874993,
+    "method": "geometric_cv",
+    "n_requested": 4096,
+    "observed_deviation_rmse": 0.003765086935486294,
+    "passed": true,
+    "pooled_standard_error": 0.0007118354980986896,
+    "reference": 18.381399594734035,
+    "reference_corrected_mse": 1.4134134670908828e-05,
+    "reference_standard_error": 0.0002043158360498352
+  },
+  {
+    "case_id": "monthly-K120",
+    "combined_standard_error": 0.0006078581348716275,
+    "combined_uncertainty_coverage": {
+      "fraction": 1.0,
+      "lower": 0.8620194241710247,
+      "n": 24,
+      "upper": 1.0
+    },
+    "difference": 0.00012444418379331523,
+    "estimator_coverage": {
+      "fraction": 1.0,
+      "lower": 0.8620194241710247,
+      "n": 24,
+      "upper": 1.0
+    },
+    "mean": 18.381524038917828,
+    "mean_production_seconds": 0.004479991669844215,
+    "method": "geometric_cv",
+    "n_requested": 16384,
+    "observed_deviation_rmse": 0.001480976573964703,
+    "passed": true,
+    "pooled_standard_error": 0.0005724915294297991,
+    "reference": 18.381399594734035,
+    "reference_corrected_mse": 2.151546651771486e-06,
+    "reference_standard_error": 0.0002043158360498352
+  },
+  {
+    "case_id": "monthly-K120",
+    "combined_standard_error": 0.0002841008982408877,
+    "combined_uncertainty_coverage": {
+      "fraction": 0.9583333333333334,
+      "lower": 0.7975777375115778,
+      "n": 24,
+      "upper": 0.992606734645195
+    },
+    "difference": -0.00018766932637603873,
+    "estimator_coverage": {
+      "fraction": 0.9583333333333334,
+      "lower": 0.7975777375115778,
+      "n": 24,
+      "upper": 0.992606734645195
+    },
+    "mean": 18.38121192540766,
+    "mean_production_seconds": 0.018319908340345137,
+    "method": "geometric_cv",
+    "n_requested": 65536,
+    "observed_deviation_rmse": 0.0009610886297749361,
+    "passed": true,
+    "pooled_standard_error": 0.00019740405142888053,
+    "reference": 18.381399594734035,
+    "reference_corrected_mse": 8.81946393421921e-07,
+    "reference_standard_error": 0.0002043158360498352
+  }
+]

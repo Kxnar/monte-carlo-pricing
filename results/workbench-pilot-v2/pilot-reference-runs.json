@@ -1,0 +1,46 @@
+[
+  {
+    "case_id": "monthly-K100",
+    "estimate": 4.0373045401180825,
+    "independent_samples": 16384,
+    "limitation": "QuantLib clamps negative control-variate price estimates to zero.",
+    "path_evaluations": 32768,
+    "reference_kind": "quantlib_arithmetic_mc",
+    "seconds": 0.162445200025104,
+    "seed": 141766690,
+    "standard_error": 0.0009133737692656002
+  },
+  {
+    "case_id": "monthly-K100",
+    "estimate": 4.036497538365486,
+    "independent_samples": 16384,
+    "limitation": "QuantLib clamps negative control-variate price estimates to zero.",
+    "path_evaluations": 32768,
+    "reference_kind": "quantlib_arithmetic_mc",
+    "seconds": 0.10545239999191836,
+    "seed": 135776147,
+    "standard_error": 0.0009108150931035336
+  },
+  {
+    "case_id": "stress-52",
+    "estimate": 16.314955708288757,
+    "independent_samples": 16384,
+    "limitation": "QuantLib clamps negative control-variate price estimates to zero.",
+    "path_evaluations": 32768,
+    "reference_kind": "quantlib_arithmetic_mc",
+    "seconds": 0.47022229997674003,
+    "seed": 1667508328,
+    "standard_error": 0.00868918487833955
+  },
+  {
+    "case_id": "stress-52",
+    "estimate": 16.30026080544808,
+    "independent_samples": 16384,
+    "limitation": "QuantLib clamps negative control-variate price estimates to zero.",
+    "path_evaluations": 32768,
+    "reference_kind": "quantlib_arithmetic_mc",
+    "seconds": 0.5041139000095427,
+    "seed": 889249156,
+    "standard_error": 0.00871616022270095
+  }
+]

@@ -1,0 +1,6813 @@
+{
+  "ordering": [
+    {
+      "group": 0,
+      "methods": [
+        [
+          "IS_THRESHOLD",
+          8000
+        ],
+        [
+          "IS_REUSE",
+          8000
+        ],
+        [
+          "IS_THRESHOLD",
+          2000
+        ],
+        [
+          "IID",
+          2000
+        ],
+        [
+          "IS_PER_VALUATION",
+          2000
+        ],
+        [
+          "IS_PER_VALUATION",
+          32000
+        ],
+        [
+          "QUAD",
+          0
+        ],
+        [
+          "IID",
+          32000
+        ],
+        [
+          "IS_THRESHOLD",
+          32000
+        ],
+        [
+          "IID",
+          8000
+        ],
+        [
+          "IS_PER_VALUATION",
+          8000
+        ],
+        [
+          "IS_REUSE",
+          2000
+        ],
+        [
+          "IS_REUSE",
+          32000
+        ]
+      ],
+      "repeat": 0
+    },
+    {
+      "group": 0,
+      "methods": [
+        [
+          "IID",
+          8000
+        ],
+        [
+          "IS_PER_VALUATION",
+          2000
+        ],
+        [
+          "IID",
+          32000
+        ],
+        [
+          "IID",
+          2000
+        ],
+        [
+          "IS_PER_VALUATION",
+          32000
+        ],
+        [
+          "IS_THRESHOLD",
+          2000
+        ],
+        [
+          "IS_THRESHOLD",
+          8000
+        ],
+        [
+          "QUAD",
+          0
+        ],
+        [
+          "IS_REUSE",
+          2000
+        ],
+        [
+          "IS_PER_VALUATION",
+          8000
+        ],
+        [
+          "IS_THRESHOLD",
+          32000
+        ],
+        [
+          "IS_REUSE",
+          32000
+        ],
+        [
+          "IS_REUSE",
+          8000
+        ]
+      ],
+      "repeat": 1
+    }
+  ],
+  "production_seed_scope": "case/group/repeat/policy/budget/valuation",
+  "purpose": "runtime grid choice before final freeze",
+  "quadrature_reference_uncertainty": "refinement diagnostic; not a stochastic standard error",
+  "references": [
+    {
+      "reference": 1.5558462645758375,
+      "refinement_diagnostic": 1.2612133559741782e-14,
+      "seconds": 0.0005520000122487545,
+      "valuation_index": 0
+    },
+    {
+      "reference": 1.7266235947483315,
+      "refinement_diagnostic": 1.3766765505351944e-14,
+      "seconds": 0.0004889999981969595,
+      "valuation_index": 1
+    },
+    {
+      "reference": 2.126801144207708,
+      "refinement_diagnostic": 1.874056465567265e-14,
+      "seconds": 0.0004681000136770308,
+      "valuation_index": 2
+    },
+    {
+      "reference": 2.896279019445016,
+      "refinement_diagnostic": 2.646771690706374e-14,
+      "seconds": 0.0006983999628573656,
+      "valuation_index": 3
+    },
+    {
+      "reference": 6.683213446012239,
+      "refinement_diagnostic": 6.394884621840902e-14,
+      "seconds": 0.0007938999915495515,
+      "valuation_index": 4
+    },
+    {
+      "reference": 9.784580164971514,
+      "refinement_diagnostic": 9.166001291305294e-14,
+      "seconds": 0.0008817000198177993,
+      "valuation_index": 5
+    },
+    {
+      "reference": 10.481388641476578,
+      "refinement_diagnostic": 1.0018652574217414e-13,
+      "seconds": 0.0009583999635651708,
+      "valuation_index": 6
+    },
+    {
+      "reference": 13.484474998473281,
+      "refinement_diagnostic": 1.2363443602225745e-13,
+      "seconds": 0.0007314999820664525,
+      "valuation_index": 7
+    }
+  ],
+  "setup": {
+    "model_moment_seconds": 0.0982798999757506,
+    "quadrature_cache_seconds": 1.100008375942707e-06,
+    "scope": "once per run, outside warmed deployment histories"
+  },
+  "setup_seconds": 0.09828099998412654,
+  "tuning": [
+    {
+      "anchor_strike": 90,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 19.223579748041438,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 18.117336067827427,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 12.418123600777498,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 11.23252112506869,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 8.073854465627146,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 7.325198277555576,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 5.113408579650127,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 3.0302184436814006,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 2.5902955850282554,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 1.031766993148819,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 0.880180674975278,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 0.9351278609870312,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_THRESHOLD",
+      "n_requested": 8000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.010756999952718616,
+      "seed_key": "295962620781308086378540520769292145839",
+      "valuation_index": 0
+    },
+    {
+      "anchor_strike": 96,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 52.109181804732,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 30.502695004435182,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 22.127362704986254,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 20.920631651240402,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 12.93718439731293,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 10.855928117725806,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 6.0164491646881295,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 4.729854851932143,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 4.460410916928718,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 6.7957217058469235,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 5.416243309054927,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 5.189759608131851,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_THRESHOLD",
+      "n_requested": 8000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.006901000044308603,
+      "seed_key": "263276471523085115437155485677541102639",
+      "valuation_index": 3
+    },
+    {
+      "anchor_strike": 105,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 81.21685192680809,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 65.62648508502396,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 51.370817177593345,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 26.06752856394595,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 20.515386659134784,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 23.46691584266605,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 12.914024451235209,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 13.26833405618481,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 16.89354092481187,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 116.84971150982673,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 71.37856320641822,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 50.5928267405686,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_THRESHOLD",
+      "n_requested": 8000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.006750000000465661,
+      "seed_key": "294613141126324011488873633549795657187",
+      "valuation_index": 4
+    },
+    {
+      "anchor_strike": 111,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 127.70092720405509,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 92.95940472780006,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 84.19927752047123,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 30.18450994556826,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 30.056481766228366,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 37.637861538693706,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 41.342372561489114,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 37.62405391315062,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 45.994442532834874,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 339.41734533726975,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 163.5348628182608,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 158.0142738057733,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_THRESHOLD",
+      "n_requested": 8000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.006644300010520965,
+      "seed_key": "130757281627663650357479820279044749467",
+      "valuation_index": 6
+    },
+    {
+      "anchor_strike": 90,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 19.223579748041438,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 18.117336067827427,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 12.418123600777498,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 11.23252112506869,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 8.073854465627146,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 7.325198277555576,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 5.113408579650127,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 3.0302184436814006,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 2.5902955850282554,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 1.031766993148819,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 0.880180674975278,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 0.9351278609870312,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_REUSE",
+      "n_requested": 8000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.006586099974811077,
+      "seed_key": "295962620781308086378540520769292145839",
+      "valuation_index": 0
+    },
+    {
+      "anchor_strike": 90,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 19.223579748041438,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 18.117336067827427,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 12.418123600777498,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 11.23252112506869,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 8.073854465627146,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 7.325198277555576,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 5.113408579650127,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 3.0302184436814006,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 2.5902955850282554,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 1.031766993148819,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 0.880180674975278,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 0.9351278609870312,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_THRESHOLD",
+      "n_requested": 2000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.006560000008903444,
+      "seed_key": "295962620781308086378540520769292145839",
+      "valuation_index": 0
+    },
+    {
+      "anchor_strike": 96,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 52.109181804732,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 30.502695004435182,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 22.127362704986254,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 20.920631651240402,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 12.93718439731293,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 10.855928117725806,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 6.0164491646881295,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 4.729854851932143,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 4.460410916928718,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 6.7957217058469235,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 5.416243309054927,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 5.189759608131851,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_THRESHOLD",
+      "n_requested": 2000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.006529800011776388,
+      "seed_key": "263276471523085115437155485677541102639",
+      "valuation_index": 3
+    },
+    {
+      "anchor_strike": 105,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 81.21685192680809,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 65.62648508502396,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 51.370817177593345,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 26.06752856394595,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 20.515386659134784,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 23.46691584266605,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 12.914024451235209,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 13.26833405618481,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 16.89354092481187,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 116.84971150982673,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 71.37856320641822,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 50.5928267405686,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_THRESHOLD",
+      "n_requested": 2000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.006598200008738786,
+      "seed_key": "294613141126324011488873633549795657187",
+      "valuation_index": 4
+    },
+    {
+      "anchor_strike": 111,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 127.70092720405509,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 92.95940472780006,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 84.19927752047123,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 30.18450994556826,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 30.056481766228366,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 37.637861538693706,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 41.342372561489114,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 37.62405391315062,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 45.994442532834874,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 339.41734533726975,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 163.5348628182608,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 158.0142738057733,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_THRESHOLD",
+      "n_requested": 2000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.006615600024815649,
+      "seed_key": "130757281627663650357479820279044749467",
+      "valuation_index": 6
+    },
+    {
+      "anchor_strike": 90,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 19.223579748041438,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 18.117336067827427,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 12.418123600777498,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 11.23252112506869,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 8.073854465627146,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 7.325198277555576,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 5.113408579650127,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 3.0302184436814006,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 2.5902955850282554,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 1.031766993148819,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 0.880180674975278,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 0.9351278609870312,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 2000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.006608600029721856,
+      "seed_key": "295962620781308086378540520769292145839",
+      "valuation_index": 0
+    },
+    {
+      "anchor_strike": 91,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 28.586822030958118,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 18.564375714456062,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 14.218605718822712,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 13.694559195549312,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 9.829821944744813,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 7.189221679259183,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 4.677441863601773,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 3.2473935001149195,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 2.8471446623243475,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 1.4714075768860624,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 1.045397597399767,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 1.1091489985823737,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 2000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.006627099995967001,
+      "seed_key": "193003963706269159893168160242005360106",
+      "valuation_index": 1
+    },
+    {
+      "anchor_strike": 93,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 34.213630122191695,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 23.409698871996035,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 17.272614308528702,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 16.355433940236992,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 9.20750202196519,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 7.766869669460256,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 5.881009995520027,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 4.176540118006378,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 3.2475689734856603,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 2.3755142621336853,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 2.0924132353008402,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 1.9272262306602082,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 2000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.006543600000441074,
+      "seed_key": "63907005709442715734394633426535980975",
+      "valuation_index": 2
+    },
+    {
+      "anchor_strike": 96,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 52.109181804732,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 30.502695004435182,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 22.127362704986254,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 20.920631651240402,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 12.93718439731293,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 10.855928117725806,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 6.0164491646881295,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 4.729854851932143,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 4.460410916928718,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 6.7957217058469235,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 5.416243309054927,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 5.189759608131851,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 2000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.006551099999342114,
+      "seed_key": "263276471523085115437155485677541102639",
+      "valuation_index": 3
+    },
+    {
+      "anchor_strike": 105,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 81.21685192680809,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 65.62648508502396,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 51.370817177593345,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 26.06752856394595,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 20.515386659134784,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 23.46691584266605,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 12.914024451235209,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 13.26833405618481,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 16.89354092481187,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 116.84971150982673,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 71.37856320641822,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 50.5928267405686,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 2000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.006485599966254085,
+      "seed_key": "294613141126324011488873633549795657187",
+      "valuation_index": 4
+    },
+    {
+      "anchor_strike": 110,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 118.11782157779301,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 90.79522099577122,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 78.84962441883343,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 31.00295877254579,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 28.76406620277494,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 35.84597310321734,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 30.024665935473735,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 33.59222567958874,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 37.560258445739485,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 297.5921582425261,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 207.04452307481935,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 143.7697869700388,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 2000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.006451699999161065,
+      "seed_key": "289805982357626629089436512895685152014",
+      "valuation_index": 5
+    },
+    {
+      "anchor_strike": 111,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 127.70092720405509,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 92.95940472780006,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 84.19927752047123,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 30.18450994556826,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 30.056481766228366,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 37.637861538693706,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 41.342372561489114,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 37.62405391315062,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 45.994442532834874,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 339.41734533726975,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 163.5348628182608,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 158.0142738057733,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 2000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.0065104999812319875,
+      "seed_key": "130757281627663650357479820279044749467",
+      "valuation_index": 6
+    },
+    {
+      "anchor_strike": 115,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 149.32803477322926,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 113.86376226469531,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 105.94063711230079,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 28.009269009225466,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 35.925770186830704,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 53.71160871614615,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 94.2216379546449,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 74.00939492555442,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 74.53356857204334,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 530.2521686167148,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 457.49677860857224,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 305.69924384614694,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 2000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.006569000019226223,
+      "seed_key": "241204577421029992321141892210002176455",
+      "valuation_index": 7
+    },
+    {
+      "anchor_strike": 90,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 19.223579748041438,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 18.117336067827427,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 12.418123600777498,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 11.23252112506869,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 8.073854465627146,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 7.325198277555576,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 5.113408579650127,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 3.0302184436814006,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 2.5902955850282554,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 1.031766993148819,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 0.880180674975278,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 0.9351278609870312,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 32000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.0066217000130563974,
+      "seed_key": "295962620781308086378540520769292145839",
+      "valuation_index": 0
+    },
+    {
+      "anchor_strike": 91,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 28.586822030958118,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 18.564375714456062,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 14.218605718822712,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 13.694559195549312,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 9.829821944744813,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 7.189221679259183,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 4.677441863601773,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 3.2473935001149195,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 2.8471446623243475,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 1.4714075768860624,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 1.045397597399767,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 1.1091489985823737,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 32000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.006748199986759573,
+      "seed_key": "193003963706269159893168160242005360106",
+      "valuation_index": 1
+    },
+    {
+      "anchor_strike": 93,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 34.213630122191695,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 23.409698871996035,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 17.272614308528702,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 16.355433940236992,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 9.20750202196519,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 7.766869669460256,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 5.881009995520027,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 4.176540118006378,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 3.2475689734856603,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 2.3755142621336853,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 2.0924132353008402,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 1.9272262306602082,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 32000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.006603199988603592,
+      "seed_key": "63907005709442715734394633426535980975",
+      "valuation_index": 2
+    },
+    {
+      "anchor_strike": 96,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 52.109181804732,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 30.502695004435182,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 22.127362704986254,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 20.920631651240402,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 12.93718439731293,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 10.855928117725806,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 6.0164491646881295,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 4.729854851932143,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 4.460410916928718,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 6.7957217058469235,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 5.416243309054927,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 5.189759608131851,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 32000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.006722300022374839,
+      "seed_key": "263276471523085115437155485677541102639",
+      "valuation_index": 3
+    },
+    {
+      "anchor_strike": 105,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 81.21685192680809,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 65.62648508502396,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 51.370817177593345,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 26.06752856394595,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 20.515386659134784,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 23.46691584266605,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 12.914024451235209,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 13.26833405618481,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 16.89354092481187,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 116.84971150982673,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 71.37856320641822,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 50.5928267405686,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 32000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.006588099990040064,
+      "seed_key": "294613141126324011488873633549795657187",
+      "valuation_index": 4
+    },
+    {
+      "anchor_strike": 110,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 118.11782157779301,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 90.79522099577122,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 78.84962441883343,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 31.00295877254579,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 28.76406620277494,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 35.84597310321734,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 30.024665935473735,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 33.59222567958874,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 37.560258445739485,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 297.5921582425261,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 207.04452307481935,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 143.7697869700388,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 32000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.006637300015427172,
+      "seed_key": "289805982357626629089436512895685152014",
+      "valuation_index": 5
+    },
+    {
+      "anchor_strike": 111,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 127.70092720405509,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 92.95940472780006,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 84.19927752047123,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 30.18450994556826,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 30.056481766228366,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 37.637861538693706,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 41.342372561489114,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 37.62405391315062,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 45.994442532834874,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 339.41734533726975,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 163.5348628182608,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 158.0142738057733,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 32000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.006675399956293404,
+      "seed_key": "130757281627663650357479820279044749467",
+      "valuation_index": 6
+    },
+    {
+      "anchor_strike": 115,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 149.32803477322926,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 113.86376226469531,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 105.94063711230079,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 28.009269009225466,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 35.925770186830704,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 53.71160871614615,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 94.2216379546449,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 74.00939492555442,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 74.53356857204334,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 530.2521686167148,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 457.49677860857224,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 305.69924384614694,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 32000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.010208499967120588,
+      "seed_key": "241204577421029992321141892210002176455",
+      "valuation_index": 7
+    },
+    {
+      "anchor_strike": 90,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 19.223579748041438,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 18.117336067827427,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 12.418123600777498,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 11.23252112506869,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 8.073854465627146,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 7.325198277555576,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 5.113408579650127,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 3.0302184436814006,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 2.5902955850282554,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 1.031766993148819,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 0.880180674975278,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 0.9351278609870312,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_THRESHOLD",
+      "n_requested": 32000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.0067334999912418425,
+      "seed_key": "295962620781308086378540520769292145839",
+      "valuation_index": 0
+    },
+    {
+      "anchor_strike": 96,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 52.109181804732,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 30.502695004435182,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 22.127362704986254,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 20.920631651240402,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 12.93718439731293,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 10.855928117725806,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 6.0164491646881295,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 4.729854851932143,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 4.460410916928718,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 6.7957217058469235,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 5.416243309054927,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 5.189759608131851,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_THRESHOLD",
+      "n_requested": 32000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.006835800013504922,
+      "seed_key": "263276471523085115437155485677541102639",
+      "valuation_index": 3
+    },
+    {
+      "anchor_strike": 105,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 81.21685192680809,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 65.62648508502396,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 51.370817177593345,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 26.06752856394595,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 20.515386659134784,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 23.46691584266605,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 12.914024451235209,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 13.26833405618481,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 16.89354092481187,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 116.84971150982673,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 71.37856320641822,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 50.5928267405686,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_THRESHOLD",
+      "n_requested": 32000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.006759599957149476,
+      "seed_key": "294613141126324011488873633549795657187",
+      "valuation_index": 4
+    },
+    {
+      "anchor_strike": 111,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 127.70092720405509,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 92.95940472780006,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 84.19927752047123,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 30.18450994556826,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 30.056481766228366,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 37.637861538693706,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 41.342372561489114,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 37.62405391315062,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 45.994442532834874,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 339.41734533726975,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 163.5348628182608,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 158.0142738057733,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_THRESHOLD",
+      "n_requested": 32000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.01935139996930957,
+      "seed_key": "130757281627663650357479820279044749467",
+      "valuation_index": 6
+    },
+    {
+      "anchor_strike": 90,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 19.223579748041438,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 18.117336067827427,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 12.418123600777498,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 11.23252112506869,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 8.073854465627146,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 7.325198277555576,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 5.113408579650127,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 3.0302184436814006,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 2.5902955850282554,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 1.031766993148819,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 0.880180674975278,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 0.9351278609870312,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 8000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.006912600016221404,
+      "seed_key": "295962620781308086378540520769292145839",
+      "valuation_index": 0
+    },
+    {
+      "anchor_strike": 91,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 28.586822030958118,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 18.564375714456062,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 14.218605718822712,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 13.694559195549312,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 9.829821944744813,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 7.189221679259183,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 4.677441863601773,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 3.2473935001149195,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 2.8471446623243475,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 1.4714075768860624,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 1.045397597399767,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 1.1091489985823737,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 8000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.007444799994118512,
+      "seed_key": "193003963706269159893168160242005360106",
+      "valuation_index": 1
+    },
+    {
+      "anchor_strike": 93,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 34.213630122191695,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 23.409698871996035,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 17.272614308528702,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 16.355433940236992,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 9.20750202196519,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 7.766869669460256,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 5.881009995520027,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 4.176540118006378,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 3.2475689734856603,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 2.3755142621336853,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 2.0924132353008402,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 1.9272262306602082,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 8000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.006549099984113127,
+      "seed_key": "63907005709442715734394633426535980975",
+      "valuation_index": 2
+    },
+    {
+      "anchor_strike": 96,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 52.109181804732,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 30.502695004435182,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 22.127362704986254,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 20.920631651240402,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 12.93718439731293,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 10.855928117725806,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 6.0164491646881295,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 4.729854851932143,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 4.460410916928718,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 6.7957217058469235,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 5.416243309054927,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 5.189759608131851,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 8000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.006422899954486638,
+      "seed_key": "263276471523085115437155485677541102639",
+      "valuation_index": 3
+    },
+    {
+      "anchor_strike": 105,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 81.21685192680809,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 65.62648508502396,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 51.370817177593345,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 26.06752856394595,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 20.515386659134784,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 23.46691584266605,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 12.914024451235209,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 13.26833405618481,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 16.89354092481187,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 116.84971150982673,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 71.37856320641822,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 50.5928267405686,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 8000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.006473499990534037,
+      "seed_key": "294613141126324011488873633549795657187",
+      "valuation_index": 4
+    },
+    {
+      "anchor_strike": 110,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 118.11782157779301,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 90.79522099577122,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 78.84962441883343,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 31.00295877254579,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 28.76406620277494,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 35.84597310321734,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 30.024665935473735,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 33.59222567958874,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 37.560258445739485,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 297.5921582425261,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 207.04452307481935,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 143.7697869700388,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 8000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.006513600004836917,
+      "seed_key": "289805982357626629089436512895685152014",
+      "valuation_index": 5
+    },
+    {
+      "anchor_strike": 111,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 127.70092720405509,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 92.95940472780006,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 84.19927752047123,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 30.18450994556826,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 30.056481766228366,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 37.637861538693706,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 41.342372561489114,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 37.62405391315062,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 45.994442532834874,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 339.41734533726975,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 163.5348628182608,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 158.0142738057733,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 8000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.006537800014484674,
+      "seed_key": "130757281627663650357479820279044749467",
+      "valuation_index": 6
+    },
+    {
+      "anchor_strike": 115,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 149.32803477322926,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 113.86376226469531,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 105.94063711230079,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 28.009269009225466,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 35.925770186830704,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 53.71160871614615,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 94.2216379546449,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 74.00939492555442,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 74.53356857204334,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 530.2521686167148,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 457.49677860857224,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 305.69924384614694,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 8000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.006451599998399615,
+      "seed_key": "241204577421029992321141892210002176455",
+      "valuation_index": 7
+    },
+    {
+      "anchor_strike": 90,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 19.223579748041438,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 18.117336067827427,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 12.418123600777498,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 11.23252112506869,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 8.073854465627146,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 7.325198277555576,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 5.113408579650127,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 3.0302184436814006,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 2.5902955850282554,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 1.031766993148819,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 0.880180674975278,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 0.9351278609870312,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_REUSE",
+      "n_requested": 2000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.006447300023864955,
+      "seed_key": "295962620781308086378540520769292145839",
+      "valuation_index": 0
+    },
+    {
+      "anchor_strike": 90,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 19.223579748041438,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 18.117336067827427,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 12.418123600777498,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 11.23252112506869,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 8.073854465627146,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 7.325198277555576,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 5.113408579650127,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 3.0302184436814006,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 2.5902955850282554,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 1.031766993148819,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 0.880180674975278,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 0.9351278609870312,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_REUSE",
+      "n_requested": 32000,
+      "payoff_evaluations": 12000,
+      "repeat": 0,
+      "seconds": 0.006598499952815473,
+      "seed_key": "295962620781308086378540520769292145839",
+      "valuation_index": 0
+    },
+    {
+      "anchor_strike": 90,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 19.223579748041438,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 18.117336067827427,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 12.418123600777498,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 11.23252112506869,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 8.073854465627146,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 7.325198277555576,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 5.113408579650127,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 3.0302184436814006,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 2.5902955850282554,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 1.031766993148819,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 0.880180674975278,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 0.9351278609870312,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 2000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.006450699991546571,
+      "seed_key": "295962620781308086378540520769292145839",
+      "valuation_index": 0
+    },
+    {
+      "anchor_strike": 91,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 28.586822030958118,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 18.564375714456062,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 14.218605718822712,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 13.694559195549312,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 9.829821944744813,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 7.189221679259183,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 4.677441863601773,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 3.2473935001149195,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 2.8471446623243475,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 1.4714075768860624,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 1.045397597399767,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 1.1091489985823737,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 2000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.0063165000174194574,
+      "seed_key": "193003963706269159893168160242005360106",
+      "valuation_index": 1
+    },
+    {
+      "anchor_strike": 93,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 34.213630122191695,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 23.409698871996035,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 17.272614308528702,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 16.355433940236992,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 9.20750202196519,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 7.766869669460256,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 5.881009995520027,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 4.176540118006378,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 3.2475689734856603,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 2.3755142621336853,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 2.0924132353008402,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 1.9272262306602082,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 2000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.006599700020160526,
+      "seed_key": "63907005709442715734394633426535980975",
+      "valuation_index": 2
+    },
+    {
+      "anchor_strike": 96,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 52.109181804732,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 30.502695004435182,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 22.127362704986254,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 20.920631651240402,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 12.93718439731293,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 10.855928117725806,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 6.0164491646881295,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 4.729854851932143,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 4.460410916928718,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 6.7957217058469235,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 5.416243309054927,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 5.189759608131851,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 2000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.006434099981561303,
+      "seed_key": "263276471523085115437155485677541102639",
+      "valuation_index": 3
+    },
+    {
+      "anchor_strike": 105,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 81.21685192680809,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 65.62648508502396,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 51.370817177593345,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 26.06752856394595,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 20.515386659134784,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 23.46691584266605,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 12.914024451235209,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 13.26833405618481,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 16.89354092481187,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 116.84971150982673,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 71.37856320641822,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 50.5928267405686,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 2000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.006482900003902614,
+      "seed_key": "294613141126324011488873633549795657187",
+      "valuation_index": 4
+    },
+    {
+      "anchor_strike": 110,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 118.11782157779301,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 90.79522099577122,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 78.84962441883343,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 31.00295877254579,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 28.76406620277494,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 35.84597310321734,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 30.024665935473735,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 33.59222567958874,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 37.560258445739485,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 297.5921582425261,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 207.04452307481935,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 143.7697869700388,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 2000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.006479999981820583,
+      "seed_key": "289805982357626629089436512895685152014",
+      "valuation_index": 5
+    },
+    {
+      "anchor_strike": 111,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 127.70092720405509,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 92.95940472780006,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 84.19927752047123,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 30.18450994556826,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 30.056481766228366,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 37.637861538693706,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 41.342372561489114,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 37.62405391315062,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 45.994442532834874,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 339.41734533726975,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 163.5348628182608,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 158.0142738057733,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 2000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.006736000010278076,
+      "seed_key": "130757281627663650357479820279044749467",
+      "valuation_index": 6
+    },
+    {
+      "anchor_strike": 115,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 149.32803477322926,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 113.86376226469531,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 105.94063711230079,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 28.009269009225466,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 35.925770186830704,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 53.71160871614615,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 94.2216379546449,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 74.00939492555442,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 74.53356857204334,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 530.2521686167148,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 457.49677860857224,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 305.69924384614694,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 2000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.009868199995253235,
+      "seed_key": "241204577421029992321141892210002176455",
+      "valuation_index": 7
+    },
+    {
+      "anchor_strike": 90,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 19.223579748041438,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 18.117336067827427,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 12.418123600777498,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 11.23252112506869,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 8.073854465627146,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 7.325198277555576,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 5.113408579650127,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 3.0302184436814006,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 2.5902955850282554,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 1.031766993148819,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 0.880180674975278,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 0.9351278609870312,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 32000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.006706500018481165,
+      "seed_key": "295962620781308086378540520769292145839",
+      "valuation_index": 0
+    },
+    {
+      "anchor_strike": 91,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 28.586822030958118,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 18.564375714456062,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 14.218605718822712,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 13.694559195549312,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 9.829821944744813,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 7.189221679259183,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 4.677441863601773,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 3.2473935001149195,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 2.8471446623243475,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 1.4714075768860624,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 1.045397597399767,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 1.1091489985823737,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 32000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.008586899959482253,
+      "seed_key": "193003963706269159893168160242005360106",
+      "valuation_index": 1
+    },
+    {
+      "anchor_strike": 93,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 34.213630122191695,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 23.409698871996035,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 17.272614308528702,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 16.355433940236992,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 9.20750202196519,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 7.766869669460256,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 5.881009995520027,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 4.176540118006378,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 3.2475689734856603,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 2.3755142621336853,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 2.0924132353008402,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 1.9272262306602082,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 32000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.00642430002335459,
+      "seed_key": "63907005709442715734394633426535980975",
+      "valuation_index": 2
+    },
+    {
+      "anchor_strike": 96,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 52.109181804732,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 30.502695004435182,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 22.127362704986254,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 20.920631651240402,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 12.93718439731293,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 10.855928117725806,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 6.0164491646881295,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 4.729854851932143,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 4.460410916928718,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 6.7957217058469235,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 5.416243309054927,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 5.189759608131851,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 32000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.014085899980273098,
+      "seed_key": "263276471523085115437155485677541102639",
+      "valuation_index": 3
+    },
+    {
+      "anchor_strike": 105,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 81.21685192680809,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 65.62648508502396,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 51.370817177593345,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 26.06752856394595,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 20.515386659134784,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 23.46691584266605,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 12.914024451235209,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 13.26833405618481,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 16.89354092481187,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 116.84971150982673,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 71.37856320641822,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 50.5928267405686,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 32000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.007982999959494919,
+      "seed_key": "294613141126324011488873633549795657187",
+      "valuation_index": 4
+    },
+    {
+      "anchor_strike": 110,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 118.11782157779301,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 90.79522099577122,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 78.84962441883343,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 31.00295877254579,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 28.76406620277494,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 35.84597310321734,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 30.024665935473735,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 33.59222567958874,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 37.560258445739485,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 297.5921582425261,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 207.04452307481935,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 143.7697869700388,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 32000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.006669700029306114,
+      "seed_key": "289805982357626629089436512895685152014",
+      "valuation_index": 5
+    },
+    {
+      "anchor_strike": 111,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 127.70092720405509,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 92.95940472780006,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 84.19927752047123,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 30.18450994556826,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 30.056481766228366,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 37.637861538693706,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 41.342372561489114,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 37.62405391315062,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 45.994442532834874,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 339.41734533726975,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 163.5348628182608,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 158.0142738057733,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 32000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.00739609997253865,
+      "seed_key": "130757281627663650357479820279044749467",
+      "valuation_index": 6
+    },
+    {
+      "anchor_strike": 115,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 149.32803477322926,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 113.86376226469531,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 105.94063711230079,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 28.009269009225466,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 35.925770186830704,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 53.71160871614615,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 94.2216379546449,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 74.00939492555442,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 74.53356857204334,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 530.2521686167148,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 457.49677860857224,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 305.69924384614694,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 32000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.006578899978194386,
+      "seed_key": "241204577421029992321141892210002176455",
+      "valuation_index": 7
+    },
+    {
+      "anchor_strike": 90,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 19.223579748041438,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 18.117336067827427,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 12.418123600777498,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 11.23252112506869,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 8.073854465627146,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 7.325198277555576,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 5.113408579650127,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 3.0302184436814006,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 2.5902955850282554,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 1.031766993148819,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 0.880180674975278,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 0.9351278609870312,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_THRESHOLD",
+      "n_requested": 2000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.006570500030647963,
+      "seed_key": "295962620781308086378540520769292145839",
+      "valuation_index": 0
+    },
+    {
+      "anchor_strike": 96,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 52.109181804732,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 30.502695004435182,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 22.127362704986254,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 20.920631651240402,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 12.93718439731293,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 10.855928117725806,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 6.0164491646881295,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 4.729854851932143,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 4.460410916928718,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 6.7957217058469235,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 5.416243309054927,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 5.189759608131851,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_THRESHOLD",
+      "n_requested": 2000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.0064150000107474625,
+      "seed_key": "263276471523085115437155485677541102639",
+      "valuation_index": 3
+    },
+    {
+      "anchor_strike": 105,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 81.21685192680809,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 65.62648508502396,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 51.370817177593345,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 26.06752856394595,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 20.515386659134784,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 23.46691584266605,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 12.914024451235209,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 13.26833405618481,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 16.89354092481187,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 116.84971150982673,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 71.37856320641822,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 50.5928267405686,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_THRESHOLD",
+      "n_requested": 2000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.006645300018135458,
+      "seed_key": "294613141126324011488873633549795657187",
+      "valuation_index": 4
+    },
+    {
+      "anchor_strike": 111,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 127.70092720405509,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 92.95940472780006,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 84.19927752047123,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 30.18450994556826,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 30.056481766228366,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 37.637861538693706,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 41.342372561489114,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 37.62405391315062,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 45.994442532834874,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 339.41734533726975,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 163.5348628182608,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 158.0142738057733,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_THRESHOLD",
+      "n_requested": 2000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.006597700004931539,
+      "seed_key": "130757281627663650357479820279044749467",
+      "valuation_index": 6
+    },
+    {
+      "anchor_strike": 90,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 19.223579748041438,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 18.117336067827427,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 12.418123600777498,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 11.23252112506869,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 8.073854465627146,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 7.325198277555576,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 5.113408579650127,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 3.0302184436814006,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 2.5902955850282554,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 1.031766993148819,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 0.880180674975278,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 0.9351278609870312,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_THRESHOLD",
+      "n_requested": 8000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.0064002000144682825,
+      "seed_key": "295962620781308086378540520769292145839",
+      "valuation_index": 0
+    },
+    {
+      "anchor_strike": 96,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 52.109181804732,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 30.502695004435182,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 22.127362704986254,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 20.920631651240402,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 12.93718439731293,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 10.855928117725806,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 6.0164491646881295,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 4.729854851932143,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 4.460410916928718,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 6.7957217058469235,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 5.416243309054927,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 5.189759608131851,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_THRESHOLD",
+      "n_requested": 8000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.0073497999692335725,
+      "seed_key": "263276471523085115437155485677541102639",
+      "valuation_index": 3
+    },
+    {
+      "anchor_strike": 105,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 81.21685192680809,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 65.62648508502396,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 51.370817177593345,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 26.06752856394595,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 20.515386659134784,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 23.46691584266605,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 12.914024451235209,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 13.26833405618481,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 16.89354092481187,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 116.84971150982673,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 71.37856320641822,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 50.5928267405686,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_THRESHOLD",
+      "n_requested": 8000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.0064359999960288405,
+      "seed_key": "294613141126324011488873633549795657187",
+      "valuation_index": 4
+    },
+    {
+      "anchor_strike": 111,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 127.70092720405509,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 92.95940472780006,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 84.19927752047123,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 30.18450994556826,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 30.056481766228366,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 37.637861538693706,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 41.342372561489114,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 37.62405391315062,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 45.994442532834874,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 339.41734533726975,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 163.5348628182608,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 158.0142738057733,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_THRESHOLD",
+      "n_requested": 8000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.0066222999594174325,
+      "seed_key": "130757281627663650357479820279044749467",
+      "valuation_index": 6
+    },
+    {
+      "anchor_strike": 90,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 19.223579748041438,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 18.117336067827427,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 12.418123600777498,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 11.23252112506869,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 8.073854465627146,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 7.325198277555576,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 5.113408579650127,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 3.0302184436814006,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 2.5902955850282554,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 1.031766993148819,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 0.880180674975278,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 0.9351278609870312,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_REUSE",
+      "n_requested": 2000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.006546399963553995,
+      "seed_key": "295962620781308086378540520769292145839",
+      "valuation_index": 0
+    },
+    {
+      "anchor_strike": 90,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 19.223579748041438,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 18.117336067827427,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 12.418123600777498,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 11.23252112506869,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 8.073854465627146,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 7.325198277555576,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 5.113408579650127,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 3.0302184436814006,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 2.5902955850282554,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 1.031766993148819,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 0.880180674975278,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 0.9351278609870312,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 8000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.006510399980470538,
+      "seed_key": "295962620781308086378540520769292145839",
+      "valuation_index": 0
+    },
+    {
+      "anchor_strike": 91,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 28.586822030958118,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 18.564375714456062,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 14.218605718822712,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 13.694559195549312,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 9.829821944744813,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 7.189221679259183,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 4.677441863601773,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 3.2473935001149195,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 2.8471446623243475,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 1.4714075768860624,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 1.045397597399767,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 1.1091489985823737,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 8000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.006370699964463711,
+      "seed_key": "193003963706269159893168160242005360106",
+      "valuation_index": 1
+    },
+    {
+      "anchor_strike": 93,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 34.213630122191695,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 23.409698871996035,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 17.272614308528702,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 16.355433940236992,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 9.20750202196519,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 7.766869669460256,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 5.881009995520027,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 4.176540118006378,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 3.2475689734856603,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 2.3755142621336853,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 2.0924132353008402,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 1.9272262306602082,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 8000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.00655160000314936,
+      "seed_key": "63907005709442715734394633426535980975",
+      "valuation_index": 2
+    },
+    {
+      "anchor_strike": 96,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 52.109181804732,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 30.502695004435182,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 22.127362704986254,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 20.920631651240402,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 12.93718439731293,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 10.855928117725806,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 6.0164491646881295,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 4.729854851932143,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 4.460410916928718,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 6.7957217058469235,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 5.416243309054927,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 5.189759608131851,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 8000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.006558699999004602,
+      "seed_key": "263276471523085115437155485677541102639",
+      "valuation_index": 3
+    },
+    {
+      "anchor_strike": 105,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 81.21685192680809,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 65.62648508502396,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 51.370817177593345,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 26.06752856394595,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 20.515386659134784,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 23.46691584266605,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 12.914024451235209,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 13.26833405618481,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 16.89354092481187,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 116.84971150982673,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 71.37856320641822,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 50.5928267405686,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 8000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.014419300016015768,
+      "seed_key": "294613141126324011488873633549795657187",
+      "valuation_index": 4
+    },
+    {
+      "anchor_strike": 110,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 118.11782157779301,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 90.79522099577122,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 78.84962441883343,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 31.00295877254579,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 28.76406620277494,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 35.84597310321734,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 30.024665935473735,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 33.59222567958874,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 37.560258445739485,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 297.5921582425261,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 207.04452307481935,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 143.7697869700388,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 8000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.006835800013504922,
+      "seed_key": "289805982357626629089436512895685152014",
+      "valuation_index": 5
+    },
+    {
+      "anchor_strike": 111,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 127.70092720405509,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 92.95940472780006,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 84.19927752047123,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 30.18450994556826,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 30.056481766228366,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 37.637861538693706,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 41.342372561489114,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 37.62405391315062,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 45.994442532834874,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 339.41734533726975,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 163.5348628182608,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 158.0142738057733,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 8000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.006591000012122095,
+      "seed_key": "130757281627663650357479820279044749467",
+      "valuation_index": 6
+    },
+    {
+      "anchor_strike": 115,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 149.32803477322926,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 113.86376226469531,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 105.94063711230079,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 28.009269009225466,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 35.925770186830704,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 53.71160871614615,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 94.2216379546449,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 74.00939492555442,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 74.53356857204334,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 530.2521686167148,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 457.49677860857224,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 305.69924384614694,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_PER_VALUATION",
+      "n_requested": 8000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.006727200001478195,
+      "seed_key": "241204577421029992321141892210002176455",
+      "valuation_index": 7
+    },
+    {
+      "anchor_strike": 90,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 19.223579748041438,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 18.117336067827427,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 12.418123600777498,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 11.23252112506869,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 8.073854465627146,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 7.325198277555576,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 5.113408579650127,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 3.0302184436814006,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 2.5902955850282554,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 1.031766993148819,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 0.880180674975278,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 0.9351278609870312,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_THRESHOLD",
+      "n_requested": 32000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.0067282000090926886,
+      "seed_key": "295962620781308086378540520769292145839",
+      "valuation_index": 0
+    },
+    {
+      "anchor_strike": 96,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 52.109181804732,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 30.502695004435182,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 22.127362704986254,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 20.920631651240402,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 12.93718439731293,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 10.855928117725806,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 6.0164491646881295,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 4.729854851932143,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 4.460410916928718,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 6.7957217058469235,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 5.416243309054927,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 5.189759608131851,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_THRESHOLD",
+      "n_requested": 32000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.006685699976515025,
+      "seed_key": "263276471523085115437155485677541102639",
+      "valuation_index": 3
+    },
+    {
+      "anchor_strike": 105,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 81.21685192680809,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 65.62648508502396,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 51.370817177593345,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 26.06752856394595,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 20.515386659134784,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 23.46691584266605,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 12.914024451235209,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 13.26833405618481,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 16.89354092481187,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 116.84971150982673,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 71.37856320641822,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 50.5928267405686,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_THRESHOLD",
+      "n_requested": 32000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.0066371000139042735,
+      "seed_key": "294613141126324011488873633549795657187",
+      "valuation_index": 4
+    },
+    {
+      "anchor_strike": 111,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 127.70092720405509,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 92.95940472780006,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 84.19927752047123,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 30.18450994556826,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 30.056481766228366,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 37.637861538693706,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 41.342372561489114,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 37.62405391315062,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 45.994442532834874,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 339.41734533726975,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 163.5348628182608,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 158.0142738057733,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_THRESHOLD",
+      "n_requested": 32000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.010425699991174042,
+      "seed_key": "130757281627663650357479820279044749467",
+      "valuation_index": 6
+    },
+    {
+      "anchor_strike": 90,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 19.223579748041438,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 18.117336067827427,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 12.418123600777498,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 11.23252112506869,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 8.073854465627146,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 7.325198277555576,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 5.113408579650127,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 3.0302184436814006,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 2.5902955850282554,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 1.031766993148819,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 0.880180674975278,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 0.9351278609870312,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_REUSE",
+      "n_requested": 32000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.0065731999929994345,
+      "seed_key": "295962620781308086378540520769292145839",
+      "valuation_index": 0
+    },
+    {
+      "anchor_strike": 90,
+      "candidates": [
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 19.223579748041438,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 18.117336067827427,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 12.418123600777498,
+          "shift": 0.0
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 11.23252112506869,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 8.073854465627146,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 7.325198277555576,
+          "shift": -0.1
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 5.113408579650127,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 3.0302184436814006,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 2.5902955850282554,
+          "shift": -0.2
+        },
+        {
+          "inflation": 1.0,
+          "method": "IS",
+          "pilot_variance": 1.031766993148819,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.25,
+          "method": "IS",
+          "pilot_variance": 0.880180674975278,
+          "shift": -0.35
+        },
+        {
+          "inflation": 1.5,
+          "method": "IS",
+          "pilot_variance": 0.9351278609870312,
+          "shift": -0.35
+        }
+      ],
+      "group": 0,
+      "method": "IS_REUSE",
+      "n_requested": 8000,
+      "payoff_evaluations": 12000,
+      "repeat": 1,
+      "seconds": 0.0068799000000581145,
+      "seed_key": "295962620781308086378540520769292145839",
+      "valuation_index": 0
+    }
+  ],
+  "tuning_cost_accounting": "each fitting event executed and timed in its actual history",
+  "wall_seconds": 1.6969805999542587
+}

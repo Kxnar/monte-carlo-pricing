@@ -1,0 +1,1905 @@
+{
+  "A": {
+    "cases": [
+      {
+        "case_id": "monthly-K80",
+        "fixing_days": [
+          30,
+          61,
+          91,
+          122,
+          152,
+          182,
+          213,
+          243,
+          274,
+          304,
+          335,
+          365
+        ],
+        "model": {
+          "dividend": 0.0,
+          "rate": 0.03,
+          "spot": 100.0,
+          "volatility": 0.2
+        },
+        "strike": 80.0
+      },
+      {
+        "case_id": "monthly-K100",
+        "fixing_days": [
+          30,
+          61,
+          91,
+          122,
+          152,
+          182,
+          213,
+          243,
+          274,
+          304,
+          335,
+          365
+        ],
+        "model": {
+          "dividend": 0.0,
+          "rate": 0.03,
+          "spot": 100.0,
+          "volatility": 0.2
+        },
+        "strike": 100.0
+      },
+      {
+        "case_id": "monthly-K120",
+        "fixing_days": [
+          30,
+          61,
+          91,
+          122,
+          152,
+          182,
+          213,
+          243,
+          274,
+          304,
+          335,
+          365
+        ],
+        "model": {
+          "dividend": 0.0,
+          "rate": 0.03,
+          "spot": 100.0,
+          "volatility": 0.2
+        },
+        "strike": 120.0
+      },
+      {
+        "case_id": "stress-52",
+        "fixing_days": [
+          14,
+          28,
+          42,
+          56,
+          70,
+          84,
+          98,
+          112,
+          126,
+          140,
+          154,
+          168,
+          182,
+          197,
+          211,
+          225,
+          239,
+          253,
+          267,
+          281,
+          295,
+          309,
+          323,
+          337,
+          351,
+          365,
+          379,
+          393,
+          407,
+          421,
+          435,
+          449,
+          463,
+          477,
+          491,
+          505,
+          519,
+          533,
+          548,
+          562,
+          576,
+          590,
+          604,
+          618,
+          632,
+          646,
+          660,
+          674,
+          688,
+          702,
+          716,
+          730
+        ],
+        "model": {
+          "dividend": 0.02,
+          "rate": -0.01,
+          "spot": 100.0,
+          "volatility": 0.45
+        },
+        "strike": 100.0
+      },
+      {
+        "case_id": "irregular",
+        "fixing_days": [
+          7,
+          31,
+          80,
+          121,
+          220,
+          365
+        ],
+        "model": {
+          "dividend": 0.0,
+          "rate": 0.03,
+          "spot": 100.0,
+          "volatility": 0.3
+        },
+        "strike": 105.0
+      },
+      {
+        "case_id": "one-fixing",
+        "fixing_days": [
+          365
+        ],
+        "model": {
+          "dividend": 0.0,
+          "rate": 0.03,
+          "spot": 100.0,
+          "volatility": 0.2
+        },
+        "strike": 100.0
+      }
+    ],
+    "groups": 3,
+    "methods": [
+      "iid",
+      "antithetic",
+      "geometric_cv"
+    ],
+    "pilot_paths": 8192,
+    "reference_pairs": 262144,
+    "reference_runs": 4,
+    "repeats": 8,
+    "sizes": [
+      4096,
+      16384,
+      65536
+    ]
+  },
+  "B": {
+    "bumps": [
+      0.01,
+      0.003,
+      0.001,
+      0.0003,
+      0.0001
+    ],
+    "cases": [
+      {
+        "case_id": "signed-nine-leg",
+        "contracts": [
+          {
+            "fixing_days": [
+              30,
+              61,
+              91
+            ],
+            "strike": 90.0
+          },
+          {
+            "fixing_days": [
+              30,
+              61,
+              91
+            ],
+            "strike": 100.0
+          },
+          {
+            "fixing_days": [
+              30,
+              61,
+              91
+            ],
+            "strike": 110.0
+          },
+          {
+            "fixing_days": [
+              30,
+              61,
+              91,
+              121,
+              152,
+              182
+            ],
+            "strike": 90.0
+          },
+          {
+            "fixing_days": [
+              30,
+              61,
+              91,
+              121,
+              152,
+              182
+            ],
+            "strike": 100.0
+          },
+          {
+            "fixing_days": [
+              30,
+              61,
+              91,
+              121,
+              152,
+              182
+            ],
+            "strike": 110.0
+          },
+          {
+            "fixing_days": [
+              30,
+              61,
+              91,
+              122,
+              152,
+              182,
+              213,
+              243,
+              274,
+              304,
+              335,
+              365
+            ],
+            "strike": 90.0
+          },
+          {
+            "fixing_days": [
+              30,
+              61,
+              91,
+              122,
+              152,
+              182,
+              213,
+              243,
+              274,
+              304,
+              335,
+              365
+            ],
+            "strike": 100.0
+          },
+          {
+            "fixing_days": [
+              30,
+              61,
+              91,
+              122,
+              152,
+              182,
+              213,
+              243,
+              274,
+              304,
+              335,
+              365
+            ],
+            "strike": 110.0
+          }
+        ],
+        "model": {
+          "dividend": 0.01,
+          "rate": 0.03,
+          "spot": 100.0,
+          "volatility": 0.25
+        },
+        "quantities": [
+          1.0,
+          -2.0,
+          1.0,
+          -1.0,
+          2.0,
+          -1.0,
+          1.0,
+          -1.0,
+          0.5
+        ]
+      },
+      {
+        "case_id": "irregular-book",
+        "contracts": [
+          {
+            "fixing_days": [
+              7,
+              31,
+              80,
+              121,
+              220,
+              365
+            ],
+            "strike": 105.0
+          }
+        ],
+        "model": {
+          "dividend": 0.01,
+          "rate": 0.03,
+          "spot": 100.0,
+          "volatility": 0.25
+        },
+        "quantities": [
+          -1.5
+        ]
+      }
+    ],
+    "methods": [
+      "iid",
+      "antithetic",
+      "geometric_cv"
+    ],
+    "n_paths": 131072,
+    "pilot_paths": 8192,
+    "timing_repeats": 3
+  },
+  "C": {
+    "bootstrap_repeats": 300,
+    "cases": [
+      {
+        "case_id": "heldout-mixture-repeated",
+        "contracts": [
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          }
+        ],
+        "model": {
+          "locations": [
+            0.02,
+            -0.08
+          ],
+          "scales": [
+            0.16,
+            0.3
+          ],
+          "shapes": [
+            2.0,
+            1.5
+          ],
+          "weights": [
+            0.8,
+            0.2
+          ]
+        },
+        "split": "heldout",
+        "workload_id": "repeated"
+      },
+      {
+        "case_id": "heldout-mixture-nearby",
+        "contracts": [
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 97.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 99.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 102.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 105.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 103.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 100.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 98.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 97.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 99.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 102.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 105.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 103.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 100.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 98.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 97.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 99.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 102.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 105.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 103.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 100.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 98.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 97.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 99.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 102.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 105.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 103.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 100.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 98.0
+          }
+        ],
+        "model": {
+          "locations": [
+            0.02,
+            -0.08
+          ],
+          "scales": [
+            0.16,
+            0.3
+          ],
+          "shapes": [
+            2.0,
+            1.5
+          ],
+          "weights": [
+            0.8,
+            0.2
+          ]
+        },
+        "split": "heldout",
+        "workload_id": "nearby"
+      },
+      {
+        "case_id": "heldout-mixture-jump",
+        "contracts": [
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 105.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 107.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 109.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 115.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 117.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 113.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 89.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 92.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 105.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 107.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 109.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 115.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 117.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 113.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 89.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 92.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 105.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 107.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 109.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 115.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 117.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 113.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 89.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 92.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 105.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 107.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 109.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 115.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 117.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 113.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 89.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 92.0
+          }
+        ],
+        "model": {
+          "locations": [
+            0.02,
+            -0.08
+          ],
+          "scales": [
+            0.16,
+            0.3
+          ],
+          "shapes": [
+            2.0,
+            1.5
+          ],
+          "weights": [
+            0.8,
+            0.2
+          ]
+        },
+        "split": "heldout",
+        "workload_id": "jump"
+      },
+      {
+        "case_id": "heldout-stress-repeated",
+        "contracts": [
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          }
+        ],
+        "model": {
+          "locations": [
+            0.025,
+            -0.15
+          ],
+          "scales": [
+            0.14,
+            0.36
+          ],
+          "shapes": [
+            2.0,
+            1.3
+          ],
+          "weights": [
+            0.7,
+            0.3
+          ]
+        },
+        "split": "heldout",
+        "workload_id": "repeated"
+      },
+      {
+        "case_id": "heldout-stress-nearby",
+        "contracts": [
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 97.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 99.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 102.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 105.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 103.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 100.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 98.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 97.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 99.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 102.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 105.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 103.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 100.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 98.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 97.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 99.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 102.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 105.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 103.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 100.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 98.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 95.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 97.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 99.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 102.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 105.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 103.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 100.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 98.0
+          }
+        ],
+        "model": {
+          "locations": [
+            0.025,
+            -0.15
+          ],
+          "scales": [
+            0.14,
+            0.36
+          ],
+          "shapes": [
+            2.0,
+            1.3
+          ],
+          "weights": [
+            0.7,
+            0.3
+          ]
+        },
+        "split": "heldout",
+        "workload_id": "nearby"
+      },
+      {
+        "case_id": "heldout-stress-jump",
+        "contracts": [
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 105.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 107.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 109.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 115.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 117.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 113.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 89.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 92.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 105.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 107.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 109.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 115.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 117.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 113.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 89.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 92.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 105.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 107.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 109.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 115.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 117.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 113.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 89.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 92.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 105.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 107.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 109.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 115.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 117.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 113.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 89.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 92.0
+          }
+        ],
+        "model": {
+          "locations": [
+            0.025,
+            -0.15
+          ],
+          "scales": [
+            0.14,
+            0.36
+          ],
+          "shapes": [
+            2.0,
+            1.3
+          ],
+          "weights": [
+            0.7,
+            0.3
+          ]
+        },
+        "split": "heldout",
+        "workload_id": "jump"
+      }
+    ],
+    "groups": 3,
+    "horizons": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32
+    ],
+    "inner_bootstrap_repeats": 100,
+    "pilot_n": 1000,
+    "quad_order": 256,
+    "reference_order": 512,
+    "repeats": 8,
+    "sizes": [
+      2000,
+      8000,
+      32000
+    ],
+    "target_rmse": 0.05,
+    "threshold": 0.1
+  },
+  "adaptation": {
+    "forecast": {
+      "A_production_seconds": 25.464659847988514,
+      "A_reference_seconds": 113.42824320495129,
+      "B_validation_seconds": 5.898784003220499,
+      "C_seconds": 488.7304127868265,
+      "total_seconds": 633.5220998429868
+    },
+    "include_stress_C": true,
+    "reason": "pre-freeze timing forecast",
+    "reduced_A": false
+  },
+  "block_size": 4096,
+  "expected_counts": {
+    "A": 1296,
+    "A_controls": 18,
+    "A_reference_runs": 24,
+    "B": 108,
+    "C": 59904
+  },
+  "gates": {
+    "B_memory_absolute": 67108864,
+    "B_memory_ratio": 1.5,
+    "B_memory_slack": 1048576,
+    "delta_fd_floor": 2e-05,
+    "geometric_delta_floor": 1e-07,
+    "geometric_price_relative": 1e-10,
+    "geometric_vega_floor": 1e-06,
+    "pooled_floor": 1e-10,
+    "pooled_sigma": 5.0,
+    "reference_resolution_floor": 1e-08,
+    "reference_resolution_ratio": 0.5,
+    "singleton_absolute": 1e-11,
+    "vega_fd_floor": 0.002
+  },
+  "limits": {
+    "production_seconds": 900,
+    "tracked_memory_bytes": 536870912
+  },
+  "root_seed": 20261012,
+  "schema_version": "workbench-config-v1",
+  "seeds": {
+    "final": 29604391827592507440174639866741257366,
+    "quantlib_mapping": "1 + semantic_seed % (2**31 - 1), nonzero Windows SWIG-compatible",
+    "train": 284157527850474929489118439243753166605
+  },
+  "training": {
+    "case_ids": [
+      "train-threshold-90",
+      "train-threshold-110"
+    ],
+    "cases": [
+      {
+        "case_id": "train-threshold-90",
+        "contracts": [
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 90.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 91.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 93.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 96.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 108.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 114.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 91.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 90.0
+          }
+        ],
+        "model": {
+          "locations": [
+            0.02,
+            -0.08
+          ],
+          "scales": [
+            0.16,
+            0.3
+          ],
+          "shapes": [
+            2.0,
+            1.5
+          ],
+          "weights": [
+            0.8,
+            0.2
+          ]
+        },
+        "split": "train",
+        "workload_id": "threshold-selection"
+      },
+      {
+        "case_id": "train-threshold-110",
+        "contracts": [
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 110.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 111.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 112.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 116.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 128.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 134.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 111.0
+          },
+          {
+            "maturity": 1.0,
+            "rate": 0.03,
+            "spot": 100.0,
+            "strike": 110.0
+          }
+        ],
+        "model": {
+          "locations": [
+            0.02,
+            -0.08
+          ],
+          "scales": [
+            0.16,
+            0.3
+          ],
+          "shapes": [
+            2.0,
+            1.5
+          ],
+          "weights": [
+            0.8,
+            0.2
+          ]
+        },
+        "split": "train",
+        "workload_id": "threshold-selection"
+      }
+    ],
+    "groups": 2,
+    "pilot_n": 1000,
+    "repeats": 3,
+    "selected_threshold": 0.1,
+    "sizes": [
+      2000,
+      8000
+    ],
+    "threshold_candidates": [
+      0.02,
+      0.05,
+      0.1,
+      "infinity"
+    ],
+    "wall_seconds": 4.254597000021022
+  }
+}

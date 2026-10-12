@@ -1,0 +1,28 @@
+{
+  "configuration_sha256": "031a0d3087abd4a9f042e14b01449ae4f755bae03c64c1068a4820e56a88fd8d",
+  "raw_rows": 61308,
+  "raw_counts": {
+    "A": 1296,
+    "B": 108,
+    "C": 59904
+  },
+  "raw_statuses": {
+    "ok": 61308
+  },
+  "validation_checks": 146,
+  "source_hashes_match": true,
+  "raw_inputs_unchanged_after_report_regeneration": true,
+  "regeneration_sampling_blocked": true,
+  "html_balanced_core_tags": true,
+  "html_navigation_targets_valid": true,
+  "html_bytes": 53201027,
+  "report_validation": "PASS",
+  "crossings": {
+    "heldout-mixture-repeated": 8,
+    "heldout-mixture-nearby": null,
+    "heldout-mixture-jump": null,
+    "heldout-stress-repeated": null,
+    "heldout-stress-nearby": null,
+    "heldout-stress-jump": null
+  }
+}

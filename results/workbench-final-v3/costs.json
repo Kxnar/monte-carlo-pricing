@@ -1,0 +1,13 @@
+{
+  "decision_seconds": 0.15198020788375288,
+  "memory_seconds": 1.9795296000083908,
+  "production_seconds": 231.05583059886703,
+  "reference_seconds": 52.83097849966725,
+  "report_seconds": 2.270244399958756,
+  "setup_seconds": 0.10038679995341226,
+  "summary_seconds": 3.738981599919498,
+  "tuning_seconds": 130.69477580033708,
+  "validation_seconds": 9.755279400385916,
+  "wall_seconds": 443.4552496999968,
+  "wall_seconds_before_report": 440.19080800004303
+}

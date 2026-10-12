@@ -1,0 +1,60 @@
+[
+  {
+    "block_size": 4096,
+    "memory_kind": "tracemalloc separate untimed run; not process RSS",
+    "n_paths": 65536,
+    "peak_memory_bytes": 3573880,
+    "seconds": 0.1159963000100106,
+    "seed": 51,
+    "suite": "A"
+  },
+  {
+    "block_size": 4096,
+    "case_id": "signed-nine-leg",
+    "memory_kind": "tracemalloc separate untimed run; not process RSS",
+    "n_paths": 131072,
+    "peak_memory_bytes": 5246544,
+    "seconds": 0.3148864000104368,
+    "seed": 233134597983817327566553290077264175,
+    "suite": "B"
+  },
+  {
+    "block_size": 4096,
+    "case_id": "signed-nine-leg",
+    "memory_kind": "tracemalloc separate untimed run; not process RSS",
+    "n_paths": 524288,
+    "peak_memory_bytes": 5246544,
+    "seconds": 1.2975096000009216,
+    "seed": 233134597983817327566553290077264175,
+    "suite": "B"
+  },
+  {
+    "block_size": 4096,
+    "case_id": "irregular-book",
+    "memory_kind": "tracemalloc separate untimed run; not process RSS",
+    "n_paths": 131072,
+    "peak_memory_bytes": 1221232,
+    "seconds": 0.04946899996139109,
+    "seed": 278236791834816552760869139481873284784,
+    "suite": "B"
+  },
+  {
+    "block_size": 4096,
+    "case_id": "irregular-book",
+    "memory_kind": "tracemalloc separate untimed run; not process RSS",
+    "n_paths": 524288,
+    "peak_memory_bytes": 1221232,
+    "seconds": 0.19101380003849044,
+    "seed": 278236791834816552760869139481873284784,
+    "suite": "B"
+  },
+  {
+    "memory_kind": "tracemalloc separate untimed run; not process RSS",
+    "n_requested": 32000,
+    "peak_memory_bytes": 1967919,
+    "seconds": 0.010654499987140298,
+    "seed": 9192,
+    "suite": "C",
+    "tuning_seed": 9191
+  }
+]

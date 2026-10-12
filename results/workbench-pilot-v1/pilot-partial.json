@@ -1,0 +1,88 @@
+{
+  "memory": [
+    {
+      "block_size": 512,
+      "case_id": "monthly-K100",
+      "memory_kind": "tracemalloc separate untimed run; not process RSS",
+      "peak_memory_bytes": 126832,
+      "seconds": 0.09400099999038503,
+      "seed": 169615004538252639251140923200408289591,
+      "suite": "A"
+    },
+    {
+      "block_size": 4096,
+      "case_id": "monthly-K100",
+      "memory_kind": "tracemalloc separate untimed run; not process RSS",
+      "peak_memory_bytes": 987072,
+      "seconds": 0.024260300036985427,
+      "seed": 337027036101057781790114691570113308632,
+      "suite": "A"
+    }
+  ],
+  "raw": [
+    {
+      "block_size": 512,
+      "case_id": "monthly-K100",
+      "kind": "tuning",
+      "n": 8192,
+      "seconds": 0.04068460001144558,
+      "suite": "A"
+    },
+    {
+      "block_size": 512,
+      "case_id": "monthly-K100",
+      "kind": "iid",
+      "n": 65536,
+      "seconds": 0.06749839999247342,
+      "suite": "A"
+    },
+    {
+      "block_size": 512,
+      "case_id": "monthly-K100",
+      "kind": "antithetic",
+      "n": 65536,
+      "seconds": 0.039101800008211285,
+      "suite": "A"
+    },
+    {
+      "block_size": 512,
+      "case_id": "monthly-K100",
+      "kind": "geometric_cv",
+      "n": 65536,
+      "seconds": 0.04487510002218187,
+      "suite": "A"
+    },
+    {
+      "block_size": 4096,
+      "case_id": "monthly-K100",
+      "kind": "tuning",
+      "n": 8192,
+      "seconds": 0.002795300038997084,
+      "suite": "A"
+    },
+    {
+      "block_size": 4096,
+      "case_id": "monthly-K100",
+      "kind": "iid",
+      "n": 65536,
+      "seconds": 0.01752999995369464,
+      "suite": "A"
+    },
+    {
+      "block_size": 4096,
+      "case_id": "monthly-K100",
+      "kind": "antithetic",
+      "n": 65536,
+      "seconds": 0.01389279996510595,
+      "suite": "A"
+    },
+    {
+      "block_size": 4096,
+      "case_id": "monthly-K100",
+      "kind": "geometric_cv",
+      "n": 65536,
+      "seconds": 0.01722939999308437,
+      "suite": "A"
+    }
+  ]
+}

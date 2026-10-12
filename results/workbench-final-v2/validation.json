@@ -1,0 +1,203 @@
+{
+  "checks": [
+    {
+      "difference": 3.8719027983802334e-15,
+      "name": "A:monthly-K80:geometric-analytic",
+      "passed": true,
+      "tolerance": 1e-10
+    },
+    {
+      "combined_standard_error": 0.0020279586054525026,
+      "difference": 0.004621265827221832,
+      "name": "A:monthly-K80:iid:4096:pooled",
+      "passed": true
+    },
+    {
+      "combined_standard_error": 0.0014537512090508652,
+      "difference": 0.0004085827210265486,
+      "name": "A:monthly-K80:iid:16384:pooled",
+      "passed": true
+    },
+    {
+      "combined_standard_error": 0.0005665710765300914,
+      "difference": 0.00033438868712359904,
+      "name": "A:monthly-K80:iid:65536:pooled",
+      "passed": true
+    },
+    {
+      "combined_standard_error": 0.001944590642668795,
+      "difference": 0.0007557926242682256,
+      "name": "A:monthly-K80:antithetic:4096:pooled",
+      "passed": true
+    },
+    {
+      "combined_standard_error": 0.0020319855086992056,
+      "difference": -0.00024544834414653993,
+      "name": "A:monthly-K80:antithetic:16384:pooled",
+      "passed": true
+    },
+    {
+      "combined_standard_error": 0.000884629187465874,
+      "difference": -0.0008157480199073447,
+      "name": "A:monthly-K80:antithetic:65536:pooled",
+      "passed": true
+    },
+    {
+      "combined_standard_error": 0.0001912376289558668,
+      "difference": -0.00024382265601331776,
+      "name": "A:monthly-K80:geometric_cv:4096:pooled",
+      "passed": true
+    },
+    {
+      "combined_standard_error": 0.00013220443023235993,
+      "difference": 3.83777072442415e-05,
+      "name": "A:monthly-K80:geometric_cv:16384:pooled",
+      "passed": true
+    },
+    {
+      "combined_standard_error": 9.246977316523626e-05,
+      "difference": -7.458985678415742e-05,
+      "name": "A:monthly-K80:geometric_cv:65536:pooled",
+      "passed": true
+    },
+    {
+      "limit": 0.00013748148104773857,
+      "name": "A:monthly-K80:reference-resolution",
+      "passed": true,
+      "reference_standard_error": 7.801242194151426e-05
+    },
+    {
+      "difference": 0.0,
+      "name": "A:monthly-K100:geometric-analytic",
+      "passed": true,
+      "tolerance": 4.1701512552780174e-10
+    },
+    {
+      "combined_standard_error": 0.02122910636990815,
+      "difference": 0.00561434865129673,
+      "name": "A:monthly-K100:iid:4096:pooled",
+      "passed": true
+    },
+    {
+      "combined_standard_error": 0.00942665857800756,
+      "difference": 0.007494688857444309,
+      "name": "A:monthly-K100:iid:16384:pooled",
+      "passed": true
+    },
+    {
+      "combined_standard_error": 0.010089010373977367,
+      "difference": -0.009920104271794905,
+      "name": "A:monthly-K100:iid:65536:pooled",
+      "passed": true
+    },
+    {
+      "combined_standard_error": 0.0121441161706461,
+      "difference": 0.040004267535178606,
+      "name": "A:monthly-K100:antithetic:4096:pooled",
+      "passed": true
+    },
+    {
+      "combined_standard_error": 0.006864324524844551,
+      "difference": -0.00687235086581417,
+      "name": "A:monthly-K100:antithetic:16384:pooled",
+      "passed": true
+    },
+    {
+      "combined_standard_error": 0.0030021287821830286,
+      "difference": -0.0008236529359990641,
+      "name": "A:monthly-K100:antithetic:65536:pooled",
+      "passed": true
+    },
+    {
+      "combined_standard_error": 0.0008913352342176806,
+      "difference": -0.00031397613984296413,
+      "name": "A:monthly-K100:geometric_cv:4096:pooled",
+      "passed": true
+    },
+    {
+      "combined_standard_error": 0.00031289907428497,
+      "difference": -0.00034167415991426253,
+      "name": "A:monthly-K100:geometric_cv:16384:pooled",
+      "passed": true
+    },
+    {
+      "combined_standard_error": 0.0001855181529291829,
+      "difference": -9.716716292196281e-05,
+      "name": "A:monthly-K100:geometric_cv:65536:pooled",
+      "passed": true
+    },
+    {
+      "limit": 0.0002979191412217006,
+      "name": "A:monthly-K100:reference-resolution",
+      "passed": true,
+      "reference_standard_error": 0.00011401906934577937
+    },
+    {
+      "difference": 0.0,
+      "name": "A:monthly-K120:geometric-analytic",
+      "passed": true,
+      "tolerance": 1.8646128309974117e-09
+    },
+    {
+      "combined_standard_error": 0.05235446416782892,
+      "difference": 0.03545562992660223,
+      "name": "A:monthly-K120:iid:4096:pooled",
+      "passed": true
+    },
+    {
+      "combined_standard_error": 0.021205898546112573,
+      "difference": -0.011418200202214734,
+      "name": "A:monthly-K120:iid:16384:pooled",
+      "passed": true
+    },
+    {
+      "combined_standard_error": 0.010952815395202074,
+      "difference": 0.0023984173426505606,
+      "name": "A:monthly-K120:iid:65536:pooled",
+      "passed": true
+    },
+    {
+      "combined_standard_error": 0.003501782994053627,
+      "difference": -0.0036850369514525028,
+      "name": "A:monthly-K120:antithetic:4096:pooled",
+      "passed": true
+    },
+    {
+      "combined_standard_error": 0.002935785686525929,
+      "difference": 0.0007632613770418573,
+      "name": "A:monthly-K120:antithetic:16384:pooled",
+      "passed": true
+    },
+    {
+      "combined_standard_error": 0.0009803400203677918,
+      "difference": -0.00020703544934619345,
+      "name": "A:monthly-K120:antithetic:65536:pooled",
+      "passed": true
+    },
+    {
+      "combined_standard_error": 0.0007405772999587232,
+      "difference": -0.0020894048769335427,
+      "name": "A:monthly-K120:geometric_cv:4096:pooled",
+      "passed": true
+    },
+    {
+      "combined_standard_error": 0.0006078581348716275,
+      "difference": 0.00012444418379331523,
+      "name": "A:monthly-K120:geometric_cv:16384:pooled",
+      "passed": true
+    },
+    {
+      "combined_standard_error": 0.0002841008982408877,
+      "difference": -0.00018766932637603873,
+      "name": "A:monthly-K120:geometric_cv:65536:pooled",
+      "passed": true
+    },
+    {
+      "limit": 0.0004661764170130339,
+      "name": "A:monthly-K120:reference-resolution",
+      "passed": true,
+      "reference_standard_error": 0.0002043158360498352
+    }
+  ],
+  "passed": true
+}

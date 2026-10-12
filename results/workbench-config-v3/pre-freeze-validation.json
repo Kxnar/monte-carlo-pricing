@@ -1,0 +1,122 @@
+[
+  {
+    "difference": -5.030247746118377e-10,
+    "name": "B:signed-nine-leg:leg0:geometric-delta",
+    "passed": true,
+    "tolerance": 1e-07
+  },
+  {
+    "difference": -4.016800225770112e-09,
+    "name": "B:signed-nine-leg:leg0:geometric-vega",
+    "passed": true,
+    "tolerance": 1e-06
+  },
+  {
+    "difference": -1.156267859236948e-10,
+    "name": "B:signed-nine-leg:leg1:geometric-delta",
+    "passed": true,
+    "tolerance": 1e-07
+  },
+  {
+    "difference": 8.324025912997968e-10,
+    "name": "B:signed-nine-leg:leg1:geometric-vega",
+    "passed": true,
+    "tolerance": 1e-06
+  },
+  {
+    "difference": 4.755331683981012e-10,
+    "name": "B:signed-nine-leg:leg2:geometric-delta",
+    "passed": true,
+    "tolerance": 1e-07
+  },
+  {
+    "difference": -2.8380284788909194e-09,
+    "name": "B:signed-nine-leg:leg2:geometric-vega",
+    "passed": true,
+    "tolerance": 1e-06
+  },
+  {
+    "difference": -3.3354635720073134e-10,
+    "name": "B:signed-nine-leg:leg3:geometric-delta",
+    "passed": true,
+    "tolerance": 1e-07
+  },
+  {
+    "difference": -5.42326006325311e-09,
+    "name": "B:signed-nine-leg:leg3:geometric-vega",
+    "passed": true,
+    "tolerance": 1e-06
+  },
+  {
+    "difference": -8.640388404757005e-11,
+    "name": "B:signed-nine-leg:leg4:geometric-delta",
+    "passed": true,
+    "tolerance": 1e-07
+  },
+  {
+    "difference": 6.543423580751551e-10,
+    "name": "B:signed-nine-leg:leg4:geometric-vega",
+    "passed": true,
+    "tolerance": 1e-06
+  },
+  {
+    "difference": 2.604735316324991e-10,
+    "name": "B:signed-nine-leg:leg5:geometric-delta",
+    "passed": true,
+    "tolerance": 1e-07
+  },
+  {
+    "difference": -3.6389042890050405e-09,
+    "name": "B:signed-nine-leg:leg5:geometric-vega",
+    "passed": true,
+    "tolerance": 1e-06
+  },
+  {
+    "difference": -1.8229143194936626e-10,
+    "name": "B:signed-nine-leg:leg6:geometric-delta",
+    "passed": true,
+    "tolerance": 1e-07
+  },
+  {
+    "difference": -6.683581688093909e-09,
+    "name": "B:signed-nine-leg:leg6:geometric-vega",
+    "passed": true,
+    "tolerance": 1e-06
+  },
+  {
+    "difference": -6.176670286350827e-11,
+    "name": "B:signed-nine-leg:leg7:geometric-delta",
+    "passed": true,
+    "tolerance": 1e-07
+  },
+  {
+    "difference": 4.964348931935092e-10,
+    "name": "B:signed-nine-leg:leg7:geometric-vega",
+    "passed": true,
+    "tolerance": 1e-06
+  },
+  {
+    "difference": 1.0354861412764649e-10,
+    "name": "B:signed-nine-leg:leg8:geometric-delta",
+    "passed": true,
+    "tolerance": 1e-07
+  },
+  {
+    "difference": -4.129926622908897e-09,
+    "name": "B:signed-nine-leg:leg8:geometric-vega",
+    "passed": true,
+    "tolerance": 1e-06
+  },
+  {
+    "difference": 1.4723156027685036e-10,
+    "name": "B:irregular-book:leg0:geometric-delta",
+    "passed": true,
+    "tolerance": 1e-07
+  },
+  {
+    "difference": -3.541387627592485e-09,
+    "name": "B:irregular-book:leg0:geometric-vega",
+    "passed": true,
+    "tolerance": 1e-06
+  }
+]
